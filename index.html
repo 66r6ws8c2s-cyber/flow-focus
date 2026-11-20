@@ -1,16 +1,67 @@
-<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta http-equiv="refresh" content="180"><title>Flow Focus</title><style>
-body{background:#0d1117;color:#e6edf3;font:15px -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;margin:0;padding:14px;max-width:1100px;margin:auto}
-h1{font-size:18px;margin:4px 0 10px} .g{color:#3fb950} .r{color:#f85149} .y{color:#d29922} .dim{color:#8b949e}
-.banner{padding:14px;border-radius:10px;font-size:20px;margin-bottom:10px;background:#161b22;border:1px solid #30363d}
-.gb{background:#0f2e1a;border-color:#3fb950;color:#3fb950} .rb{background:#3a1414;border-color:#f85149;color:#f85149}
-.sub{font-size:13px;color:#c9d1d9;margin-top:4px} .ctx{background:#161b22;padding:10px;border-radius:8px;margin-bottom:10px;font-size:14px}
-table{width:100%;border-collapse:collapse} th,td{text-align:left;padding:8px 6px;border-bottom:1px solid #21262d;vertical-align:top}
-th{font-size:12px;color:#8b949e;font-weight:600} .tk{font-weight:700;font-size:17px} .ord{font-size:12px;white-space:nowrap}
-.foot{color:#8b949e;font-size:12px;margin-top:12px;line-height:1.5} .err{color:#d29922;font-size:13px;margin:6px 0}
-@media(max-width:700px){table,thead,tbody,tr,td{display:block} thead{display:none} tr{border:1px solid #30363d;border-radius:8px;margin-bottom:8px;padding:6px} td{border:0;padding:3px 6px}}
-</style></head><body><h1>Options Flow Focus: AMD NVDA MSFT AAPL TSLA META MU</h1>
-<div class="banner dim">No data yet. Market opens 9:30 AM ET; first update about 9:45 AM ET.</div><div class="ctx"></div>
-<div class="foot">Last updated 8:46 AM ET (2026-11-20). Source: Unusual Whales. Updates every 15 min, 9:30 AM–4:00 PM ET on trading days; this page reloads itself every 3 min.<br>
-Lean = bullish share of directional premium since 9:30 AM ET. Bullish = calls bought at ask + puts sold at bid; bearish = puts bought at ask + calls sold at bid. Orders of $25K+ counted; mid-price trades and options more than 15% in the money are skipped. Line = lean through the day (dashed = 50%). Context only, not trade advice.</div>
-</body></html>
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flow Focus</title><style>
+:root{--bg:#f6f7fb;--card:#fff;--ink:#0f172a;--mut:#64748b;--line:#e8ebf2;--g:#16a34a;--r:#e11d48}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.4 -apple-system,BlinkMacSystemFont,"SF Pro Text","Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:18px 16px 40px}
+header{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin-bottom:14px}
+h1{font-size:22px;margin:0;letter-spacing:-.3px}h1 span{font-size:22px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 12px;font-size:13px;box-shadow:0 1px 2px rgba(15,23,42,.04)}
+.seg{display:inline-flex;background:#eef1f7;border-radius:999px;padding:3px}.seg button{border:0;background:none;padding:6px 12px;border-radius:999px;font:inherit;font-size:13px;cursor:pointer;color:var(--mut)}
+.seg button.on{background:#fff;color:var(--ink);box-shadow:0 1px 3px rgba(15,23,42,.12);font-weight:600}
+.sample{background:#fff4e5;border:2px dashed #f59e0b;color:#b45309;border-radius:14px;padding:10px 14px;margin-bottom:12px;font-weight:600}
+.focus{border-radius:22px;padding:20px 22px;margin-bottom:14px;display:flex;gap:20px;align-items:center;justify-content:space-between;box-shadow:0 6px 24px rgba(15,23,42,.08)}
+.f-bull{background:linear-gradient(135deg,#dcfce7,#f0fdf4);border:1px solid #bbf7d0}.f-bear{background:linear-gradient(135deg,#ffe4e6,#fff1f2);border:1px solid #fecdd3}
+.f-mixed{background:linear-gradient(135deg,#fef9c3,#fffbeb);border:1px solid #fde68a}.f-none{background:#fff;border:1px solid var(--line)}
+.focus .k{font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--mut)}
+.focus .t{font-size:40px;font-weight:800;letter-spacing:-1px;margin:2px 0}.focus .why{font-size:15px;max-width:640px}
+.strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.pill{border-radius:999px;padding:7px 14px;font-size:14px;font-weight:600;border:1px solid var(--line);background:#fff}
+.p-bull{background:#dcfce7;color:#166534;border-color:#bbf7d0}.p-bear{background:#ffe4e6;color:#9f1239;border-color:#fecdd3}.p-mixed{background:#fef9c3;color:#854d0e;border-color:#fde68a}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:0 2px 10px rgba(15,23,42,.05);cursor:pointer;transition:transform .12s,box-shadow .12s;user-select:none}
+.card:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(15,23,42,.09)}
+.card.is-focus{outline:3px solid #a78bfa;outline-offset:-1px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.tk{font-size:24px;font-weight:800;letter-spacing:-.5px}.lean{font-weight:600;margin:2px 0 6px}
+.bull{color:var(--g)}.bear{color:var(--r)}.mixed{color:#a16207}.muted{color:var(--mut)}.small{font-size:12px}
+.badge{display:inline-block;border-radius:999px;padding:3px 10px;font-size:12.5px;font-weight:600;margin-bottom:4px}
+.b-bull{background:#dcfce7;color:#166534}.b-bear{background:#ffe4e6;color:#9f1239}.b-steady{background:#eef2ff;color:#3730a3}.b-fade{background:#fef3c7;color:#92400e}.b-quiet{background:#f1f5f9;color:#64748b}
+.donut .dn-b{font-size:19px;font-weight:800;fill:#0f172a}.donut .dn-s{font-size:10px;fill:#64748b}
+.split{margin-top:10px}.sl{display:flex;justify-content:space-between;font-size:13px;margin-top:6px}
+.bar{display:flex;height:9px;border-radius:99px;overflow:hidden;background:#e2e8f0;margin-top:4px}.bar span{display:block;height:100%}
+.trend{margin-top:10px}.hint{text-align:center;font-size:12px;color:#94a3b8;margin-top:8px}
+.more{display:none;margin-top:10px;border-top:1px dashed var(--line);padding-top:8px}.card.open .more{display:block}.card.open .hint{display:none}
+.mh{font-size:12px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.more ul{list-style:none;padding:0;margin:6px 0 0}.more li{font-size:13.5px;padding:4px 0}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:6px}.d-bull{background:var(--g)}.d-bear{background:var(--r)}
+.empty{background:#fff;border:1px solid var(--line);border-radius:20px;padding:30px;text-align:center;font-size:17px}
+.err{background:#fff7ed;border:1px solid #fed7aa;color:#9a3412;border-radius:12px;padding:8px 12px;margin-bottom:12px;font-size:13px}
+footer{margin-top:22px;color:var(--mut);font-size:12.5px;line-height:1.55}
+@media(max-width:640px){.focus{flex-direction:column;align-items:flex-start}.focus .t{font-size:32px}h1{font-size:19px}.grid{grid-template-columns:1fr}}
+</style></head><body><div class="wrap">
+<header><h1><span>🐳</span> Flow Focus</h1><div class="chips"><span class="chip">🕒 Updated 8:46 AM ET</span><span class="chip" id="cd">…</span><span class="seg"><button data-k="default" onclick="sortBy('default')">My order</button><button data-k="lean" onclick="sortBy('lean')">Strongest lean</button><button data-k="money" onclick="sortBy('money')">Most money</button></span></div></header>
+<div class="focus f-none"><div><div class="k">Focus</div><div class="why">☕ No data yet. The market opens at 9:30 AM ET, and the first update lands around 9:45 AM ET.</div></div></div>
+<footer>Source: Unusual Whales · updated 8:46 AM ET 2026-11-20 · refreshes every 15 min, 9:30 AM–4:00 PM ET.<br>
+Bullish = calls bought at ask + puts sold at bid; bearish = the reverse. Counts single-leg orders of $25K+ since 9:30 AM ET and skips spreads/multi-leg, stock-tied, mid-price and deep in-the-money prints. Pie = bull vs bear money; line = lean through the day.<br>
+<b>Context only, not trade advice.</b></footer></div><script>
+const S=JSON.parse(localStorage.getItem('ff_state')||'{"open":[],"sort":"default"}');
+function save(){localStorage.setItem('ff_state',JSON.stringify(S))}
+function tog(el){const t=el.dataset.tk;el.classList.toggle('open');S.open=S.open.filter(x=>x!==t);if(el.classList.contains('open'))S.open.push(t);save()}
+function sortBy(k){S.sort=k;save();apply()}
+function apply(){const g=document.getElementById('grid');if(!g)return;const cs=[...g.children];
+ cs.sort((a,b)=>S.sort==='lean'?b.dataset.strength-a.dataset.strength:S.sort==='money'?b.dataset.money-a.dataset.money:a.dataset.i-b.dataset.i);
+ cs.forEach(c=>{g.appendChild(c);c.classList.toggle('open',S.open.includes(c.dataset.tk))});
+ document.querySelectorAll('.seg button').forEach(b=>b.classList.toggle('on',b.dataset.k===S.sort))}
+function etNow(){const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour12:false,weekday:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(new Date());const o={};p.forEach(x=>o[x.type]=x.value);return {wd:o.weekday,h:+o.hour%24,m:+o.minute,s:+o.second}}
+function tick(){const el=document.getElementById('cd');if(!el)return;const t=etNow();const sec=t.h*3600+t.m*60+t.s;
+ const wk=!['Sat','Sun'].includes(t.wd),lag=90,first=9*3600+45*60,last=16*3600;
+ if(!wk||sec>=last+lag){el.textContent='⏭ Next update 9:45 AM ET, next trading day';return}
+ let nxt=Math.max(first,Math.ceil((sec-lag)/900)*900)+lag; if(nxt<=sec)nxt+=900;
+ const d=nxt-sec,mm=Math.floor(d/60),ss=String(d%60).padStart(2,'0');el.textContent='⏳ Next update in '+mm+':'+ss}
+apply();tick();setInterval(tick,1000);
+const UPDATED="2026-11-20 08:46";
+async function check(){try{const r=await fetch('latest.json?t='+Date.now(),{cache:'no-store'});const j=await r.json();
+ if(j.updated&&j.updated!==UPDATED){location.replace(location.pathname+'?v='+Date.now())}}catch(e){}}
+setInterval(check,60000);setTimeout(()=>location.replace(location.pathname+'?v='+Date.now()),15*60000);
+</script></body></html>
