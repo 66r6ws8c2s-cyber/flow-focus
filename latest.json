@@ -1,414 +1,972 @@
 {
- "updated": "2026-11-20 09:30",
- "updated_hm": "9:30 AM",
+ "updated": "2026-11-20 09:45",
+ "updated_hm": "9:45 AM",
  "date": "2026-11-20",
  "source": "Unusual Whales API",
  "status": "ok",
  "tickers": {
   "AMD": {
-   "bull_small": 879035.0,
-   "bull_big": 1315795.0,
-   "bear_small": 809093.0,
-   "bear_big": 0.0,
-   "n": 27,
-   "skipped_multileg": 6864655.0,
-   "skipped_itm": 280660.0,
-   "bull": 2194830.0,
-   "bear": 809093.0,
-   "lean": 73.1,
-   "big_lean": 100.0,
-   "recent_bull": 2194830.0,
-   "recent_bear": 809093.0,
-   "recent_lean": 73.1,
-   "early_lean": null,
+   "bull_small": 10673805.0,
+   "bull_big": 6310145.0,
+   "bear_small": 11428137.0,
+   "bear_big": 2710053.0,
+   "n": 417,
+   "n_bull_small": 186,
+   "n_bull_big": 14,
+   "n_bear_small": 209,
+   "n_bear_big": 8,
+   "skipped_multileg": 40208379.0,
+   "skipped_itm": 11243824.0,
+   "bull": 16983950.0,
+   "bear": 14138190.0,
+   "lean": 54.6,
+   "big_lean": 70.0,
+   "recent_bull": 14789120.0,
+   "recent_bear": 13519807.0,
+   "recent_lean": 52.2,
+   "early_lean": 78.0,
    "top": [
     {
-     "time": "09:30",
-     "contract": "11-23 $445C",
+     "time": "09:32",
+     "ts": "9:32",
+     "contract": "04-16 $610C",
+     "exp": "4/16",
+     "strike": "610",
+     "cp": "CALL",
+     "size": 500,
+     "price": "34.25",
      "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 1712640,
+     "spot": "464.274"
+    },
+    {
+     "time": "09:30",
+     "ts": "9:30",
+     "contract": "11-23 $445C",
+     "exp": "11/23",
+     "strike": "445",
+     "cp": "CALL",
+     "size": 200,
+     "price": "32.13",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
      "dir": "bull",
      "premium": 642665,
      "spot": "468.231"
     },
     {
-     "time": "09:30",
-     "contract": "11-23 $472.5C",
+     "time": "09:34",
+     "ts": "9:34",
+     "contract": "12-18 $400P",
+     "exp": "12/18",
+     "strike": "400",
+     "cp": "PUT",
+     "size": 296,
+     "price": "18.65",
      "side": "Ask",
-     "dir": "bull",
-     "premium": 364460,
-     "spot": "468.3506"
-    },
-    {
-     "time": "09:30",
-     "contract": "11-23 $455C",
-     "side": "Ask",
-     "dir": "bull",
-     "premium": 308670,
-     "spot": "468.23"
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 551925,
+     "spot": "459.8454"
     }
    ],
    "series": [
     [
-     "09:30",
-     73.1
+     "09:45",
+     54.6
+    ],
+    [
+     "09:45",
+     54.6
     ]
    ],
-   "speed": "up_bull",
-   "speed_text": "Picking up bullish",
-   "recent_total": 3003923.0
+   "speed": "fade",
+   "speed_text": "Bull side fading",
+   "recent_total": 28308927.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 149.5,
+    "n_bull_big": 8.3,
+    "n_bear_small": 158.3,
+    "n_bear_big": 5.8,
+    "bull_small": 7948681.2,
+    "bull_big": 3183579.2,
+    "bear_small": 8274407.3,
+    "bear_big": 3541781.0,
+    "ratio_small": 0.98,
+    "ratio_big": 1.61
+   },
+   "vs": {
+    "n_bull_small": 1.24,
+    "n_bull_big": 1.69,
+    "n_bear_small": 1.32,
+    "n_bear_big": 1.38
+   },
+   "vs_read": {
+    "code": "normal",
+    "text": "About normal (bulls 1.3x, bears 1.3x)",
+    "x": 1.32
+   }
   },
   "NVDA": {
-   "bull_small": 1142974.0,
-   "bull_big": 0.0,
-   "bear_small": 1357696.0,
-   "bear_big": 0.0,
-   "n": 50,
-   "skipped_multileg": 7633792.0,
-   "skipped_itm": 5579494.0,
-   "bull": 1142974.0,
-   "bear": 1357696.0,
-   "lean": 45.7,
-   "big_lean": null,
-   "recent_bull": 1142974.0,
-   "recent_bear": 1357696.0,
-   "recent_lean": 45.7,
-   "early_lean": null,
-   "top": [],
+   "bull_small": 18025668.0,
+   "bull_big": 3990955.0,
+   "bear_small": 24288620.0,
+   "bear_big": 6571901.0,
+   "n": 769,
+   "n_bull_small": 314,
+   "n_bull_big": 12,
+   "n_bear_small": 426,
+   "n_bear_big": 17,
+   "skipped_multileg": 65338663.0,
+   "skipped_itm": 27076517.0,
+   "bull": 22016623.0,
+   "bear": 30860521.0,
+   "lean": 41.6,
+   "big_lean": 37.8,
+   "recent_bull": 21199969.0,
+   "recent_bear": 29599831.0,
+   "recent_lean": 41.7,
+   "early_lean": 39.3,
+   "top": [
+    {
+     "time": "09:41",
+     "ts": "9:41",
+     "contract": "04-16 $160C",
+     "exp": "4/16",
+     "strike": "160",
+     "cp": "CALL",
+     "size": 1000,
+     "price": "10.27",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 1027000,
+     "spot": "139.36"
+    },
+    {
+     "time": "09:45",
+     "ts": "9:45",
+     "contract": "04-16 $160C",
+     "exp": "4/16",
+     "strike": "160",
+     "cp": "CALL",
+     "size": 1000,
+     "price": "10.24",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 1024024,
+     "spot": "139.58"
+    },
+    {
+     "time": "09:33",
+     "ts": "9:33",
+     "contract": "12-18 $150P",
+     "exp": "12/18",
+     "strike": "150",
+     "cp": "PUT",
+     "size": 519,
+     "price": "13.50",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": true,
+     "dir": "bear",
+     "premium": 700555,
+     "spot": "141.51"
+    }
+   ],
    "series": [
     [
-     "09:30",
-     45.7
+     "09:45",
+     42.0
+    ],
+    [
+     "09:45",
+     41.6
     ]
    ],
    "speed": "steady",
    "speed_text": "Steady",
-   "recent_total": 2500670.0
+   "recent_total": 50799800.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 530.8,
+    "n_bull_big": 51.1,
+    "n_bear_small": 588.6,
+    "n_bear_big": 55.0,
+    "bull_small": 29571312.8,
+    "bull_big": 24829472.0,
+    "bear_small": 33055723.4,
+    "bear_big": 25556147.3,
+    "ratio_small": 0.99,
+    "ratio_big": 0.89
+   },
+   "vs": {
+    "n_bull_small": 0.59,
+    "n_bull_big": 0.23,
+    "n_bear_small": 0.72,
+    "n_bear_big": 0.31
+   },
+   "vs_read": {
+    "code": "quiet",
+    "text": "Quieter than normal (0.7x)",
+    "x": 0.69
+   }
   },
   "MSFT": {
-   "bull_small": 162120.0,
-   "bull_big": 0.0,
-   "bear_small": 211570.0,
-   "bear_big": 310900.0,
-   "n": 10,
-   "skipped_multileg": 28588.0,
-   "skipped_itm": 0.0,
-   "bull": 162120.0,
-   "bear": 522470.0,
-   "lean": 23.7,
-   "big_lean": 0.0,
-   "recent_bull": 162120.0,
-   "recent_bear": 522470.0,
-   "recent_lean": 23.7,
-   "early_lean": null,
+   "bull_small": 1214389.0,
+   "bull_big": 2135210.0,
+   "bear_small": 1371672.0,
+   "bear_big": 690300.0,
+   "n": 46,
+   "n_bull_small": 18,
+   "n_bull_big": 3,
+   "n_bear_small": 23,
+   "n_bear_big": 2,
+   "skipped_multileg": 3078598.0,
+   "skipped_itm": 535760.0,
+   "bull": 3349599.0,
+   "bear": 2061972.0,
+   "lean": 61.9,
+   "big_lean": 75.6,
+   "recent_bull": 3187479.0,
+   "recent_bear": 1539502.0,
+   "recent_lean": 67.4,
+   "early_lean": 23.7,
    "top": [
     {
-     "time": "09:30",
-     "contract": "03-19 $520C",
+     "time": "09:35",
+     "ts": "9:35",
+     "contract": "11-27 $495C",
+     "exp": "11/27",
+     "strike": "495",
+     "cp": "CALL",
+     "size": 801,
+     "price": "9.86",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 790060,
+     "spot": "494.71"
+    },
+    {
+     "time": "09:35",
+     "ts": "9:35",
+     "contract": "11-27 $495C",
+     "exp": "11/27",
+     "strike": "495",
+     "cp": "CALL",
+     "size": 759,
+     "price": "9.95",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 755150,
+     "spot": "494.9502"
+    },
+    {
+     "time": "09:35",
+     "ts": "9:35",
+     "contract": "01-15 $550P",
+     "exp": "1/15",
+     "strike": "550",
+     "cp": "PUT",
+     "size": 100,
+     "price": "59.00",
      "side": "Bid",
-     "dir": "bear",
-     "premium": 310900,
-     "spot": "493"
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 590000,
+     "spot": "494.57"
     }
    ],
    "series": [
     [
-     "09:30",
-     23.7
+     "09:45",
+     61.9
+    ],
+    [
+     "09:45",
+     61.9
     ]
    ],
-   "speed": "up_bear",
-   "speed_text": "Picking up bearish",
-   "recent_total": 684590.0
+   "speed": "flip_bull",
+   "speed_text": "Flipping bullish",
+   "recent_total": 4726981.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 28.1,
+    "n_bull_big": 3.2,
+    "n_bear_small": 32.5,
+    "n_bear_big": 1.3,
+    "bull_small": 1521964.0,
+    "bull_big": 2126574.8,
+    "bear_small": 1755978.9,
+    "bear_big": 988566.7,
+    "ratio_small": 0.89,
+    "ratio_big": 2.2
+   },
+   "vs": {
+    "n_bull_small": 0.64,
+    "n_bull_big": 0.94,
+    "n_bear_small": 0.71,
+    "n_bear_big": 1.54
+   },
+   "vs_read": {
+    "code": "normal",
+    "text": "About normal (bulls 0.7x, bears 0.7x)",
+    "x": 0.74
+   }
   },
   "AAPL": {
-   "bull_small": 1261011.0,
-   "bull_big": 1028950.0,
-   "bear_small": 362260.0,
-   "bear_big": 0.0,
-   "n": 24,
-   "skipped_multileg": 1501975.0,
-   "skipped_itm": 270010.0,
-   "bull": 2289961.0,
-   "bear": 362260.0,
-   "lean": 86.3,
-   "big_lean": 100.0,
-   "recent_bull": 2289961.0,
-   "recent_bear": 362260.0,
-   "recent_lean": 86.3,
-   "early_lean": null,
+   "bull_small": 2845835.0,
+   "bull_big": 1953983.0,
+   "bear_small": 1432304.0,
+   "bear_big": 2167928.0,
+   "n": 79,
+   "n_bull_small": 43,
+   "n_bull_big": 4,
+   "n_bear_small": 31,
+   "n_bear_big": 1,
+   "skipped_multileg": 2850060.0,
+   "skipped_itm": 877790.0,
+   "bull": 4799818.0,
+   "bear": 3600232.0,
+   "lean": 57.1,
+   "big_lean": 47.4,
+   "recent_bull": 2659857.0,
+   "recent_bear": 3237972.0,
+   "recent_lean": 45.1,
+   "early_lean": 85.5,
    "top": [
     {
-     "time": "09:30",
-     "contract": "02-19 $360C",
+     "time": "09:40",
+     "ts": "9:40",
+     "contract": "01-15 $340P",
+     "exp": "1/15",
+     "strike": "340",
+     "cp": "PUT",
+     "size": 2464,
+     "price": "8.80",
      "side": "Ask",
+     "sidecode": "A",
+     "sweep": true,
+     "dir": "bear",
+     "premium": 2167928,
+     "spot": "350.3801"
+    },
+    {
+     "time": "09:30",
+     "ts": "9:30",
+     "contract": "02-19 $360C",
+     "exp": "2/19",
+     "strike": "360",
+     "cp": "CALL",
+     "size": 400,
+     "price": "17.45",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
      "dir": "bull",
      "premium": 698000,
      "spot": "353.86"
     },
     {
-     "time": "09:30",
-     "contract": "12-18 $350C",
-     "side": "Ask",
-     "dir": "bull",
-     "premium": 330950,
-     "spot": "352.5"
-    }
-   ],
-   "series": [
-    [
-     "09:30",
-     86.3
-    ]
-   ],
-   "speed": "up_bull",
-   "speed_text": "Picking up bullish",
-   "recent_total": 2652221.0
-  },
-  "TSLA": {
-   "bull_small": 683025.0,
-   "bull_big": 207835.0,
-   "bear_small": 325159.0,
-   "bear_big": 0.0,
-   "n": 20,
-   "skipped_multileg": 1936146.0,
-   "skipped_itm": 1339594.0,
-   "bull": 890860.0,
-   "bear": 325159.0,
-   "lean": 73.3,
-   "big_lean": 100.0,
-   "recent_bull": 890860.0,
-   "recent_bear": 325159.0,
-   "recent_lean": 73.3,
-   "early_lean": null,
-   "top": [
-    {
-     "time": "09:30",
-     "contract": "12-18 $400C",
-     "side": "Ask",
-     "dir": "bull",
-     "premium": 207835,
-     "spot": "370.02"
-    }
-   ],
-   "series": [
-    [
-     "09:30",
-     73.3
-    ]
-   ],
-   "speed": "up_bull",
-   "speed_text": "Picking up bullish",
-   "recent_total": 1216019.0
-  },
-  "META": {
-   "bull_small": 119760.0,
-   "bull_big": 291315.0,
-   "bear_small": 328280.0,
-   "bear_big": 330165.0,
-   "n": 12,
-   "skipped_multileg": 2279963.0,
-   "skipped_itm": 60820.0,
-   "bull": 411075.0,
-   "bear": 658445.0,
-   "lean": 38.4,
-   "big_lean": 46.9,
-   "recent_bull": 411075.0,
-   "recent_bear": 658445.0,
-   "recent_lean": 38.4,
-   "early_lean": null,
-   "top": [
-    {
-     "time": "09:30",
-     "contract": "01-19 $910C",
+     "time": "09:40",
+     "ts": "9:40",
+     "contract": "01-15 $340P",
+     "exp": "1/15",
+     "strike": "340",
+     "cp": "PUT",
+     "size": 598,
+     "price": "8.80",
      "side": "Bid",
-     "dir": "bear",
-     "premium": 330165,
-     "spot": "578.8301"
-    },
-    {
-     "time": "09:30",
-     "contract": "11-30 $577.5C",
-     "side": "Ask",
+     "sidecode": "B",
+     "sweep": false,
      "dir": "bull",
-     "premium": 291315,
-     "spot": "578"
+     "premium": 526240,
+     "spot": "350.425"
     }
    ],
    "series": [
     [
-     "09:30",
-     38.4
+     "09:45",
+     57.5
+    ],
+    [
+     "09:45",
+     57.1
     ]
    ],
    "speed": "up_bear",
    "speed_text": "Picking up bearish",
-   "recent_total": 1069520.0
+   "recent_total": 5897829.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 59.4,
+    "n_bull_big": 2.9,
+    "n_bear_small": 34.7,
+    "n_bear_big": 2.0,
+    "bull_small": 3338644.8,
+    "bull_big": 1269069.4,
+    "bear_small": 1805448.1,
+    "bear_big": 2018437.4,
+    "ratio_small": 1.85,
+    "ratio_big": 2.27
+   },
+   "vs": {
+    "n_bull_small": 0.72,
+    "n_bull_big": 1.38,
+    "n_bear_small": 0.89,
+    "n_bear_big": 0.5
+   },
+   "vs_read": {
+    "code": "normal",
+    "text": "About normal (bulls 0.8x, bears 0.9x)",
+    "x": 0.87
+   }
   },
-  "MU": {
-   "bull_small": 1246755.0,
-   "bull_big": 337200.0,
-   "bear_small": 1076381.0,
-   "bear_big": 613955.0,
-   "n": 41,
-   "skipped_multileg": 6493791.0,
-   "skipped_itm": 982469.0,
-   "bull": 1583955.0,
-   "bear": 1690336.0,
-   "lean": 48.4,
-   "big_lean": 35.5,
-   "recent_bull": 1583955.0,
-   "recent_bear": 1690336.0,
-   "recent_lean": 48.4,
-   "early_lean": null,
+  "TSLA": {
+   "bull_small": 4237391.0,
+   "bull_big": 1149485.0,
+   "bear_small": 4714752.0,
+   "bear_big": 2743213.0,
+   "n": 189,
+   "n_bull_small": 83,
+   "n_bull_big": 4,
+   "n_bear_small": 96,
+   "n_bear_big": 6,
+   "skipped_multileg": 13204978.0,
+   "skipped_itm": 3648154.0,
+   "bull": 5386876.0,
+   "bear": 7457965.0,
+   "lean": 41.9,
+   "big_lean": 29.5,
+   "recent_bull": 4629771.0,
+   "recent_bear": 7172246.0,
+   "recent_lean": 39.2,
+   "early_lean": 72.6,
    "top": [
     {
-     "time": "09:30",
-     "contract": "12-18 $720C",
+     "time": "09:42",
+     "ts": "9:42",
+     "contract": "12-15 $400C",
+     "exp": "12/15",
+     "strike": "400",
+     "cp": "CALL",
+     "size": 103,
+     "price": "102.20",
      "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
      "dir": "bear",
-     "premium": 388955,
-     "spot": "659.04"
+     "premium": 1052660,
+     "spot": "368.3899"
     },
     {
-     "time": "09:30",
-     "contract": "12-18 $650P",
+     "time": "09:38",
+     "ts": "9:38",
+     "contract": "04-16 $420C",
+     "exp": "4/16",
+     "strike": "420",
+     "cp": "CALL",
+     "size": 176,
+     "price": "26.30",
      "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 462885,
+     "spot": "367.64"
+    },
+    {
+     "time": "09:32",
+     "ts": "9:32",
+     "contract": "12-15 $400P",
+     "exp": "12/15",
+     "strike": "400",
+     "cp": "PUT",
+     "size": 38,
+     "price": "101.00",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
      "dir": "bull",
-     "premium": 337200,
-     "spot": "659.455"
-    },
-    {
-     "time": "09:30",
-     "contract": "11-23 $680C",
-     "side": "Bid",
-     "dir": "bear",
-     "premium": 225000,
-     "spot": "662.25"
+     "premium": 383800,
+     "spot": "367.245"
     }
    ],
    "series": [
     [
-     "09:30",
-     48.4
+     "09:45",
+     41.9
+    ],
+    [
+     "09:45",
+     41.9
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 3274291.0
+   "speed": "flip_bear",
+   "speed_text": "Flipping bearish",
+   "recent_total": 11802017.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 115.5,
+    "n_bull_big": 6.7,
+    "n_bear_small": 116.1,
+    "n_bear_big": 7.0,
+    "bull_small": 6360144.1,
+    "bull_big": 3959507.6,
+    "bear_small": 6617466.9,
+    "bear_big": 2899543.9,
+    "ratio_small": 1.04,
+    "ratio_big": 1.12
+   },
+   "vs": {
+    "n_bull_small": 0.72,
+    "n_bull_big": 0.6,
+    "n_bear_small": 0.83,
+    "n_bear_big": 0.86
+   },
+   "vs_read": {
+    "code": "normal",
+    "text": "About normal (bulls 0.7x, bears 0.8x)",
+    "x": 0.83
+   }
+  },
+  "META": {
+   "bull_small": 4380562.0,
+   "bull_big": 779315.0,
+   "bear_small": 7768819.0,
+   "bear_big": 14776805.0,
+   "n": 239,
+   "n_bull_small": 83,
+   "n_bull_big": 3,
+   "n_bear_small": 133,
+   "n_bear_big": 20,
+   "skipped_multileg": 14571705.0,
+   "skipped_itm": 20891470.0,
+   "bull": 5159877.0,
+   "bear": 22545624.0,
+   "lean": 18.6,
+   "big_lean": 5.0,
+   "recent_bull": 4748802.0,
+   "recent_bear": 21887179.0,
+   "recent_lean": 17.8,
+   "early_lean": 38.4,
+   "top": [
+    {
+     "time": "09:43",
+     "ts": "9:43",
+     "contract": "01-21 $680C",
+     "exp": "1/21",
+     "strike": "680",
+     "cp": "CALL",
+     "size": 481,
+     "price": "84.50",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 4064450,
+     "spot": "582.93"
+    },
+    {
+     "time": "09:43",
+     "ts": "9:43",
+     "contract": "01-21 $680C",
+     "exp": "1/21",
+     "strike": "680",
+     "cp": "CALL",
+     "size": 291,
+     "price": "84.50",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 2458950,
+     "spot": "582.79"
+    },
+    {
+     "time": "09:44",
+     "ts": "9:44",
+     "contract": "01-21 $680C",
+     "exp": "1/21",
+     "strike": "680",
+     "cp": "CALL",
+     "size": 286,
+     "price": "84.50",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 2416700,
+     "spot": "582.61"
+    }
+   ],
+   "series": [
+    [
+     "09:45",
+     18.7
+    ],
+    [
+     "09:45",
+     18.6
+    ]
+   ],
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 26635981.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 37.2,
+    "n_bull_big": 2.0,
+    "n_bear_small": 29.8,
+    "n_bear_big": 2.5,
+    "bull_small": 2114340.4,
+    "bull_big": 721404.3,
+    "bear_small": 1593166.0,
+    "bear_big": 1265510.4,
+    "ratio_small": 1.27,
+    "ratio_big": 1.04
+   },
+   "vs": {
+    "n_bull_small": 2.23,
+    "n_bull_big": 1.5,
+    "n_bear_small": 4.46,
+    "n_bear_big": 8.0
+   },
+   "vs_read": {
+    "code": "unusual_bear",
+    "text": "Unusually bearish: 4.7x normal bearish orders",
+    "x": 4.74
+   }
+  },
+  "MU": {
+   "bull_small": 15262427.0,
+   "bull_big": 33275325.0,
+   "bear_small": 17755746.0,
+   "bear_big": 8791437.0,
+   "n": 619,
+   "n_bull_small": 264,
+   "n_bull_big": 9,
+   "n_bear_small": 323,
+   "n_bear_big": 23,
+   "skipped_multileg": 90458135.0,
+   "skipped_itm": 29156324.0,
+   "bull": 48537752.0,
+   "bear": 26547183.0,
+   "lean": 64.6,
+   "big_lean": 79.1,
+   "recent_bull": 47834877.0,
+   "recent_bear": 24907311.0,
+   "recent_lean": 65.8,
+   "early_lean": 30.0,
+   "top": [
+    {
+     "time": "09:42",
+     "ts": "9:42",
+     "contract": "01-15 $660P",
+     "exp": "1/15",
+     "strike": "660",
+     "cp": "PUT",
+     "size": 2458,
+     "price": "86.00",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 21138800,
+     "spot": "637.76"
+    },
+    {
+     "time": "09:31",
+     "ts": "9:31",
+     "contract": "02-19 $700C",
+     "exp": "2/19",
+     "strike": "700",
+     "cp": "CALL",
+     "size": 1074,
+     "price": "82.58",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 8869475,
+     "spot": "655.125"
+    },
+    {
+     "time": "09:42",
+     "ts": "9:42",
+     "contract": "11-30 $670P",
+     "exp": "11/30",
+     "strike": "670",
+     "cp": "PUT",
+     "size": 172,
+     "price": "53.97",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 928215,
+     "spot": "637.7575"
+    }
+   ],
+   "series": [
+    [
+     "09:45",
+     65.3
+    ],
+    [
+     "09:45",
+     64.6
+    ]
+   ],
+   "speed": "flip_bull",
+   "speed_text": "Flipping bullish",
+   "recent_total": 72742188.0,
+   "base": {
+    "slot": "09:45",
+    "days": 6,
+    "first": "2026-11-12",
+    "last": "2026-11-19",
+    "n_bull_small": 266.6,
+    "n_bull_big": 15.4,
+    "n_bear_small": 263.1,
+    "n_bear_big": 14.4,
+    "bull_small": 13584415.5,
+    "bull_big": 9008695.9,
+    "bear_small": 13210673.0,
+    "bear_big": 8299531.6,
+    "ratio_small": 1.01,
+    "ratio_big": 1.18
+   },
+   "vs": {
+    "n_bull_small": 0.99,
+    "n_bull_big": 0.58,
+    "n_bear_small": 1.23,
+    "n_bear_big": 1.6
+   },
+   "vs_read": {
+    "code": "lean_bear",
+    "text": "Bearish tilt vs normal: bears 1.2x, bulls 1.0x",
+    "x": 1.25
+   }
   }
  },
  "gauges": {
   "SPY": {
-   "bull_small": 955669.0,
-   "bull_big": 1880294.0,
-   "bear_small": 614463.0,
-   "bear_big": 1642507.0,
-   "n": 21,
-   "skipped_multileg": 17919169.0,
-   "skipped_itm": 0.0,
-   "bull": 2835963.0,
-   "bear": 2256970.0,
-   "lean": 55.7,
-   "big_lean": 53.4,
-   "recent_bull": 2835963.0,
-   "recent_bear": 2256970.0,
-   "recent_lean": 55.7,
-   "early_lean": null,
+   "bull_small": 10811247.0,
+   "bull_big": 34629581.0,
+   "bear_small": 6500888.0,
+   "bear_big": 21001062.0,
+   "n": 231,
+   "n_bull_small": 77,
+   "n_bull_big": 72,
+   "n_bear_small": 46,
+   "n_bear_big": 36,
+   "skipped_multileg": 168547941.0,
+   "skipped_itm": 530764.0,
+   "bull": 45440828.0,
+   "bear": 27501950.0,
+   "lean": 62.3,
+   "big_lean": 62.2,
+   "recent_bull": 42984648.0,
+   "recent_bear": 25244980.0,
+   "recent_lean": 63.0,
+   "early_lean": 52.1,
    "top": [
     {
      "time": "09:30",
-     "contract": "11-20 $725P",
+     "ts": "9:30",
+     "contract": "03-31 $750P",
+     "exp": "3/31",
+     "strike": "750",
+     "cp": "PUT",
+     "size": 1153,
+     "price": "50.00",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 5765000,
+     "spot": "712.4664"
+    },
+    {
+     "time": "09:43",
+     "ts": "9:43",
+     "contract": "12-17 $650P",
+     "exp": "12/17",
+     "strike": "650",
+     "cp": "PUT",
+     "size": 981,
+     "price": "31.70",
      "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
      "dir": "bull",
-     "premium": 846220,
-     "spot": "713.19"
+     "premium": 3109770,
+     "spot": "712.635"
     },
     {
-     "time": "09:30",
-     "contract": "11-27 $745P",
-     "side": "Ask",
-     "dir": "bear",
-     "premium": 429640,
-     "spot": "712.21"
-    },
-    {
-     "time": "09:30",
-     "contract": "11-27 $747P",
-     "side": "Ask",
-     "dir": "bear",
-     "premium": 385390,
-     "spot": "712.54"
+     "time": "09:37",
+     "ts": "9:37",
+     "contract": "12-02 $700P",
+     "exp": "12/02",
+     "strike": "700",
+     "cp": "PUT",
+     "size": 3297,
+     "price": "7.82",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": true,
+     "dir": "bull",
+     "premium": 2578199,
+     "spot": "713.63"
     }
    ],
    "series": [
     [
-     "09:30",
-     55.7
-    ]
-   ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 5092933.0
-  },
-  "QQQ": {
-   "bull_small": 464862.0,
-   "bull_big": 573098.0,
-   "bear_small": 532949.0,
-   "bear_big": 0.0,
-   "n": 9,
-   "skipped_multileg": 4784084.0,
-   "skipped_itm": 667729.0,
-   "bull": 1037960.0,
-   "bear": 532949.0,
-   "lean": 66.1,
-   "big_lean": 100.0,
-   "recent_bull": 1037960.0,
-   "recent_bear": 532949.0,
-   "recent_lean": 66.1,
-   "early_lean": null,
-   "top": [
-    {
-     "time": "09:30",
-     "contract": "11-20 $640P",
-     "side": "Bid",
-     "dir": "bull",
-     "premium": 301051,
-     "spot": "637.24"
-    },
-    {
-     "time": "09:30",
-     "contract": "12-04 $635P",
-     "side": "Bid",
-     "dir": "bull",
-     "premium": 272047,
-     "spot": "637.47"
-    }
-   ],
-   "series": [
+     "09:45",
+     62.1
+    ],
     [
-     "09:30",
-     66.1
+     "09:45",
+     62.3
     ]
    ],
    "speed": "up_bull",
    "speed_text": "Picking up bullish",
-   "recent_total": 1570909.0
+   "recent_total": 68229628.0
+  },
+  "QQQ": {
+   "bull_small": 6653853.0,
+   "bull_big": 17237021.0,
+   "bear_small": 11836136.0,
+   "bear_big": 25560464.0,
+   "n": 209,
+   "n_bull_small": 47,
+   "n_bull_big": 32,
+   "n_bear_small": 87,
+   "n_bear_big": 43,
+   "skipped_multileg": 61949902.0,
+   "skipped_itm": 1218804.0,
+   "bull": 23890874.0,
+   "bear": 37396600.0,
+   "lean": 39.0,
+   "big_lean": 40.3,
+   "recent_bull": 22852914.0,
+   "recent_bear": 36982627.0,
+   "recent_lean": 38.2,
+   "early_lean": 71.5,
+   "top": [
+    {
+     "time": "09:35",
+     "ts": "9:35",
+     "contract": "11-24 $660P",
+     "exp": "11/24",
+     "strike": "660",
+     "cp": "PUT",
+     "size": 3259,
+     "price": "26.36",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 8590724,
+     "spot": "635.85"
+    },
+    {
+     "time": "09:36",
+     "ts": "9:36",
+     "contract": "02-19 $620P",
+     "exp": "2/19",
+     "strike": "620",
+     "cp": "PUT",
+     "size": 1239,
+     "price": "27.77",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 3440528,
+     "spot": "637.49"
+    },
+    {
+     "time": "09:31",
+     "ts": "9:31",
+     "contract": "12-31 $635P",
+     "exp": "12/31",
+     "strike": "635",
+     "cp": "PUT",
+     "size": 850,
+     "price": "26.26",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 2231696,
+     "spot": "636.3899"
+    }
+   ],
+   "series": [
+    [
+     "09:45",
+     39.4
+    ],
+    [
+     "09:45",
+     39.0
+    ]
+   ],
+   "speed": "flip_bear",
+   "speed_text": "Flipping bearish",
+   "recent_total": 59835541.0
   }
  },
  "tide": {
-  "time": "09:30",
-  "ncp": -1789178.0,
-  "npp": 5496599.0,
+  "time": "09:45",
+  "ncp": -71984579.0,
+  "npp": 26826376.0,
   "read": "Bearish"
  },
  "focus": {
-  "ticker": "AAPL",
-  "dir": "bull",
-  "score": 233.2,
-  "lean": 86.3,
-  "big": 1028950.0,
-  "speed": "Picking up bullish"
+  "ticker": "META",
+  "dir": "bear",
+  "score": 233.7,
+  "lean": 18.6,
+  "big": 14776805.0,
+  "speed": "Picking up bearish"
  },
  "errors": [],
- "api_calls": 10
+ "api_calls": 20
 }
