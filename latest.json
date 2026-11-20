@@ -1,12 +1,414 @@
 {
- "updated": "2026-11-20 08:46",
- "updated_hm": "8:46 AM",
+ "updated": "2026-11-20 09:30",
+ "updated_hm": "9:30 AM",
  "date": "2026-11-20",
  "source": "Unusual Whales API",
- "status": "preopen",
- "tickers": {},
- "gauges": {},
- "tide": null,
- "focus": null,
- "errors": []
+ "status": "ok",
+ "tickers": {
+  "AMD": {
+   "bull_small": 879035.0,
+   "bull_big": 1315795.0,
+   "bear_small": 809093.0,
+   "bear_big": 0.0,
+   "n": 27,
+   "skipped_multileg": 6864655.0,
+   "skipped_itm": 280660.0,
+   "bull": 2194830.0,
+   "bear": 809093.0,
+   "lean": 73.1,
+   "big_lean": 100.0,
+   "recent_bull": 2194830.0,
+   "recent_bear": 809093.0,
+   "recent_lean": 73.1,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "11-23 $445C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 642665,
+     "spot": "468.231"
+    },
+    {
+     "time": "09:30",
+     "contract": "11-23 $472.5C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 364460,
+     "spot": "468.3506"
+    },
+    {
+     "time": "09:30",
+     "contract": "11-23 $455C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 308670,
+     "spot": "468.23"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     73.1
+    ]
+   ],
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 3003923.0
+  },
+  "NVDA": {
+   "bull_small": 1142974.0,
+   "bull_big": 0.0,
+   "bear_small": 1357696.0,
+   "bear_big": 0.0,
+   "n": 50,
+   "skipped_multileg": 7633792.0,
+   "skipped_itm": 5579494.0,
+   "bull": 1142974.0,
+   "bear": 1357696.0,
+   "lean": 45.7,
+   "big_lean": null,
+   "recent_bull": 1142974.0,
+   "recent_bear": 1357696.0,
+   "recent_lean": 45.7,
+   "early_lean": null,
+   "top": [],
+   "series": [
+    [
+     "09:30",
+     45.7
+    ]
+   ],
+   "speed": "steady",
+   "speed_text": "Steady",
+   "recent_total": 2500670.0
+  },
+  "MSFT": {
+   "bull_small": 162120.0,
+   "bull_big": 0.0,
+   "bear_small": 211570.0,
+   "bear_big": 310900.0,
+   "n": 10,
+   "skipped_multileg": 28588.0,
+   "skipped_itm": 0.0,
+   "bull": 162120.0,
+   "bear": 522470.0,
+   "lean": 23.7,
+   "big_lean": 0.0,
+   "recent_bull": 162120.0,
+   "recent_bear": 522470.0,
+   "recent_lean": 23.7,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "03-19 $520C",
+     "side": "Bid",
+     "dir": "bear",
+     "premium": 310900,
+     "spot": "493"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     23.7
+    ]
+   ],
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 684590.0
+  },
+  "AAPL": {
+   "bull_small": 1261011.0,
+   "bull_big": 1028950.0,
+   "bear_small": 362260.0,
+   "bear_big": 0.0,
+   "n": 24,
+   "skipped_multileg": 1501975.0,
+   "skipped_itm": 270010.0,
+   "bull": 2289961.0,
+   "bear": 362260.0,
+   "lean": 86.3,
+   "big_lean": 100.0,
+   "recent_bull": 2289961.0,
+   "recent_bear": 362260.0,
+   "recent_lean": 86.3,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "02-19 $360C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 698000,
+     "spot": "353.86"
+    },
+    {
+     "time": "09:30",
+     "contract": "12-18 $350C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 330950,
+     "spot": "352.5"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     86.3
+    ]
+   ],
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 2652221.0
+  },
+  "TSLA": {
+   "bull_small": 683025.0,
+   "bull_big": 207835.0,
+   "bear_small": 325159.0,
+   "bear_big": 0.0,
+   "n": 20,
+   "skipped_multileg": 1936146.0,
+   "skipped_itm": 1339594.0,
+   "bull": 890860.0,
+   "bear": 325159.0,
+   "lean": 73.3,
+   "big_lean": 100.0,
+   "recent_bull": 890860.0,
+   "recent_bear": 325159.0,
+   "recent_lean": 73.3,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "12-18 $400C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 207835,
+     "spot": "370.02"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     73.3
+    ]
+   ],
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 1216019.0
+  },
+  "META": {
+   "bull_small": 119760.0,
+   "bull_big": 291315.0,
+   "bear_small": 328280.0,
+   "bear_big": 330165.0,
+   "n": 12,
+   "skipped_multileg": 2279963.0,
+   "skipped_itm": 60820.0,
+   "bull": 411075.0,
+   "bear": 658445.0,
+   "lean": 38.4,
+   "big_lean": 46.9,
+   "recent_bull": 411075.0,
+   "recent_bear": 658445.0,
+   "recent_lean": 38.4,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "01-19 $910C",
+     "side": "Bid",
+     "dir": "bear",
+     "premium": 330165,
+     "spot": "578.8301"
+    },
+    {
+     "time": "09:30",
+     "contract": "11-30 $577.5C",
+     "side": "Ask",
+     "dir": "bull",
+     "premium": 291315,
+     "spot": "578"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     38.4
+    ]
+   ],
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 1069520.0
+  },
+  "MU": {
+   "bull_small": 1246755.0,
+   "bull_big": 337200.0,
+   "bear_small": 1076381.0,
+   "bear_big": 613955.0,
+   "n": 41,
+   "skipped_multileg": 6493791.0,
+   "skipped_itm": 982469.0,
+   "bull": 1583955.0,
+   "bear": 1690336.0,
+   "lean": 48.4,
+   "big_lean": 35.5,
+   "recent_bull": 1583955.0,
+   "recent_bear": 1690336.0,
+   "recent_lean": 48.4,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "12-18 $720C",
+     "side": "Bid",
+     "dir": "bear",
+     "premium": 388955,
+     "spot": "659.04"
+    },
+    {
+     "time": "09:30",
+     "contract": "12-18 $650P",
+     "side": "Bid",
+     "dir": "bull",
+     "premium": 337200,
+     "spot": "659.455"
+    },
+    {
+     "time": "09:30",
+     "contract": "11-23 $680C",
+     "side": "Bid",
+     "dir": "bear",
+     "premium": 225000,
+     "spot": "662.25"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     48.4
+    ]
+   ],
+   "speed": "steady",
+   "speed_text": "Steady",
+   "recent_total": 3274291.0
+  }
+ },
+ "gauges": {
+  "SPY": {
+   "bull_small": 955669.0,
+   "bull_big": 1880294.0,
+   "bear_small": 614463.0,
+   "bear_big": 1642507.0,
+   "n": 21,
+   "skipped_multileg": 17919169.0,
+   "skipped_itm": 0.0,
+   "bull": 2835963.0,
+   "bear": 2256970.0,
+   "lean": 55.7,
+   "big_lean": 53.4,
+   "recent_bull": 2835963.0,
+   "recent_bear": 2256970.0,
+   "recent_lean": 55.7,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "11-20 $725P",
+     "side": "Bid",
+     "dir": "bull",
+     "premium": 846220,
+     "spot": "713.19"
+    },
+    {
+     "time": "09:30",
+     "contract": "11-27 $745P",
+     "side": "Ask",
+     "dir": "bear",
+     "premium": 429640,
+     "spot": "712.21"
+    },
+    {
+     "time": "09:30",
+     "contract": "11-27 $747P",
+     "side": "Ask",
+     "dir": "bear",
+     "premium": 385390,
+     "spot": "712.54"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     55.7
+    ]
+   ],
+   "speed": "steady",
+   "speed_text": "Steady",
+   "recent_total": 5092933.0
+  },
+  "QQQ": {
+   "bull_small": 464862.0,
+   "bull_big": 573098.0,
+   "bear_small": 532949.0,
+   "bear_big": 0.0,
+   "n": 9,
+   "skipped_multileg": 4784084.0,
+   "skipped_itm": 667729.0,
+   "bull": 1037960.0,
+   "bear": 532949.0,
+   "lean": 66.1,
+   "big_lean": 100.0,
+   "recent_bull": 1037960.0,
+   "recent_bear": 532949.0,
+   "recent_lean": 66.1,
+   "early_lean": null,
+   "top": [
+    {
+     "time": "09:30",
+     "contract": "11-20 $640P",
+     "side": "Bid",
+     "dir": "bull",
+     "premium": 301051,
+     "spot": "637.24"
+    },
+    {
+     "time": "09:30",
+     "contract": "12-04 $635P",
+     "side": "Bid",
+     "dir": "bull",
+     "premium": 272047,
+     "spot": "637.47"
+    }
+   ],
+   "series": [
+    [
+     "09:30",
+     66.1
+    ]
+   ],
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 1570909.0
+  }
+ },
+ "tide": {
+  "time": "09:30",
+  "ncp": -1789178.0,
+  "npp": 5496599.0,
+  "read": "Bearish"
+ },
+ "focus": {
+  "ticker": "AAPL",
+  "dir": "bull",
+  "score": 233.2,
+  "lean": 86.3,
+  "big": 1028950.0,
+  "speed": "Picking up bullish"
+ },
+ "errors": [],
+ "api_calls": 10
 }
