@@ -52,9 +52,9 @@ h1{font-size:20px;margin:0;letter-spacing:-.3px;font-weight:700;color:var(--ink)
 footer{margin-top:22px;color:var(--mut);font-size:12px;line-height:1.55}
 @media(max-width:640px){h1{font-size:18px}.grid{grid-template-columns:1fr}.lean-big .pct{font-size:32px}}
 </style></head><body><div class="wrap">
-<header><h1>Flow Focus</h1><div class="chips"><span class="chip">Updated 10:00 AM ET</span><span class="chip" id="cd">…</span></div></header>
+<header><h1>Flow Focus</h1><div class="chips"><span class="chip">Updated 10:15 AM ET</span><span class="chip" id="cd">…</span></div></header>
 <div class="empty">Market closed today (weekend or holiday). No data.</div>
-<footer>Source: Unusual Whales · updated 10:00 AM ET 2026-11-21 · refreshes every 15 min, 9:30 AM–4:00 PM ET.<br>
+<footer>Source: Unusual Whales · updated 10:15 AM ET 2026-11-21 · refreshes every 15 min, 9:30 AM–4:00 PM ET.<br>
 Bullish = calls bought at ask + puts sold at bid; bearish = the reverse. Counts single-leg orders of $25K+ since 9:30 AM ET and skips spreads/multi-leg, stock-tied, mid-price and deep in-the-money prints. The % is the share of directional money that is bullish (over 60% bullish, under 40% bearish). Vs normal = order counts vs the previous 10 trading days at this time of day. Top lines are the largest $200K+ orders (buyer = paid the ask, seller = hit the bid). Open More on a card for counts vs normal, the $200K+ split, the expiry split, the checklist, and up to five big orders.<br>
 <b>Context only, not trade advice.</b></footer></div><script>
 function etNow(){const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour12:false,weekday:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(new Date());const o={};p.forEach(x=>o[x.type]=x.value);return {wd:o.weekday,h:+o.hour%24,m:+o.minute,s:+o.second}}
@@ -77,7 +77,7 @@ function restoreMore(){
  });
 }
 tick();setInterval(tick,1000);restoreMore();
-const UPDATED="2026-11-21 10:00";
+const UPDATED="2026-11-21 10:15";
 async function check(){try{const r=await fetch('latest.json?t='+Date.now(),{cache:'no-store'});const j=await r.json();
  if(j.updated&&j.updated!==UPDATED){location.replace(location.pathname+'?v='+Date.now())}}catch(e){}}
 setInterval(check,60000);setTimeout(()=>location.replace(location.pathname+'?v='+Date.now()),15*60000);
