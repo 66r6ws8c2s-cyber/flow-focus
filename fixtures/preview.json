@@ -38,8 +38,8 @@
     {
      "time": "09:40",
      "ts": "9:40",
-     "contract": "01-15 $130C",
-     "exp": "1/15",
+     "contract": "1/15/27 $130C",
+     "exp": "1/15/27",
      "strike": "130",
      "cp": "CALL",
      "size": 1000,
@@ -56,8 +56,8 @@
     {
      "time": "09:41",
      "ts": "9:41",
-     "contract": "01-15 $140C",
-     "exp": "1/15",
+     "contract": "1/15/27 $140C",
+     "exp": "1/15/27",
      "strike": "140",
      "cp": "CALL",
      "size": 1000,
@@ -124,8 +124,8 @@
       {
        "time": "09:40",
        "ts": "9:40",
-       "contract": "01-15 $130C",
-       "exp": "1/15",
+       "contract": "1/15/27 $130C",
+       "exp": "1/15/27",
        "strike": "130",
        "cp": "CALL",
        "size": 1000,
@@ -142,8 +142,8 @@
       {
        "time": "09:41",
        "ts": "9:41",
-       "contract": "01-15 $140C",
-       "exp": "1/15",
+       "contract": "1/15/27 $140C",
+       "exp": "1/15/27",
        "strike": "140",
        "cp": "CALL",
        "size": 1000,
@@ -212,30 +212,34 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "50% bullish"
+      "detail": "50% bullish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bullish side",
+      "label": "$1M+ of $200K+ money on the bullish side",
       "ok": false,
-      "detail": "$0.5M vs $0.5M other side (needs $1M+ and more)"
+      "detail": "$0.5M vs $0.5M other side (needs $1M+ and more)",
+      "miss": "under $1M of $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "quiet last 15 min"
+      "detail": "quiet last 15 min",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "5 bullish orders vs ~436 normal (0.0x)"
+      "detail": "5 bullish orders vs ~436 normal (0.0x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: one-sided lean, $200k+ money, accelerating, above-normal order count",
-    "short": "Thin: no one-sided lean, no $200K+ money, not accelerating, count not above normal"
+    "verdict": "Thin \u2014 missing: no one-sided lean, under $1M of $200K+ money, not accelerating, count not above normal",
+    "short": "Thin: no one-sided lean, under $1M of $200K+ money, not accelerating, count not above normal"
    }
   },
   "NVDA": {
@@ -271,8 +275,8 @@
     {
      "time": "10:05",
      "ts": "10:05",
-     "contract": "01-15 $160C",
-     "exp": "1/15",
+     "contract": "1/15/27 $160C",
+     "exp": "1/15/27",
      "strike": "160",
      "cp": "CALL",
      "size": 4000,
@@ -289,8 +293,8 @@
     {
      "time": "09:31",
      "ts": "9:31",
-     "contract": "01-15 $90C",
-     "exp": "1/15",
+     "contract": "1/15/27 $90C",
+     "exp": "1/15/27",
      "strike": "90",
      "cp": "CALL",
      "size": 400,
@@ -357,8 +361,8 @@
       {
        "time": "10:05",
        "ts": "10:05",
-       "contract": "01-15 $160C",
-       "exp": "1/15",
+       "contract": "1/15/27 $160C",
+       "exp": "1/15/27",
        "strike": "160",
        "cp": "CALL",
        "size": 4000,
@@ -375,8 +379,8 @@
       {
        "time": "09:31",
        "ts": "9:31",
-       "contract": "01-15 $90C",
-       "exp": "1/15",
+       "contract": "1/15/27 $90C",
+       "exp": "1/15/27",
        "strike": "90",
        "cp": "CALL",
        "size": 400,
@@ -445,29 +449,33 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": true,
-      "detail": "94% bullish"
+      "detail": "94% bullish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bullish side",
+      "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)"
+      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)",
+      "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": true,
-      "detail": "picking up bullish, last 15m 100% bull"
+      "detail": "picking up bullish, last 15m 100% bull",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "8 bullish orders vs ~996 normal (0.0x)"
+      "detail": "8 bullish orders vs ~996 normal (0.0x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: above-normal order count",
+    "verdict": "Thin \u2014 missing: count not above normal",
     "short": "Thin: count not above normal"
    }
   },
@@ -504,8 +512,8 @@
     {
      "time": "10:08",
      "ts": "10:08",
-     "contract": "01-15 $160C",
-     "exp": "1/15",
+     "contract": "1/15/27 $160C",
+     "exp": "1/15/27",
      "strike": "160",
      "cp": "CALL",
      "size": 4000,
@@ -522,8 +530,8 @@
     {
      "time": "09:31",
      "ts": "9:31",
-     "contract": "01-15 $90C",
-     "exp": "1/15",
+     "contract": "1/15/27 $90C",
+     "exp": "1/15/27",
      "strike": "90",
      "cp": "CALL",
      "size": 400,
@@ -590,8 +598,8 @@
       {
        "time": "10:08",
        "ts": "10:08",
-       "contract": "01-15 $160C",
-       "exp": "1/15",
+       "contract": "1/15/27 $160C",
+       "exp": "1/15/27",
        "strike": "160",
        "cp": "CALL",
        "size": 4000,
@@ -608,8 +616,8 @@
       {
        "time": "09:31",
        "ts": "9:31",
-       "contract": "01-15 $90C",
-       "exp": "1/15",
+       "contract": "1/15/27 $90C",
+       "exp": "1/15/27",
        "strike": "90",
        "cp": "CALL",
        "size": 400,
@@ -678,29 +686,33 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": true,
-      "detail": "94% bullish"
+      "detail": "94% bullish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bullish side",
+      "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)"
+      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)",
+      "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": true,
-      "detail": "picking up bullish, last 15m 100% bull"
+      "detail": "picking up bullish, last 15m 100% bull",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "8 bullish orders vs ~74 normal (0.1x)"
+      "detail": "8 bullish orders vs ~74 normal (0.1x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: above-normal order count",
+    "verdict": "Thin \u2014 missing: count not above normal",
     "short": "Thin: count not above normal"
    }
   },
@@ -737,8 +749,8 @@
     {
      "time": "10:10",
      "ts": "10:10",
-     "contract": "01-15 $160C",
-     "exp": "1/15",
+     "contract": "1/15/27 $160C",
+     "exp": "1/15/27",
      "strike": "160",
      "cp": "CALL",
      "size": 4000,
@@ -755,8 +767,8 @@
     {
      "time": "09:31",
      "ts": "9:31",
-     "contract": "01-15 $90C",
-     "exp": "1/15",
+     "contract": "1/15/27 $90C",
+     "exp": "1/15/27",
      "strike": "90",
      "cp": "CALL",
      "size": 400,
@@ -823,8 +835,8 @@
       {
        "time": "10:10",
        "ts": "10:10",
-       "contract": "01-15 $160C",
-       "exp": "1/15",
+       "contract": "1/15/27 $160C",
+       "exp": "1/15/27",
        "strike": "160",
        "cp": "CALL",
        "size": 4000,
@@ -841,8 +853,8 @@
       {
        "time": "09:31",
        "ts": "9:31",
-       "contract": "01-15 $90C",
-       "exp": "1/15",
+       "contract": "1/15/27 $90C",
+       "exp": "1/15/27",
        "strike": "90",
        "cp": "CALL",
        "size": 400,
@@ -911,29 +923,33 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": true,
-      "detail": "94% bullish"
+      "detail": "94% bullish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bullish side",
+      "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)"
+      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)",
+      "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": true,
-      "detail": "picking up bullish, last 15m 100% bull"
+      "detail": "picking up bullish, last 15m 100% bull",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "7 bullish orders vs ~122 normal (0.1x)"
+      "detail": "7 bullish orders vs ~122 normal (0.1x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: above-normal order count",
+    "verdict": "Thin \u2014 missing: count not above normal",
     "short": "Thin: count not above normal"
    }
   },
@@ -970,8 +986,8 @@
     {
      "time": "10:12",
      "ts": "10:12",
-     "contract": "01-15 $160C",
-     "exp": "1/15",
+     "contract": "1/15/27 $160C",
+     "exp": "1/15/27",
      "strike": "160",
      "cp": "CALL",
      "size": 4000,
@@ -988,8 +1004,8 @@
     {
      "time": "09:31",
      "ts": "9:31",
-     "contract": "01-15 $90C",
-     "exp": "1/15",
+     "contract": "1/15/27 $90C",
+     "exp": "1/15/27",
      "strike": "90",
      "cp": "CALL",
      "size": 400,
@@ -1056,8 +1072,8 @@
       {
        "time": "10:12",
        "ts": "10:12",
-       "contract": "01-15 $160C",
-       "exp": "1/15",
+       "contract": "1/15/27 $160C",
+       "exp": "1/15/27",
        "strike": "160",
        "cp": "CALL",
        "size": 4000,
@@ -1074,8 +1090,8 @@
       {
        "time": "09:31",
        "ts": "9:31",
-       "contract": "01-15 $90C",
-       "exp": "1/15",
+       "contract": "1/15/27 $90C",
+       "exp": "1/15/27",
        "strike": "90",
        "cp": "CALL",
        "size": 400,
@@ -1144,29 +1160,33 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": true,
-      "detail": "94% bearish"
+      "detail": "94% bearish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bearish side",
+      "label": "$1M+ of $200K+ money on the bearish side",
       "ok": true,
-      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)"
+      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)",
+      "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": true,
-      "detail": "picking up bearish, last 15m 0% bull"
+      "detail": "picking up bearish, last 15m 0% bull",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "8 bearish orders vs ~339 normal (0.0x)"
+      "detail": "8 bearish orders vs ~339 normal (0.0x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: above-normal order count",
+    "verdict": "Thin \u2014 missing: count not above normal",
     "short": "Thin: count not above normal"
    }
   },
@@ -1203,8 +1223,8 @@
     {
      "time": "10:09",
      "ts": "10:09",
-     "contract": "01-15 $160C",
-     "exp": "1/15",
+     "contract": "1/15/27 $160C",
+     "exp": "1/15/27",
      "strike": "160",
      "cp": "CALL",
      "size": 4000,
@@ -1221,8 +1241,8 @@
     {
      "time": "09:31",
      "ts": "9:31",
-     "contract": "01-15 $90C",
-     "exp": "1/15",
+     "contract": "1/15/27 $90C",
+     "exp": "1/15/27",
      "strike": "90",
      "cp": "CALL",
      "size": 400,
@@ -1289,8 +1309,8 @@
       {
        "time": "10:09",
        "ts": "10:09",
-       "contract": "01-15 $160C",
-       "exp": "1/15",
+       "contract": "1/15/27 $160C",
+       "exp": "1/15/27",
        "strike": "160",
        "cp": "CALL",
        "size": 4000,
@@ -1307,8 +1327,8 @@
       {
        "time": "09:31",
        "ts": "9:31",
-       "contract": "01-15 $90C",
-       "exp": "1/15",
+       "contract": "1/15/27 $90C",
+       "exp": "1/15/27",
        "strike": "90",
        "cp": "CALL",
        "size": 400,
@@ -1377,29 +1397,33 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": true,
-      "detail": "94% bearish"
+      "detail": "94% bearish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bearish side",
+      "label": "$1M+ of $200K+ money on the bearish side",
       "ok": true,
-      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)"
+      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)",
+      "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": true,
-      "detail": "picking up bearish, last 15m 0% bull"
+      "detail": "picking up bearish, last 15m 0% bull",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "8 bearish orders vs ~108 normal (0.1x)"
+      "detail": "8 bearish orders vs ~108 normal (0.1x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: above-normal order count",
+    "verdict": "Thin \u2014 missing: count not above normal",
     "short": "Thin: count not above normal"
    }
   },
@@ -1436,8 +1460,8 @@
     {
      "time": "10:11",
      "ts": "10:11",
-     "contract": "01-15 $160C",
-     "exp": "1/15",
+     "contract": "1/15/27 $160C",
+     "exp": "1/15/27",
      "strike": "160",
      "cp": "CALL",
      "size": 4000,
@@ -1454,8 +1478,8 @@
     {
      "time": "09:31",
      "ts": "9:31",
-     "contract": "01-15 $90C",
-     "exp": "1/15",
+     "contract": "1/15/27 $90C",
+     "exp": "1/15/27",
      "strike": "90",
      "cp": "CALL",
      "size": 400,
@@ -1522,8 +1546,8 @@
       {
        "time": "10:11",
        "ts": "10:11",
-       "contract": "01-15 $160C",
-       "exp": "1/15",
+       "contract": "1/15/27 $160C",
+       "exp": "1/15/27",
        "strike": "160",
        "cp": "CALL",
        "size": 4000,
@@ -1540,8 +1564,8 @@
       {
        "time": "09:31",
        "ts": "9:31",
-       "contract": "01-15 $90C",
-       "exp": "1/15",
+       "contract": "1/15/27 $90C",
+       "exp": "1/15/27",
        "strike": "90",
        "cp": "CALL",
        "size": 400,
@@ -1610,29 +1634,33 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": true,
-      "detail": "94% bearish"
+      "detail": "94% bearish",
+      "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$200K+ money on the bearish side",
+      "label": "$1M+ of $200K+ money on the bearish side",
       "ok": true,
-      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)"
+      "detail": "$2.0M vs $0.2M other side (needs $1M+ and more)",
+      "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": true,
-      "detail": "picking up bearish, last 15m 0% bull"
+      "detail": "picking up bearish, last 15m 0% bull",
+      "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "8 bearish orders vs ~716 normal (0.0x)"
+      "detail": "8 bearish orders vs ~716 normal (0.0x)",
+      "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: above-normal order count",
+    "verdict": "Thin \u2014 missing: count not above normal",
     "short": "Thin: count not above normal"
    }
   }
