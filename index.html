@@ -175,9 +175,12 @@ function card(tk,o,focusTk,day){
     const tail=base?` vs ~${halfEven(base[k]||0)}`+(vs[k]!=null?` <span class="x">${oneDec(vs[k])}x</span>`:""):"";
     return `<li>${label} <b>${now}</b>${tail}</li>`;
   }).join("");
-  const buckets=BUCKETS.map(([k,label])=>{
+  const moneyRows=[["Bull",o.bull_big],["Bear",o.bear_big]].map(([label,v])=>
+    `<li>${label} <b>${money(v)}</b></li>`).join("");
+  const buckets=BUCKETS.flatMap(([k,label])=>{
     const B=(o.buckets||{})[k]||{};
-    return `<li>${esc(label)} <b>${money(B.bull)}</b> / <b>${money(B.bear)}</b></li>`;
+    return [["bull",B.bull],["bear",B.bear]].map(([side,v])=>
+      `<li>${esc(label)} ${side} <b>${money(v)}</b></li>`);
   }).join("");
   const checks=((o.ready&&o.ready.items)||[]).map(i=>{
     const mark=i.ok===true?"✓":i.ok===false?"✗":"—";
@@ -191,8 +194,8 @@ function card(tk,o,focusTk,day){
 ${tops?`<ul class="tops">${tops}</ul>`:""}
 <details class="more-d"><summary>More</summary><div class="more">
 <div class="mh">Orders vs normal</div><ul class="lines">${counts}</ul>
-<div class="mh">$200K+ money</div><div class="line">bull <b>${money(o.bull_big)}</b> vs bear <b>${money(o.bear_big)}</b></div>
-<div class="mh">By expiry · bull / bear $</div><ul class="lines">${buckets}</ul>
+<div class="mh">$200K+ money</div><ul class="lines">${moneyRows}</ul>
+<div class="mh">By expiry</div><ul class="lines">${buckets}</ul>
 <div class="mh">Checklist</div><ul class="check">${checks}</ul>
 <div class="mh">Top $200K+ orders</div><ul class="tops">${moreTops}</ul>
 ${note}
