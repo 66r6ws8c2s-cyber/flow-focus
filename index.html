@@ -12,6 +12,9 @@ h1{font-size:20px;margin:0;letter-spacing:-.3px;font-weight:700;color:var(--ink)
 .tide .bull{font-weight:700}.tide .bear{font-weight:700}
 .focus-line{margin:-6px 0 14px;font-size:13px;color:#374151}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
+.group{margin:0 0 20px}.group:last-of-type{margin-bottom:0}
+.group-label{margin:0 0 8px;font-size:11px;font-weight:700;color:var(--mut);text-transform:uppercase;letter-spacing:.06em}
+.group-empty{margin:0;font-size:13px;color:var(--mut)}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 12px}
 .card.is-focus{outline:2px solid #111;outline-offset:-1px}
 .call{margin:0 0 10px;font-size:16px;font-weight:600;letter-spacing:-.15px;line-height:1.35;color:#6b7280}
@@ -58,7 +61,7 @@ footer{margin-top:22px;color:var(--mut);font-size:12px;line-height:1.55}
 <div id="stage"><div class="empty">Loading…</div></div>
 <footer><span id="asof">Source: Unusual Whales · refreshes every 15 min, 9:30 AM–4:00 PM ET.</span><br>
 Bullish = calls bought at ask + puts sold at bid; bearish = the reverse. Counts single-leg orders of $25K+ since 9:30 AM ET and skips spreads/multi-leg, stock-tied, mid-price and deep in-the-money prints. The % is the share of directional money that is bullish (over 60% bullish, under 40% bearish). Vs normal = order counts vs the previous 10 trading days at this time of day. Top lines are the largest $200K+ orders (buyer = paid the ask, seller = hit the bid). Open More on a card for counts vs normal, the $200K+ split, the expiry split, the checklist, and up to five big orders.<br>
-<b>The line at the top of each card is a rule-based call, not trade advice.</b><br>
+Cards are grouped Bullish, Bearish, then Neutral: a significant call sets the group, otherwise lean 55%+ is bullish and 45% or less is bearish.<br><b>The line at the top of each card is a rule-based call, not trade advice.</b><br>
 <b>Context only, not trade advice.</b></footer></div><script>
 const ORDER = ["GOOGL","MSFT","AAPL","AMZN","NBIS","AMD","TSLA","SHOP","CRWD","PLTR","AVGO","NVDA","META","WMT","MU","ABNB","SPOT"];
 const BUCKETS = [["wk","This week"],["2w","<2 wks"],["1m","2 wks–1 mo"],["1m+","1 mo+"]];
@@ -91,6 +94,29 @@ function flagOf(vs){
   if(!vs)return {text:"",cls:"v-norm"};
   if(vs.short)return {text:vs.short,cls:String(vs.code||"").indexOf("unusual")===0?"v-unusual":"v-norm"};
   return {text:vs.text||"",cls:"v-norm"};
+}
+function groupOf(o){
+  if(o&&(o.call_dir==="bull"||o.call_dir==="bear"))return o.call_dir;
+  const L=o&&o.lean;
+  if(L==null||L==="")return "neutral";
+  if(Number(L)>=55)return "bull";
+  if(Number(L)<=45)return "bear";
+  return "neutral";
+}
+function sortGroup(names,tickers){
+  return names.slice().sort((a,b)=>{
+    const oa=tickers[a]||{},ob=tickers[b]||{};
+    const sa=(oa.call_dir==="bull"||oa.call_dir==="bear")?1:0;
+    const sb=(ob.call_dir==="bull"||ob.call_dir==="bear")?1:0;
+    if(sb!==sa)return sb-sa;
+    const da=(oa.lean==null||oa.lean==="")?0:Math.abs(Number(oa.lean)-50);
+    const db=(ob.lean==null||ob.lean==="")?0:Math.abs(Number(ob.lean)-50);
+    if(db!==da)return db-da;
+    const ia=ORDER.indexOf(a),ib=ORDER.indexOf(b);
+    const ia2=ia<0?999:ia,ib2=ib<0?999:ib;
+    if(ia2!==ib2)return ia2-ib2;
+    return a<b?-1:a>b?1:0;
+  });
 }
 function tape(t,withSize){
   const side=t.side==="Ask"?"buyer":t.side==="Bid"?"seller":"mid";
@@ -167,7 +193,16 @@ function render(d){
     if(!names.length)html+=`<div class="empty">No qualifying orders yet.</div>`;
     else{
       const focus=d.focus&&d.focus.ticker;
-      html+=tideHTML(d)+`<div class="grid" id="grid">`+names.map(tk=>card(tk,d.tickers[tk],focus)).join("")+`</div>`;
+      const buckets={bull:[],bear:[],neutral:[]};
+      names.forEach(tk=>buckets[groupOf(d.tickers[tk])].push(tk));
+      html+=tideHTML(d);
+      [["bull","Bullish"],["bear","Bearish"],["neutral","Neutral"]].forEach(([key,label])=>{
+        const list=sortGroup(buckets[key],d.tickers);
+        html+=`<section class="group" data-group="${key}"><h2 class="group-label">${label}</h2>`;
+        if(!list.length)html+=`<p class="group-empty">None</p>`;
+        else html+=`<div class="grid">`+list.map(tk=>card(tk,d.tickers[tk],focus)).join("")+`</div>`;
+        html+=`</section>`;
+      });
     }
   }
   stage.innerHTML=html;
