@@ -14,15 +14,17 @@ h1{font-size:20px;margin:0;letter-spacing:-.3px;font-weight:700;color:var(--ink)
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:12px}
 .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px 12px}
 .card.is-focus{outline:2px solid #111;outline-offset:-1px}
+.call{margin:0 0 10px;font-size:16px;font-weight:600;letter-spacing:-.15px;line-height:1.35;color:#6b7280}
+.call.bull{color:var(--g);font-weight:700}
+.call.bear{color:var(--r);font-weight:700}
 .row{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
 .tk{font-size:22px;font-weight:800;letter-spacing:-.4px;color:var(--ink);line-height:1.1}
 .lean-big{text-align:right;line-height:.95;flex:none}
-.lean-big .pct{font-size:36px;font-weight:800;letter-spacing:-1.6px;display:block}
-.lean-big .w{display:block;font-size:13px;font-weight:700;margin-top:2px}
-.bull{color:var(--g)}.bear{color:var(--r)}.mixed{color:var(--mix)}
+.lean-big .pct{font-size:36px;font-weight:800;letter-spacing:-1.6px;display:block;color:#111}
+.lean-big .w{display:block;font-size:13px;font-weight:700;margin-top:2px;color:var(--mut)}
 .muted{color:var(--mut)}
 .flag{margin-top:8px;font-size:13px;font-weight:600;color:#4b5563}
-.flag.v-unusual{color:var(--mix);font-weight:700}
+.flag.v-unusual{color:#111;font-weight:700}
 .verdict{margin-top:2px;font-size:13px;font-weight:700;color:#111}
 .tops{list-style:none;padding:0;margin:10px 0 0}
 .tape{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 8px;font:12px/1.35 ui-monospace,SFMono-Regular,Menlo,monospace;border-radius:8px;padding:6px 8px;margin:0 0 4px;background:#fafafa;border:1px solid var(--line);color:#111}
@@ -31,7 +33,7 @@ h1{font-size:20px;margin:0;letter-spacing:-.3px;font-weight:700;color:var(--ink)
 .tape .sz{color:#374151}
 .tape .pr{margin-left:auto;color:#111}
 .tape .sd{font-weight:800;padding:0 5px;border-radius:5px;color:#fff}
-.s-ask .sd{background:var(--ask)}.s-bid .sd{background:var(--bid)}.s-mid .sd{background:#9ca3af}
+.s-ask .sd,.s-bid .sd,.s-mid .sd{background:#374151}
 .more-d{margin-top:8px;border-top:1px solid var(--line);padding-top:6px}
 .more-d>summary{cursor:pointer;list-style:none;font-size:12px;font-weight:600;color:var(--mut);user-select:none}
 .more-d>summary::-webkit-details-marker{display:none}
@@ -50,35 +52,157 @@ h1{font-size:20px;margin:0;letter-spacing:-.3px;font-weight:700;color:var(--ink)
 .empty{background:#fff;border:1px solid var(--line);border-radius:16px;padding:30px;text-align:center;font-size:16px}
 .err{background:#fafafa;border:1px solid var(--line);color:#374151;border-radius:12px;padding:8px 12px;margin-bottom:12px;font-size:13px}
 footer{margin-top:22px;color:var(--mut);font-size:12px;line-height:1.55}
-@media(max-width:640px){h1{font-size:18px}.grid{grid-template-columns:1fr}.lean-big .pct{font-size:32px}}
+@media(max-width:640px){h1{font-size:18px}.grid{grid-template-columns:1fr}.lean-big .pct{font-size:32px}.call{font-size:15px}}
 </style></head><body><div class="wrap">
-<header><h1>Flow Focus</h1><div class="chips"><span class="chip">Updated 10:31 AM ET</span><span class="chip" id="cd">…</span></div></header>
-<div class="empty">Market closed today (weekend or holiday). No data.</div>
-<footer>Source: Unusual Whales · updated 10:31 AM ET 2026-11-21 · refreshes every 15 min, 9:30 AM–4:00 PM ET.<br>
+<header><h1>Flow Focus</h1><div class="chips"><span class="chip" id="upd">Updated …</span><span class="chip" id="cd">…</span></div></header>
+<div id="stage"><div class="empty">Loading…</div></div>
+<footer><span id="asof">Source: Unusual Whales · refreshes every 15 min, 9:30 AM–4:00 PM ET.</span><br>
 Bullish = calls bought at ask + puts sold at bid; bearish = the reverse. Counts single-leg orders of $25K+ since 9:30 AM ET and skips spreads/multi-leg, stock-tied, mid-price and deep in-the-money prints. The % is the share of directional money that is bullish (over 60% bullish, under 40% bearish). Vs normal = order counts vs the previous 10 trading days at this time of day. Top lines are the largest $200K+ orders (buyer = paid the ask, seller = hit the bid). Open More on a card for counts vs normal, the $200K+ split, the expiry split, the checklist, and up to five big orders.<br>
+<b>The line at the top of each card is a rule-based call, not trade advice.</b><br>
 <b>Context only, not trade advice.</b></footer></div><script>
-function etNow(){const p=new Intl.DateTimeFormat('en-US',{timeZone:'America/New_York',hour12:false,weekday:'short',hour:'2-digit',minute:'2-digit',second:'2-digit'}).formatToParts(new Date());const o={};p.forEach(x=>o[x.type]=x.value);return {wd:o.weekday,h:+o.hour%24,m:+o.minute,s:+o.second}}
-function tick(){const el=document.getElementById('cd');if(!el)return;const t=etNow();const sec=t.h*3600+t.m*60+t.s;
- const wk=!['Sat','Sun'].includes(t.wd),lag=90,first=9*3600+45*60,last=16*3600;
- if(!wk||sec>=last+lag){el.textContent='Next update 9:45 AM ET, next trading day';return}
+const ORDER = ["AMD","NVDA","MSFT","AAPL","TSLA","META","MU"];
+const BUCKETS = [["wk","This week"],["2w","<2 wks"],["1m","2 wks–1 mo"],["1m+","1 mo+"]];
+const VERDICT_MAP = {
+  "one-sided lean":"no one-sided lean",
+  "$200k+ money":"no $200K+ money",
+  "accelerating":"not accelerating",
+  "above-normal order count":"count not above normal"
+};
+function esc(s){return String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]))}
+function halfEven(n){const s=n<0?-1:1;n=Math.abs(n);const f=Math.floor(n),d=n-f;let r;if(Math.abs(d-0.5)<1e-8)r=(f%2===0)?f:f+1;else r=Math.round(n);return s*r}
+function oneDec(n){return (halfEven(Number(n)*10)/10).toFixed(1)}
+function money(v){v=Number(v)||0;if(v>=1e6)return "$"+(v/1e6).toFixed(1)+"M";if(v>=1e3)return "$"+Math.round(v/1e3)+"K";return "$"+Math.round(v)}
+function todayET(){return new Intl.DateTimeFormat("en-CA",{timeZone:"America/New_York",year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date())}
+function dataUrl(){const q=new URLSearchParams(location.search).get("fixture");return q==="fixtures/preview.json"?"fixtures/preview.json":"latest.json"}
+function leanView(L){
+  if(L==null)return {pct:"—",word:"no data",cls:"mixed"};
+  const pct=halfEven(L);
+  if(L>60)return {pct:pct+"%",word:"bullish",cls:"bull"};
+  if(L<40)return {pct:pct+"%",word:"bearish",cls:"bear"};
+  return {pct:pct+"%",word:"mixed",cls:"mixed"};
+}
+function shortVerdict(v){
+  if(!v)return "";
+  const prefix="Thin — missing: ";
+  if(v.indexOf(prefix)!==0)return v;
+  return "Thin: "+v.slice(prefix.length).split(",").map(s=>VERDICT_MAP[s.trim()]||s.trim()).join(", ");
+}
+function flagOf(vs){
+  if(!vs)return {text:"",cls:"v-norm"};
+  if(vs.short)return {text:vs.short,cls:String(vs.code||"").indexOf("unusual")===0?"v-unusual":"v-norm"};
+  return {text:vs.text||"",cls:"v-norm"};
+}
+function tape(t,withSize){
+  const side=t.side==="Ask"?"buyer":t.side==="Bid"?"seller":"mid";
+  const sc=side==="buyer"?"s-ask":side==="seller"?"s-bid":"s-mid";
+  const ct=(t.exp||"")+" "+(t.strike||"")+String(t.cp||"C").charAt(0);
+  const sz=withSize&&t.size!=null&&t.price!=null?`<span class="sz">${esc(Number(t.size).toLocaleString("en-US"))}@${esc(t.price)}</span>`:"";
+  return `<li class="tape ${sc}"><span class="tt">${esc(t.ts||t.time)}</span> <span class="ct">${esc(ct)}</span> ${sz} <b class="pr">${money(t.premium)}</b> <span class="sd">${side}</span></li>`;
+}
+function card(tk,o,focusTk){
+  const lv=leanView(o.lean);
+  const flag=flagOf(o.vs_read);
+  const verdict=(o.ready&&(o.ready.short||shortVerdict(o.ready.verdict)))||"";
+  const dir=o.call_dir==="bull"||o.call_dir==="bear"?o.call_dir:"";
+  const call=o.call||"Nothing significant";
+  const tops=(o.top||[]).slice(0,2).map(t=>tape(t,false)).join("");
+  const moreTops=(o.top||[]).map(t=>tape(t,true)).join("")||`<li class="muted">No $200K+ orders yet</li>`;
+  const base=o.base, vs=o.vs||{};
+  const countRows=[["$200K+ bull","n_bull_big"],["$200K+ bear","n_bear_big"],["Under $200K bull","n_bull_small"],["Under $200K bear","n_bear_small"]];
+  const counts=countRows.map(([label,k])=>{
+    const now=o[k]||0;
+    const tail=base?` vs ~${halfEven(base[k]||0)}`+(vs[k]!=null?` <span class="x">${oneDec(vs[k])}x</span>`:""):"";
+    return `<li>${label} <b>${now}</b>${tail}</li>`;
+  }).join("");
+  const buckets=BUCKETS.map(([k,label])=>{
+    const B=(o.buckets||{})[k]||{};
+    return `<li>${esc(label)} <b>${money(B.bull)}</b> / <b>${money(B.bear)}</b></li>`;
+  }).join("");
+  const checks=((o.ready&&o.ready.items)||[]).map(i=>{
+    const mark=i.ok===true?"✓":i.ok===false?"✗":"—";
+    return `<li><span class="ci">${mark}</span><span>${esc(i.label)}<span class="muted"> · ${esc(i.detail||"")}</span></span></li>`;
+  }).join("");
+  const note=o.repeat?`<div class="note">${esc(o.repeat)}</div>`:"";
+  return `<div class="card${focusTk===tk?" is-focus":""}" data-tk="${esc(tk)}">
+<div class="call ${dir}">${esc(call)}</div>
+<div class="row"><div class="tk">${esc(tk)}</div><div class="lean-big ${lv.cls}"><span class="pct">${lv.pct}</span><span class="w">${lv.word}</span></div></div>
+<div class="flag ${flag.cls}">${esc(flag.text)}</div><div class="verdict">${esc(verdict)}</div>
+${tops?`<ul class="tops">${tops}</ul>`:""}
+<details class="more-d"><summary>More</summary><div class="more">
+<div class="mh">Orders vs normal</div><ul class="lines">${counts}</ul>
+<div class="mh">$200K+ money</div><div class="line">bull <b>${money(o.bull_big)}</b> vs bear <b>${money(o.bear_big)}</b></div>
+<div class="mh">By expiry · bull / bear $</div><ul class="lines">${buckets}</ul>
+<div class="mh">Checklist</div><ul class="check">${checks}</ul>
+<div class="mh">Top $200K+ orders</div><ul class="tops">${moreTops}</ul>
+${note}
+</div></details>
+</div>`;
+}
+function tideHTML(d){
+  const g=d.gauges||{}, bits=[];
+  if(d.tide&&d.tide.read){
+    const cls=d.tide.read==="Bullish"?"bull":d.tide.read==="Bearish"?"bear":"mixed";
+    bits.push(`Market Tide: <span class="${cls}">${esc(d.tide.read)}</span>`);
+  }else bits.push("Market Tide: unavailable");
+  ["SPY","QQQ"].forEach(tk=>{if(g[tk]&&g[tk].lean!=null)bits.push(`${tk} ${halfEven(g[tk].lean)}% bull`)});
+  if(d.tide&&d.tide.time)bits.push(`${esc(d.tide.time)} ET`);
+  return `<div class="tide">${bits.join(" · ")}</div>`;
+}
+function render(d){
+  const upd=document.getElementById("upd");
+  if(upd)upd.textContent="Updated "+(d.updated_hm||"—")+" ET";
+  const asof=document.getElementById("asof");
+  const source=d.source&&d.source!=="Unusual Whales API"?d.source:"Unusual Whales";
+  if(asof)asof.textContent="Source: "+source+" · updated "+(d.updated_hm||"—")+" ET "+(d.date||"")+" · refreshes every 15 min, 9:30 AM–4:00 PM ET.";
+  const stage=document.getElementById("stage");
+  let html="";
+  if(dataUrl()!=="latest.json")html+=`<div class="sample">Synthetic fixture for layout checks. Not live.</div>`;
+  else if(d.status==="ok"&&d.date&&d.date!==todayET())html+=`<div class="sample">Showing the ${esc(d.date)} session. Refreshes on trading days, 9:30 AM–4:00 PM ET.</div>`;
+  if(d.errors&&d.errors.length)html+=`<div class="err">Some data didn’t load on this update, so a few numbers may be incomplete.</div>`;
+  if(d.status==="closed")html+=`<div class="empty">Market closed today (weekend or holiday). No data.</div>`;
+  else if(d.status==="preopen")html+=`<div class="empty">No data yet. Market opens 9:30 AM ET.</div>`;
+  else{
+    const names=ORDER.filter(tk=>d.tickers&&d.tickers[tk]);
+    Object.keys(d.tickers||{}).forEach(tk=>{if(names.indexOf(tk)<0)names.push(tk)});
+    if(!names.length)html+=`<div class="empty">No qualifying orders yet.</div>`;
+    else{
+      const focus=d.focus&&d.focus.ticker;
+      html+=tideHTML(d)+`<div class="grid" id="grid">`+names.map(tk=>card(tk,d.tickers[tk],focus)).join("")+`</div>`;
+    }
+  }
+  stage.innerHTML=html;
+  restoreMore();
+}
+function etNow(){const p=new Intl.DateTimeFormat("en-US",{timeZone:"America/New_York",hour12:false,weekday:"short",hour:"2-digit",minute:"2-digit",second:"2-digit"}).formatToParts(new Date());const o={};p.forEach(x=>o[x.type]=x.value);return {wd:o.weekday,h:+o.hour%24,m:+o.minute,s:+o.second}}
+function tick(){const el=document.getElementById("cd");if(!el)return;const t=etNow();const sec=t.h*3600+t.m*60+t.s;
+ const wk=!["Sat","Sun"].includes(t.wd),lag=90,first=9*3600+45*60,last=16*3600;
+ if(!wk||sec>=last+lag){el.textContent="Next update 9:45 AM ET, next trading day";return}
  let nxt=Math.max(first,Math.ceil((sec-lag)/900)*900)+lag; if(nxt<=sec)nxt+=900;
- const d=nxt-sec,mm=Math.floor(d/60),ss=String(d%60).padStart(2,'0');el.textContent='Next update in '+mm+':'+ss}
+ const dlt=nxt-sec,mm=Math.floor(dlt/60),ss=String(dlt%60).padStart(2,"0");el.textContent="Next update in "+mm+":"+ss}
 function restoreMore(){
  let open=[];
- try{open=JSON.parse(localStorage.getItem('ff_more')||'[]')}catch(e){open=[]}
- document.querySelectorAll('.card details.more-d').forEach(d=>{
-  const tk=d.closest('.card').dataset.tk;
-  if(open.includes(tk)) d.open=true;
-  d.addEventListener('toggle',()=>{
-   let cur=[];try{cur=JSON.parse(localStorage.getItem('ff_more')||'[]')}catch(e){cur=[]}
+ try{open=JSON.parse(localStorage.getItem("ff_more")||"[]")}catch(e){open=[]}
+ document.querySelectorAll(".card details.more-d").forEach(d=>{
+  const tk=d.closest(".card").dataset.tk;
+  if(open.includes(tk))d.open=true;
+  d.addEventListener("toggle",()=>{
+   let cur=[];try{cur=JSON.parse(localStorage.getItem("ff_more")||"[]")}catch(e){cur=[]}
    cur=cur.filter(x=>x!==tk);if(d.open)cur.push(tk);
-   localStorage.setItem('ff_more',JSON.stringify(cur));
+   localStorage.setItem("ff_more",JSON.stringify(cur));
   });
  });
 }
-tick();setInterval(tick,1000);restoreMore();
-const UPDATED="2026-11-21 10:31";
-async function check(){try{const r=await fetch('latest.json?t='+Date.now(),{cache:'no-store'});const j=await r.json();
- if(j.updated&&j.updated!==UPDATED){location.replace(location.pathname+'?v='+Date.now())}}catch(e){}}
-setInterval(check,60000);setTimeout(()=>location.replace(location.pathname+'?v='+Date.now()),15*60000);
+let updated="";
+async function load(){const r=await fetch(dataUrl()+"?t="+Date.now(),{cache:"no-store"});if(!r.ok)throw new Error("HTTP "+r.status);return r.json()}
+async function check(){
+  try{
+    const j=await load();
+    if(j.updated!==updated){updated=j.updated||"";render(j)}
+  }catch(e){
+    const stage=document.getElementById("stage");
+    if(stage&&!updated)stage.innerHTML=`<div class="err">Couldn’t load the latest refresh.</div>`;
+  }
+}
+tick();setInterval(tick,1000);check();setInterval(check,60000);
+setTimeout(()=>{const u=new URL(location.href);u.searchParams.set("v",Date.now());location.replace(u.pathname+u.search)},15*60000);
 </script></body></html>

@@ -1,0 +1,71 @@
+name: Refresh
+
+# Cover 9:30 AM–4:00 PM America/New_York in both EST (UTC−5) and EDT (UTC−4).
+# EDT: 9:30 is 13:30 UTC, 16:00 is 20:00 UTC.
+# EST: 9:30 is 14:30 UTC, 16:00 is 21:00 UTC.
+# The extra UTC runs fall outside the cash session; compute.py exits before any API call.
+on:
+  schedule:
+    - cron: "*/15 13-20 * * 1-5"
+    - cron: "0 21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: flow-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          persist-credentials: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt
+
+      - name: Restore trade cache
+        uses: actions/cache@v4
+        with:
+          path: data
+          key: flow-trades-${{ github.run_id }}
+          restore-keys: |
+            flow-trades-
+
+      - name: Refresh
+        env:
+          UW_API_KEY: ${{ secrets.UW_API_KEY }}
+        run: python compute.py
+
+      - name: Commit published outputs
+        run: |
+          git config user.name "flow-bot"
+          git config user.email "flow-bot@users.noreply.github.com"
+          git add -- latest.json baselines.json
+          if git diff --cached --name-only | grep -qE '^(data/|\.env)'; then
+            echo "refusing to commit cache or secrets"
+            exit 1
+          fi
+          if git diff --cached | grep -qE 'Bearer |UW_API_KEY=.+'; then
+            echo "refusing to commit a secret"
+            exit 1
+          fi
+          if git diff --cached --quiet; then
+            echo "No published changes."
+            exit 0
+          fi
+          git commit -m "update $(TZ=America/New_York date +%H:%M)"
+          git push origin HEAD:main
