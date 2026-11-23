@@ -367,10 +367,12 @@ def analyze(rows, now):
         B[f"n_{sd}"] += 1
         (rec if t >= cut else early)[sd] += p
         if p >= BIG:
+            ey, em, ed = x["expiry"].split("-")
+            exp = f"{int(em)}/{ed}" + (f"/{ey[2:]}" if int(ey) != now.date().year else "")
             big.append(dict(
                 time=t.strftime("%H:%M"), ts=t.strftime("%-I:%M"),
-                contract=f"{x['expiry'][5:]} ${float(x['strike']):g}{x['option_type'][0].upper()}",
-                exp=f"{int(x['expiry'][5:7])}/{x['expiry'][8:10]}", strike=f"{float(x['strike']):g}",
+                contract=f"{exp} ${float(x['strike']):g}{x['option_type'][0].upper()}",
+                exp=exp, strike=f"{float(x['strike']):g}",
                 cp=x["option_type"].upper(), size=x.get("size"), price=x.get("price"),
                 side=("Ask" if "ask_side" in (x.get("tags") or []) else "Bid"), sidecode=side_code(x),
                 sweep="intermarket_sweep" in (x.get("report_flags") or []),
@@ -495,7 +497,9 @@ READY_X = 1.2
 
 _VERDICT_SHORT = {
     "one-sided lean": "no one-sided lean",
-    "$200k+ money": "no $200K+ money",
+    # Older verdicts used this token for the $1M-ahead check, which is not "no $200K+ money".
+    "$200k+ money": "not $1M+ ahead in $200K+ money",
+    "$1m+ of $200k+ money": "not $1M+ ahead in $200K+ money",
     "accelerating": "not accelerating",
     "above-normal order count": "count not above normal",
 }
@@ -509,11 +513,21 @@ def verdict_short(verdict):
     return "Thin: " + ", ".join(_VERDICT_SHORT.get(p, p) for p in parts)
 
 
+
+def _big_miss(big_d, big_o):
+    """Why the $1M-ahead $200K+ check failed. Not the same bar as the call line ($200K and 2x)."""
+    if (big_d or 0) < BIG and (big_o or 0) < BIG:
+        return "no $200K+ money"
+    if (big_d or 0) < FOCUS_BIG_MIN:
+        return "under $1M of $200K+ money"
+    return "other side has more $200K+ money"
+
+
 def readiness(o):
     L = o.get("lean")
     if L is None:
         items = [dict(key=k, label=label, ok=None, detail="no data") for k, label in (
-            ("lean", "One-sided lean (65%+)"), ("big", "$200K+ money on that side"),
+            ("lean", "One-sided lean (65%+)"), ("big", "$1M+ of $200K+ money on that side"),
             ("accel", "Accelerating"), ("count", "Above-normal order count"))]
         return dict(dir=None, items=items, ready=False, verdict="No data yet", short="No data yet")
     d = "bull" if L >= 50 else "bear"
@@ -537,18 +551,24 @@ def readiness(o):
     else:
         cnt = (None, "no baseline yet")
     items = [
-        dict(key="lean", label="One-sided lean (65%+)", ok=pct >= 65, detail=f"{pct:.0f}% {word}"),
-        dict(key="big", label=f"$200K+ money on the {word} side", ok=big_d >= 1_000_000 and big_d > big_o,
-             detail=f"${big_d/1e6:.1f}M vs ${big_o/1e6:.1f}M other side (needs $1M+ and more)"),
-        dict(key="accel", label="Accelerating", ok=acc[0], detail=acc[1]),
-        dict(key="count", label="Above-normal order count", ok=cnt[0], detail=cnt[1]),
+        dict(key="lean", label="One-sided lean (65%+)", ok=pct >= 65, detail=f"{pct:.0f}% {word}",
+             miss="no one-sided lean"),
+        dict(key="big", label=f"$1M+ of $200K+ money on the {word} side",
+             ok=big_d >= FOCUS_BIG_MIN and big_d > big_o,
+             detail=f"${big_d/1e6:.1f}M vs ${big_o/1e6:.1f}M other side (needs $1M+ and more)",
+             miss=_big_miss(big_d, big_o)),
+        dict(key="accel", label="Accelerating", ok=acc[0], detail=acc[1], miss="not accelerating"),
+        dict(key="count", label="Above-normal order count", ok=cnt[0], detail=cnt[1],
+             miss="count not above normal"),
     ]
-    missing = [i["label"].split(" (")[0].replace(f" on the {word} side", "") for i in items if i["ok"] is False]
+    missing = [i["miss"] for i in items if i["ok"] is False]
     unknown = [i for i in items if i["ok"] is None]
     ready = not missing and not unknown
     verdict = ("Enough to act on" if ready else
-               ("Thin — missing: " + ", ".join(missing).lower()) if missing else "Can't fully check yet (no baseline)")
-    return dict(dir=d, items=items, ready=ready, verdict=verdict, short=verdict_short(verdict))
+               ("Thin — missing: " + ", ".join(missing)) if missing else "Can't fully check yet (no baseline)")
+    short = ("Enough to act on" if ready else
+             ("Thin: " + ", ".join(missing)) if missing else "Can't fully check yet (no baseline)")
+    return dict(dir=d, items=items, ready=ready, verdict=verdict, short=short)
 
 
 def attach_baselines(tickers, day, now):

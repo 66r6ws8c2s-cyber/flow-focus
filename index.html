@@ -60,14 +60,15 @@ footer{margin-top:22px;color:var(--mut);font-size:12px;line-height:1.55}
 <header><h1>Flow Focus</h1><div class="chips"><span class="chip" id="upd">Updated …</span><span class="chip" id="cd">…</span></div></header>
 <div id="stage"><div class="empty">Loading…</div></div>
 <footer><span id="asof">Source: Unusual Whales · refreshes every 15 min, 9:30 AM–4:00 PM ET.</span><br>
-Bullish = calls bought at ask + puts sold at bid; bearish = the reverse. Counts single-leg orders of $25K+ since 9:30 AM ET and skips spreads/multi-leg, stock-tied, mid-price and deep in-the-money prints. The % is the share of directional money that is bullish (over 60% bullish, under 40% bearish). Vs normal = order counts vs the previous 10 trading days at this time of day. Top lines are the largest $200K+ orders (buyer = paid the ask, seller = hit the bid). Open More on a card for counts vs normal, the $200K+ split, the expiry split, the checklist, and up to five big orders.<br>
+Bullish = calls bought at ask + puts sold at bid; bearish = the reverse. Counts single-leg orders of $25K+ since 9:30 AM ET and skips spreads/multi-leg, stock-tied, mid-price and deep in-the-money prints. The % is the share of directional money that is bullish (60%+ bullish, 40% or less bearish). Vs normal = order counts vs the previous 10 trading days at this time of day. Top lines are the largest $200K+ orders (buyer = paid the ask, seller = hit the bid). Open More on a card for counts vs normal, the $200K+ split, the expiry split, the checklist, and up to five big orders.<br>
 Cards are grouped Bullish, Bearish, then Neutral: a significant call sets the group, otherwise lean 55%+ is bullish and 45% or less is bearish.<br><b>The line at the top of each card is a rule-based call, not trade advice.</b><br>
 <b>Context only, not trade advice.</b></footer></div><script>
 const ORDER = ["GOOGL","MSFT","AAPL","AMZN","NBIS","AMD","TSLA","SHOP","CRWD","PLTR","AVGO","NVDA","META","WMT","MU","ABNB","SPOT"];
 const BUCKETS = [["wk","This week"],["2w","<2 wks"],["1m","2 wks–1 mo"],["1m+","1 mo+"]];
 const VERDICT_MAP = {
   "one-sided lean":"no one-sided lean",
-  "$200k+ money":"no $200K+ money",
+  "$200k+ money":"not $1M+ ahead in $200K+ money",
+  "$1m+ of $200k+ money":"not $1M+ ahead in $200K+ money",
   "accelerating":"not accelerating",
   "above-normal order count":"count not above normal"
 };
@@ -80,8 +81,8 @@ function dataUrl(){const q=new URLSearchParams(location.search).get("fixture");r
 function leanView(L){
   if(L==null)return {pct:"—",word:"no data",cls:"mixed"};
   const pct=halfEven(L);
-  if(L>60)return {pct:pct+"%",word:"bullish",cls:"bull"};
-  if(L<40)return {pct:pct+"%",word:"bearish",cls:"bear"};
+  if(pct>=60)return {pct:pct+"%",word:"bullish",cls:"bull"};
+  if(pct<=40)return {pct:pct+"%",word:"bearish",cls:"bear"};
   return {pct:pct+"%",word:"mixed",cls:"mixed"};
 }
 function shortVerdict(v){
@@ -89,6 +90,40 @@ function shortVerdict(v){
   const prefix="Thin — missing: ";
   if(v.indexOf(prefix)!==0)return v;
   return "Thin: "+v.slice(prefix.length).split(",").map(s=>VERDICT_MAP[s.trim()]||s.trim()).join(", ");
+}
+function expLabel(t,day){
+  const e=t.exp||"";
+  if(!e||e.split("/").length>=3)return e;
+  if(t.dte==null||!day)return e;
+  const p=String(day).split("-").map(Number);
+  if(p.length!==3||!p[0])return e;
+  const dt=new Date(Date.UTC(p[0],p[1]-1,p[2]+Number(t.dte)));
+  const y=dt.getUTCFullYear();
+  return y===p[0]?e:e+"/"+String(y).slice(2);
+}
+function bigMiss(item){
+  const m=String(item&&item.detail||"").match(/\$([0-9.]+)M vs \$([0-9.]+)M/);
+  if(m){
+    const d=+m[1],o=+m[2];
+    if(d<0.2&&o<0.2)return "no $200K+ money";
+    if(d<1)return "under $1M of $200K+ money";
+    return "other side has more $200K+ money";
+  }
+  return (item&&item.miss)||"not $1M+ ahead in $200K+ money";
+}
+function readyLine(ready){
+  if(!ready)return "";
+  const bits=[];
+  (ready.items||[]).forEach(i=>{
+    if(i.ok!==false)return;
+    if(i.key==="lean")bits.push("no one-sided lean");
+    else if(i.key==="big")bits.push(bigMiss(i));
+    else if(i.key==="accel")bits.push("not accelerating");
+    else if(i.key==="count")bits.push("count not above normal");
+    else if(i.miss)bits.push(i.miss);
+  });
+  if(bits.length)return "Thin: "+bits.join(", ");
+  return ready.short||shortVerdict(ready.verdict)||"";
 }
 function flagOf(vs){
   if(!vs)return {text:"",cls:"v-norm"};
@@ -118,21 +153,21 @@ function sortGroup(names,tickers){
     return a<b?-1:a>b?1:0;
   });
 }
-function tape(t,withSize){
+function tape(t,withSize,day){
   const side=t.side==="Ask"?"buyer":t.side==="Bid"?"seller":"mid";
   const sc=side==="buyer"?"s-ask":side==="seller"?"s-bid":"s-mid";
-  const ct=(t.exp||"")+" "+(t.strike||"")+String(t.cp||"C").charAt(0);
+  const ct=expLabel(t,day)+" "+(t.strike||"")+String(t.cp||"C").charAt(0);
   const sz=withSize&&t.size!=null&&t.price!=null?`<span class="sz">${esc(Number(t.size).toLocaleString("en-US"))}@${esc(t.price)}</span>`:"";
   return `<li class="tape ${sc}"><span class="tt">${esc(t.ts||t.time)}</span> <span class="ct">${esc(ct)}</span> ${sz} <b class="pr">${money(t.premium)}</b> <span class="sd">${side}</span></li>`;
 }
-function card(tk,o,focusTk){
+function card(tk,o,focusTk,day){
   const lv=leanView(o.lean);
   const flag=flagOf(o.vs_read);
-  const verdict=(o.ready&&(o.ready.short||shortVerdict(o.ready.verdict)))||"";
+  const verdict=readyLine(o.ready)||"";
   const dir=o.call_dir==="bull"||o.call_dir==="bear"?o.call_dir:"";
   const call=o.call||"Nothing significant";
-  const tops=(o.top||[]).slice(0,2).map(t=>tape(t,false)).join("");
-  const moreTops=(o.top||[]).map(t=>tape(t,true)).join("")||`<li class="muted">No $200K+ orders yet</li>`;
+  const tops=(o.top||[]).slice(0,2).map(t=>tape(t,false,day)).join("");
+  const moreTops=(o.top||[]).map(t=>tape(t,true,day)).join("")||`<li class="muted">No $200K+ orders yet</li>`;
   const base=o.base, vs=o.vs||{};
   const countRows=[["$200K+ bull","n_bull_big"],["$200K+ bear","n_bear_big"],["Under $200K bull","n_bull_small"],["Under $200K bear","n_bear_small"]];
   const counts=countRows.map(([label,k])=>{
@@ -200,7 +235,7 @@ function render(d){
         const list=sortGroup(buckets[key],d.tickers);
         html+=`<section class="group" data-group="${key}"><h2 class="group-label">${label}</h2>`;
         if(!list.length)html+=`<p class="group-empty">None</p>`;
-        else html+=`<div class="grid">`+list.map(tk=>card(tk,d.tickers[tk],focus)).join("")+`</div>`;
+        else html+=`<div class="grid">`+list.map(tk=>card(tk,d.tickers[tk],focus,d.date)).join("")+`</div>`;
         html+=`</section>`;
       });
     }

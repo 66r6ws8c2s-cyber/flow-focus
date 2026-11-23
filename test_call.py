@@ -224,8 +224,19 @@ def test_guard_and_calendar():
 def test_copy():
     check(c.verdict_short("Thin — missing: one-sided lean, accelerating") == "Thin: no one-sided lean, not accelerating", "verdict")
     check(c.verdict_short("Thin — missing: one-sided lean, $200k+ money, accelerating")
-          == "Thin: no one-sided lean, no $200K+ money, not accelerating", "verdict money")
+          == "Thin: no one-sided lean, not $1M+ ahead in $200K+ money, not accelerating", "verdict money")
+    check(c.verdict_short("Thin — missing: under $1M of $200K+ money, not accelerating")
+          == "Thin: under $1M of $200K+ money, not accelerating", "verdict under 1M")
     check(c.verdict_short("Enough to act on") == "Enough to act on", "ready verdict")
+    spot = c.readiness(dict(lean=80.4, bull_big=834081, bear_big=0, speed="quiet", recent_lean=None,
+                           speed_text="Quiet last 15m", n_bull_small=17, n_bull_big=1, n_bear_small=0, n_bear_big=0))
+    check("under $1M of $200K+ money" in spot["short"] and "no $200K+ money" not in spot["short"], "spot short "+spot["short"])
+    aapl = c.readiness(dict(lean=51.2, bull_big=10_004_095, bear_big=13_631_675, speed="quiet", recent_lean=None,
+                           speed_text="Quiet last 15m", n_bull_small=1, n_bull_big=1, n_bear_small=1, n_bear_big=1))
+    check("other side has more $200K+ money" in aapl["short"] and "no $200K+ money" not in aapl["short"], "aapl short "+aapl["short"])
+    shop = c.readiness(dict(lean=32.6, bull_big=0, bear_big=0, speed="quiet", recent_lean=None,
+                           speed_text="Quiet last 15m", n_bull_small=1, n_bull_big=0, n_bear_small=1, n_bear_big=0))
+    check("no $200K+ money" in shop["short"], "shop short "+shop["short"])
     check(c.flag_short(dict(code="normal", text="About normal (bulls 1.3x, bears 1.4x)")) == "About normal", "flag")
     check(c.flag_short(dict(code="busy", text="Busy both ways: 1.4x+ normal orders")) == "Busy both ways: 1.4x normal", "busy")
     check(c.flag_short(dict(code="unusual_bear", text="Unusually bearish: 1.5x normal bearish orders"))

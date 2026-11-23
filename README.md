@@ -66,6 +66,6 @@ Orders of $25K+ premium since 9:30 AM ET (SPY/QQQ: $100K+, tide context only).
 - `series` is the cumulative lean at each 15-minute mark, from the cache.
 - Lean = bull / (bull + bear). Speed compares the last 15 minutes with the earlier session (±10 points picking up or fading; a cross of 55/45 is a flip; under $100K in 15 minutes is quiet).
 - Focus (the outlined card) is unchanged: lean ≥ 65% or ≤ 35%, at least $1M of $200K+ premium on that side and more than the other side, and still accelerating. The call line does not require the $1M or the acceleration test.
-- Vs normal compares order counts with the previous 10 trading days at this time of day. The readiness line is the same four checks as before (lean, $200K+ dollars, acceleration, count vs normal).
+- Vs normal compares order counts with the previous 10 trading days at this time of day. The readiness line is the same four checks as before (lean, $1M+ of $200K+ dollars and more than the other side, acceleration, count vs normal). That $1M bar is higher than the call line, so a card can have a significant call and still be Thin.
 
 API use when the cache is warm: about one trades call per ticker, extra pages only when there are more than 500 new prints, plus one market-tide call. The first run of a session refetches the day; later runs reuse `data/`.
