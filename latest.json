@@ -1,38 +1,38 @@
 {
- "updated": "2026-11-24 15:02",
- "updated_hm": "3:02 PM",
+ "updated": "2026-11-24 16:09",
+ "updated_hm": "4:09 PM",
  "date": "2026-11-24",
  "source": "Unusual Whales API",
  "status": "ok",
  "tickers": {
   "GOOGL": {
-   "bull_small": 9562764.0,
+   "bull_small": 10602010.0,
    "bull_big": 7742255.0,
-   "bear_small": 16253261.0,
+   "bear_small": 17286059.0,
    "bear_big": 7881835.0,
-   "n": 494,
-   "n_bull_small": 191,
+   "n": 534,
+   "n_bull_small": 210,
    "n_bull_big": 13,
-   "n_bear_small": 269,
+   "n_bear_small": 290,
    "n_bear_big": 21,
-   "skipped_multileg": 22610600.0,
-   "skipped_itm": 5821422.0,
-   "bull": 17305019.0,
-   "bear": 24135096.0,
-   "lean": 41.8,
+   "skipped_multileg": 62161232.0,
+   "skipped_itm": 6069272.0,
+   "bull": 18344265.0,
+   "bear": 25167894.0,
+   "lean": 42.2,
    "big_lean": 49.6,
-   "recent_bull": 321143.0,
-   "recent_bear": 402855.0,
-   "recent_lean": 44.4,
-   "early_lean": 41.7,
+   "recent_bull": 135200.0,
+   "recent_bear": 52380.0,
+   "recent_lean": 72.1,
+   "early_lean": 42.0,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 281.37,
-    "last": 277.02,
+    "last": 279.05,
     "low": 276.19,
     "high": 281.37,
-    "chg": -1.55
+    "chg": -0.82
    },
    "top": [
     {
@@ -129,15 +129,15 @@
    "repeat": "1/21/28 395C hit 7 times ($3.1M, all sellers); 11/25 280P hit 3 times ($920K, all sellers)",
    "buckets": {
     "wk": {
-     "bull": 2201959.0,
-     "bear": 1686302.0,
+     "bull": 2507699.0,
+     "bear": 1972912.0,
      "bull_big": 919569.0,
      "bear_big": 497070.0,
-     "bull_small": 1282390.0,
-     "bear_small": 1189232.0,
-     "n_bull": 29,
-     "n_bear": 30,
-     "lean": 56.6,
+     "bull_small": 1588130.0,
+     "bear_small": 1475842.0,
+     "n_bull": 34,
+     "n_bear": 35,
+     "lean": 56.0,
      "top": [
       {
        "time": "11:16",
@@ -197,14 +197,14 @@
     },
     "2w": {
      "bull": 1153459.0,
-     "bear": 997488.0,
+     "bear": 1188244.0,
      "bull_big": 914595.0,
      "bear_big": 480000.0,
      "bull_small": 238864.0,
-     "bear_small": 517488.0,
+     "bear_small": 708244.0,
      "n_bull": 6,
-     "n_bear": 12,
-     "lean": 53.6,
+     "n_bear": 16,
+     "lean": 49.3,
      "top": [
       {
        "time": "11:30",
@@ -245,15 +245,15 @@
      ]
     },
     "1m": {
-     "bull": 1675291.0,
-     "bear": 1415823.0,
+     "bull": 2002774.0,
+     "bear": 1578708.0,
      "bull_big": 498663.0,
      "bear_big": 0.0,
-     "bull_small": 1176628.0,
-     "bear_small": 1415823.0,
-     "n_bull": 24,
-     "n_bear": 26,
-     "lean": 54.2,
+     "bull_small": 1504111.0,
+     "bear_small": 1578708.0,
+     "n_bull": 29,
+     "n_bear": 29,
+     "lean": 55.9,
      "top": [
       {
        "time": "12:54",
@@ -276,15 +276,15 @@
      ]
     },
     "1m+": {
-     "bull": 12274310.0,
-     "bear": 20035483.0,
+     "bull": 12680333.0,
+     "bear": 20428030.0,
      "bull_big": 5409428.0,
      "bear_big": 6904765.0,
-     "bull_small": 6864882.0,
-     "bear_small": 13130718.0,
-     "n_bull": 145,
-     "n_bear": 222,
-     "lean": 38.0,
+     "bull_small": 7270905.0,
+     "bear_small": 13523265.0,
+     "n_bull": 154,
+     "n_bear": 231,
+     "lean": 38.3,
      "top": [
       {
        "time": "11:38",
@@ -433,13 +433,25 @@
      41.8
     ],
     [
-     "15:02",
+     "15:15",
      41.8
+    ],
+    [
+     "15:30",
+     41.7
+    ],
+    [
+     "15:45",
+     41.8
+    ],
+    [
+     "16:00",
+     42.2
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 723998.0,
+   "speed": "flip_bull",
+   "speed_text": "Flipping bullish",
+   "recent_total": 187580.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -467,7 +479,7 @@
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "steady, last 15m 44% bull",
+      "detail": "flipping bullish, last 15m 72% bull",
       "miss": "not accelerating"
      },
      {
@@ -484,33 +496,33 @@
    }
   },
   "MSFT": {
-   "bull_small": 16781601.0,
-   "bull_big": 13585742.0,
-   "bear_small": 10585503.0,
-   "bear_big": 9948739.0,
-   "n": 494,
-   "n_bull_small": 277,
-   "n_bull_big": 26,
-   "n_bear_small": 178,
-   "n_bear_big": 13,
-   "skipped_multileg": 75404934.0,
-   "skipped_itm": 2899107.0,
-   "bull": 30367343.0,
-   "bear": 20534242.0,
-   "lean": 59.7,
-   "big_lean": 57.7,
-   "recent_bull": 278875.0,
-   "recent_bear": 471099.0,
-   "recent_lean": 37.2,
-   "early_lean": 60.0,
+   "bull_small": 20210609.0,
+   "bull_big": 13805542.0,
+   "bear_small": 11742561.0,
+   "bear_big": 11814295.0,
+   "n": 563,
+   "n_bull_small": 320,
+   "n_bull_big": 27,
+   "n_bear_small": 202,
+   "n_bear_big": 14,
+   "skipped_multileg": 80608118.0,
+   "skipped_itm": 3345153.0,
+   "bull": 34016151.0,
+   "bear": 23556856.0,
+   "lean": 59.1,
+   "big_lean": 53.9,
+   "recent_bull": 94370.0,
+   "recent_bear": 31025.0,
+   "recent_lean": 75.3,
+   "early_lean": 59.0,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 490.35,
-    "last": 492.85,
+    "last": 496.01,
     "low": 488.82,
     "high": 501.74,
-    "chg": 0.51
+    "chg": 1.15
    },
    "top": [
     {
@@ -586,36 +598,36 @@
      "bucket": "1m+"
     },
     {
-     "time": "10:06",
-     "ts": "10:06",
-     "contract": "1/21/28 $565C",
-     "exp": "1/21/28",
-     "strike": "565",
+     "time": "15:48",
+     "ts": "3:48",
+     "contract": "2/19/27 $510C",
+     "exp": "2/19/27",
+     "strike": "510",
      "cp": "CALL",
-     "size": 350,
-     "price": "52.35",
+     "size": 658,
+     "price": "28.35",
      "side": "Bid",
      "sidecode": "B",
-     "sweep": false,
+     "sweep": true,
      "dir": "bear",
-     "premium": 1832200,
-     "spot": "492.48",
-     "dte": 423,
+     "premium": 1865556,
+     "spot": "494.84",
+     "dte": 87,
      "bucket": "1m+"
     }
    ],
    "repeat": "1/21/28 565C hit 6 times ($5.9M, all sellers); 1/21/28 570C hit 5 times ($4.5M, all buyers)",
    "buckets": {
     "wk": {
-     "bull": 1828409.0,
-     "bear": 2306882.0,
+     "bull": 2047536.0,
+     "bear": 2613059.0,
      "bull_big": 265000.0,
      "bear_big": 0.0,
-     "bull_small": 1563409.0,
-     "bear_small": 2306882.0,
-     "n_bull": 33,
-     "n_bear": 37,
-     "lean": 44.2,
+     "bull_small": 1782536.0,
+     "bear_small": 2613059.0,
+     "n_bull": 37,
+     "n_bear": 43,
+     "lean": 43.9,
      "top": [
       {
        "time": "14:17",
@@ -638,15 +650,15 @@
      ]
     },
     "2w": {
-     "bull": 2242999.0,
-     "bear": 1292789.0,
+     "bull": 2702910.0,
+     "bear": 1584374.0,
      "bull_big": 1469128.0,
      "bear_big": 375750.0,
-     "bull_small": 773871.0,
-     "bear_small": 917039.0,
-     "n_bull": 23,
-     "n_bear": 17,
-     "lean": 63.4,
+     "bull_small": 1233782.0,
+     "bear_small": 1208624.0,
+     "n_bull": 26,
+     "n_bear": 22,
+     "lean": 63.0,
      "top": [
       {
        "time": "12:08",
@@ -705,15 +717,15 @@
      ]
     },
     "1m": {
-     "bull": 3802028.0,
-     "bear": 2247678.0,
+     "bull": 4057804.0,
+     "bear": 2376094.0,
      "bull_big": 1580820.0,
      "bear_big": 548570.0,
-     "bull_small": 2221208.0,
-     "bear_small": 1699108.0,
-     "n_bull": 42,
-     "n_bear": 32,
-     "lean": 62.8,
+     "bull_small": 2476984.0,
+     "bear_small": 1827524.0,
+     "n_bull": 48,
+     "n_bear": 35,
+     "lean": 63.1,
      "top": [
       {
        "time": "09:50",
@@ -772,15 +784,15 @@
      ]
     },
     "1m+": {
-     "bull": 22493907.0,
-     "bear": 14686893.0,
-     "bull_big": 10270794.0,
-     "bear_big": 9024419.0,
-     "bull_small": 12223113.0,
-     "bear_small": 5662474.0,
-     "n_bull": 205,
-     "n_bear": 105,
-     "lean": 60.5,
+     "bull": 25207901.0,
+     "bear": 16983329.0,
+     "bull_big": 10490594.0,
+     "bear_big": 10889975.0,
+     "bull_small": 14717307.0,
+     "bear_small": 6093354.0,
+     "n_bull": 236,
+     "n_bear": 116,
+     "lean": 59.7,
      "top": [
       {
        "time": "10:07",
@@ -929,39 +941,51 @@
      59.6
     ],
     [
-     "15:02",
-     59.7
+     "15:15",
+     60.7
+    ],
+    [
+     "15:30",
+     60.9
+    ],
+    [
+     "15:45",
+     61.1
+    ],
+    [
+     "16:00",
+     59.1
     ]
    ],
-   "speed": "flip_bear",
-   "speed_text": "Flipping bearish",
-   "recent_total": 749974.0,
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 125395.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 319.7,
-    "n_bull_big": 19.2,
-    "n_bear_small": 302.3,
-    "n_bear_big": 18.7,
-    "bull_small": 17584592.7,
-    "bull_big": 10133974.8,
-    "bear_small": 16070730.7,
-    "bear_big": 9591353.2,
-    "ratio_small": 1.09,
-    "ratio_big": 1.13
+    "n_bull_small": 362.0,
+    "n_bull_big": 22.2,
+    "n_bear_small": 344.8,
+    "n_bear_big": 21.3,
+    "bull_small": 19972313.7,
+    "bull_big": 11687131.7,
+    "bear_small": 18546746.9,
+    "bear_big": 10973954.5,
+    "ratio_small": 1.07,
+    "ratio_big": 1.09
    },
    "vs": {
-    "n_bull_small": 0.87,
-    "n_bull_big": 1.35,
+    "n_bull_small": 0.88,
+    "n_bull_big": 1.22,
     "n_bear_small": 0.59,
-    "n_bear_big": 0.7
+    "n_bear_big": 0.66
    },
    "vs_read": {
     "code": "normal",
     "text": "About normal (bulls 0.9x, bears 0.6x)",
-    "x": 0.89,
+    "x": 0.9,
     "short": "About normal"
    },
    "ready": {
@@ -971,64 +995,64 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "60% bullish",
+      "detail": "59% bullish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$13.6M vs $9.9M other side (needs $1M+ and more)",
+      "detail": "$13.8M vs $11.8M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": false,
-      "detail": "flipping bearish, last 15m 37% bull",
+      "ok": true,
+      "detail": "picking up bullish, last 15m 75% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "303 bullish orders vs ~339 normal (0.9x)",
+      "detail": "347 bullish orders vs ~384 normal (0.9x)",
       "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, not accelerating, count not above normal",
-    "short": "Thin: no one-sided lean, not accelerating, count not above normal"
+    "verdict": "Thin \u2014 missing: no one-sided lean, count not above normal",
+    "short": "Thin: no one-sided lean, count not above normal"
    }
   },
   "AAPL": {
-   "bull_small": 19355396.0,
-   "bull_big": 10993570.0,
-   "bear_small": 17614138.0,
-   "bear_big": 19585870.0,
-   "n": 731,
-   "n_bull_small": 361,
-   "n_bull_big": 29,
-   "n_bear_small": 310,
-   "n_bear_big": 31,
-   "skipped_multileg": 39341023.0,
-   "skipped_itm": 16222140.0,
-   "bull": 30348966.0,
-   "bear": 37200008.0,
-   "lean": 44.9,
-   "big_lean": 36.0,
-   "recent_bull": 3720189.0,
-   "recent_bear": 5016294.0,
-   "recent_lean": 42.6,
-   "early_lean": 45.3,
+   "bull_small": 23227393.0,
+   "bull_big": 17684421.0,
+   "bear_small": 19370664.0,
+   "bear_big": 21271439.0,
+   "n": 854,
+   "n_bull_small": 438,
+   "n_bull_big": 40,
+   "n_bear_small": 340,
+   "n_bear_big": 36,
+   "skipped_multileg": 42863879.0,
+   "skipped_itm": 19217618.0,
+   "bull": 40911814.0,
+   "bear": 40642103.0,
+   "lean": 50.2,
+   "big_lean": 45.4,
+   "recent_bull": 5001499.0,
+   "recent_bear": 234900.0,
+   "recent_lean": 95.5,
+   "early_lean": 47.1,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 348.2,
-    "last": 351.85,
+    "last": 354.32,
     "low": 346.07,
-    "high": 353.86,
-    "chg": 1.05
+    "high": 354.32,
+    "chg": 1.76
    },
    "top": [
     {
@@ -1086,6 +1110,24 @@
      "bucket": "1m+"
     },
     {
+     "time": "15:57",
+     "ts": "3:57",
+     "contract": "11/30 $310C",
+     "exp": "11/30",
+     "strike": "310",
+     "cp": "CALL",
+     "size": 468,
+     "price": "44.00",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 2059200,
+     "spot": "353.76",
+     "dte": 6,
+     "bucket": "2w"
+    },
+    {
      "time": "11:27",
      "ts": "11:27",
      "contract": "4/16/27 $355C",
@@ -1102,38 +1144,20 @@
      "spot": "351.67",
      "dte": 143,
      "bucket": "1m+"
-    },
-    {
-     "time": "14:50",
-     "ts": "2:50",
-     "contract": "12/18 $365C",
-     "exp": "12/18",
-     "strike": "365",
-     "cp": "CALL",
-     "size": 4981,
-     "price": "3.70",
-     "side": "Bid",
-     "sidecode": "B",
-     "sweep": false,
-     "dir": "bear",
-     "premium": 1843068,
-     "spot": "352.57",
-     "dte": 24,
-     "bucket": "1m"
     }
    ],
-   "repeat": "1/21/28 370C hit 11 times ($3.7M, buyers and sellers); 1/15/27 355C hit 2 times ($2.9M, buyers and sellers)",
+   "repeat": "1/21/28 370C hit 13 times ($4.1M, buyers and sellers); 11/30 310C hit 2 times ($3.7M, all buyers)",
    "buckets": {
     "wk": {
-     "bull": 4395651.0,
-     "bear": 4191615.0,
+     "bull": 5207958.0,
+     "bear": 4772587.0,
      "bull_big": 0.0,
-     "bear_big": 710000.0,
-     "bull_small": 4395651.0,
-     "bear_small": 3481615.0,
-     "n_bull": 91,
-     "n_bear": 82,
-     "lean": 51.2,
+     "bear_big": 928680.0,
+     "bull_small": 5207958.0,
+     "bear_small": 3843907.0,
+     "n_bull": 108,
+     "n_bear": 92,
+     "lean": 52.2,
      "top": [
       {
        "time": "09:31",
@@ -1192,16 +1216,52 @@
      ]
     },
     "2w": {
-     "bull": 2144131.0,
-     "bear": 1504348.0,
-     "bull_big": 595548.0,
+     "bull": 6618975.0,
+     "bear": 1814231.0,
+     "bull_big": 4532648.0,
      "bear_big": 0.0,
-     "bull_small": 1548583.0,
-     "bear_small": 1504348.0,
-     "n_bull": 34,
-     "n_bear": 28,
-     "lean": 58.8,
+     "bull_small": 2086327.0,
+     "bear_small": 1814231.0,
+     "n_bull": 50,
+     "n_bear": 36,
+     "lean": 78.5,
      "top": [
+      {
+       "time": "15:57",
+       "ts": "3:57",
+       "contract": "11/30 $310C",
+       "exp": "11/30",
+       "strike": "310",
+       "cp": "CALL",
+       "size": 468,
+       "price": "44.00",
+       "side": "Ask",
+       "sidecode": "A",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 2059200,
+       "spot": "353.76",
+       "dte": 6,
+       "bucket": "2w"
+      },
+      {
+       "time": "15:57",
+       "ts": "3:57",
+       "contract": "11/30 $310C",
+       "exp": "11/30",
+       "strike": "310",
+       "cp": "CALL",
+       "size": 381,
+       "price": "44.00",
+       "side": "Ask",
+       "sidecode": "A",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 1676400,
+       "spot": "353.77",
+       "dte": 6,
+       "bucket": "2w"
+      },
       {
        "time": "12:33",
        "ts": "12:33",
@@ -1219,37 +1279,19 @@
        "spot": "353.34",
        "dte": 10,
        "bucket": "2w"
-      },
-      {
-       "time": "09:30",
-       "ts": "9:30",
-       "contract": "12/04 $335P",
-       "exp": "12/04",
-       "strike": "335",
-       "cp": "PUT",
-       "size": 1230,
-       "price": "2.40",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": false,
-       "dir": "bull",
-       "premium": 295248,
-       "spot": "346.98",
-       "dte": 10,
-       "bucket": "2w"
       }
      ]
     },
     "1m": {
-     "bull": 3395210.0,
-     "bear": 8970690.0,
-     "bull_big": 486550.0,
-     "bear_big": 6871923.0,
-     "bull_small": 2908660.0,
-     "bear_small": 2098767.0,
-     "n_bull": 57,
-     "n_bear": 42,
-     "lean": 27.5,
+     "bull": 5476225.0,
+     "bear": 10569415.0,
+     "bull_big": 1817003.0,
+     "bear_big": 8126062.0,
+     "bull_small": 3659222.0,
+     "bear_small": 2443353.0,
+     "n_bull": 75,
+     "n_bear": 48,
+     "lean": 34.1,
      "top": [
       {
        "time": "11:52",
@@ -1308,15 +1350,15 @@
      ]
     },
     "1m+": {
-     "bull": 20413974.0,
-     "bear": 22533355.0,
-     "bull_big": 9911472.0,
-     "bear_big": 12003947.0,
-     "bull_small": 10502502.0,
-     "bear_small": 10529408.0,
-     "n_bull": 208,
-     "n_bear": 189,
-     "lean": 47.5,
+     "bull": 23608656.0,
+     "bear": 23485870.0,
+     "bull_big": 11334770.0,
+     "bear_big": 12216697.0,
+     "bull_small": 12273886.0,
+     "bear_small": 11269173.0,
+     "n_bull": 245,
+     "n_bear": 200,
+     "lean": 50.1,
      "top": [
       {
        "time": "11:01",
@@ -1465,106 +1507,118 @@
      45.0
     ],
     [
-     "15:02",
+     "15:15",
      44.9
+    ],
+    [
+     "15:30",
+     44.8
+    ],
+    [
+     "15:45",
+     45.8
+    ],
+    [
+     "16:00",
+     50.2
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 8736483.0,
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 5236399.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 358.4,
-    "n_bull_big": 33.3,
-    "n_bear_small": 328.6,
-    "n_bear_big": 36.9,
-    "bull_small": 20776507.3,
-    "bull_big": 17521244.9,
-    "bear_small": 18732990.3,
-    "bear_big": 22278981.7,
-    "ratio_small": 1.11,
+    "n_bull_small": 416.9,
+    "n_bull_big": 37.8,
+    "n_bear_small": 384.7,
+    "n_bear_big": 42.2,
+    "bull_small": 24223020.7,
+    "bull_big": 19791544.9,
+    "bear_small": 21915053.5,
+    "bear_big": 25169158.1,
+    "ratio_small": 1.09,
     "ratio_big": 0.92
    },
    "vs": {
-    "n_bull_small": 1.01,
-    "n_bull_big": 0.87,
-    "n_bear_small": 0.94,
-    "n_bear_big": 0.84
+    "n_bull_small": 1.05,
+    "n_bull_big": 1.06,
+    "n_bear_small": 0.88,
+    "n_bear_big": 0.85
    },
    "vs_read": {
     "code": "normal",
-    "text": "About normal (bulls 1.0x, bears 0.9x)",
-    "x": 1.0,
+    "text": "About normal (bulls 1.1x, bears 0.9x)",
+    "x": 1.05,
     "short": "About normal"
    },
    "ready": {
-    "dir": "bear",
+    "dir": "bull",
     "items": [
      {
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "55% bearish",
+      "detail": "50% bullish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
-      "label": "$1M+ of $200K+ money on the bearish side",
-      "ok": true,
-      "detail": "$19.6M vs $11.0M other side (needs $1M+ and more)",
+      "label": "$1M+ of $200K+ money on the bullish side",
+      "ok": false,
+      "detail": "$17.7M vs $21.3M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": false,
-      "detail": "steady, last 15m 43% bull",
+      "ok": true,
+      "detail": "picking up bullish, last 15m 96% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "341 bearish orders vs ~366 normal (0.9x)",
+      "detail": "478 bullish orders vs ~455 normal (1.1x)",
       "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, not accelerating, count not above normal",
-    "short": "Thin: no one-sided lean, not accelerating, count not above normal"
+    "verdict": "Thin \u2014 missing: no one-sided lean, other side has more $200K+ money, count not above normal",
+    "short": "Thin: no one-sided lean, other side has more $200K+ money, count not above normal"
    }
   },
   "AMZN": {
-   "bull_small": 11492945.0,
-   "bull_big": 8186753.0,
-   "bear_small": 8216566.0,
-   "bear_big": 11505282.0,
-   "n": 382,
-   "n_bull_small": 205,
-   "n_bull_big": 19,
-   "n_bear_small": 135,
-   "n_bear_big": 23,
-   "skipped_multileg": 35171149.0,
-   "skipped_itm": 4668025.0,
-   "bull": 19679698.0,
-   "bear": 19721848.0,
-   "lean": 49.9,
-   "big_lean": 41.6,
-   "recent_bull": 665568.0,
-   "recent_bear": 672972.0,
-   "recent_lean": 49.7,
-   "early_lean": 50.0,
+   "bull_small": 13036665.0,
+   "bull_big": 10319108.0,
+   "bear_small": 10176981.0,
+   "bear_big": 13623639.0,
+   "n": 457,
+   "n_bull_small": 235,
+   "n_bull_big": 23,
+   "n_bear_small": 173,
+   "n_bear_big": 26,
+   "skipped_multileg": 51404811.0,
+   "skipped_itm": 8003858.0,
+   "bull": 23355773.0,
+   "bear": 23800620.0,
+   "lean": 49.5,
+   "big_lean": 43.1,
+   "recent_bull": 123615.0,
+   "recent_bear": 383733.0,
+   "recent_lean": 24.4,
+   "early_lean": 49.8,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 252.14,
-    "last": 251.14,
-    "low": 250.93,
+    "last": 252.17,
+    "low": 250.75,
     "high": 255.37,
-    "chg": -0.4
+    "chg": 0.01
    },
    "top": [
     {
@@ -1604,6 +1658,24 @@
      "bucket": "1m+"
     },
     {
+     "time": "15:42",
+     "ts": "3:42",
+     "contract": "12/15/28 $270P",
+     "exp": "12/15/28",
+     "strike": "270",
+     "cp": "PUT",
+     "size": 242,
+     "price": "53.80",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 1301960,
+     "spot": "251.2",
+     "dte": 752,
+     "bucket": "1m+"
+    },
+    {
      "time": "12:01",
      "ts": "12:01",
      "contract": "6/17/27 $275C",
@@ -1622,38 +1694,20 @@
      "bucket": "1m+"
     },
     {
-     "time": "11:05",
-     "ts": "11:05",
-     "contract": "12/11 $265C",
-     "exp": "12/11",
-     "strike": "265",
-     "cp": "CALL",
-     "size": 2274,
-     "price": "3.60",
-     "side": "Bid",
-     "sidecode": "B",
-     "sweep": false,
-     "dir": "bear",
-     "premium": 818640,
-     "spot": "251.04",
-     "dte": 17,
-     "bucket": "1m"
-    },
-    {
-     "time": "12:01",
-     "ts": "12:01",
-     "contract": "6/17/27 $220P",
+     "time": "15:33",
+     "ts": "3:33",
+     "contract": "6/17/27 $180P",
      "exp": "6/17/27",
-     "strike": "220",
+     "strike": "180",
      "cp": "PUT",
-     "size": 500,
-     "price": "14.25",
+     "size": 1944,
+     "price": "5.25",
      "side": "Ask",
      "sidecode": "A",
      "sweep": false,
      "dir": "bear",
-     "premium": 712500,
-     "spot": "251.34",
+     "premium": 1020538,
+     "spot": "250.9524",
      "dte": 205,
      "bucket": "1m+"
     }
@@ -1661,15 +1715,15 @@
    "repeat": "6/17/27 260C hit 2 times ($579K, all buyers); 12/18 235P hit 2 times ($511K, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 1801239.0,
-     "bear": 1929385.0,
+     "bull": 1865910.0,
+     "bear": 2035292.0,
      "bull_big": 721497.0,
      "bear_big": 1262066.0,
-     "bull_small": 1079742.0,
-     "bear_small": 667319.0,
-     "n_bull": 25,
-     "n_bear": 21,
-     "lean": 48.3,
+     "bull_small": 1144413.0,
+     "bear_small": 773226.0,
+     "n_bull": 27,
+     "n_bear": 24,
+     "lean": 47.8,
      "top": [
       {
        "time": "12:28",
@@ -1728,15 +1782,15 @@
      ]
     },
     "2w": {
-     "bull": 1905078.0,
-     "bear": 1602984.0,
+     "bull": 2119965.0,
+     "bear": 1875682.0,
      "bull_big": 865468.0,
      "bear_big": 292392.0,
-     "bull_small": 1039610.0,
-     "bear_small": 1310592.0,
-     "n_bull": 19,
-     "n_bear": 14,
-     "lean": 54.3,
+     "bull_small": 1254497.0,
+     "bear_small": 1583290.0,
+     "n_bull": 25,
+     "n_bear": 19,
+     "lean": 53.1,
      "top": [
       {
        "time": "14:37",
@@ -1795,15 +1849,15 @@
      ]
     },
     "1m": {
-     "bull": 2409312.0,
-     "bear": 2891165.0,
+     "bull": 2504262.0,
+     "bear": 3013150.0,
      "bull_big": 238140.0,
      "bear_big": 1793058.0,
-     "bull_small": 2171172.0,
-     "bear_small": 1098107.0,
-     "n_bull": 44,
-     "n_bear": 27,
-     "lean": 45.5,
+     "bull_small": 2266122.0,
+     "bear_small": 1220092.0,
+     "n_bull": 46,
+     "n_bear": 30,
+     "lean": 45.4,
      "top": [
       {
        "time": "11:05",
@@ -1862,15 +1916,15 @@
      ]
     },
     "1m+": {
-     "bull": 13564069.0,
-     "bear": 13298314.0,
-     "bull_big": 6361648.0,
-     "bear_big": 8157766.0,
-     "bull_small": 7202421.0,
-     "bear_small": 5140548.0,
-     "n_bull": 136,
-     "n_bear": 96,
-     "lean": 50.5,
+     "bull": 16865636.0,
+     "bear": 16876496.0,
+     "bull_big": 8494003.0,
+     "bear_big": 10276123.0,
+     "bull_small": 8371633.0,
+     "bear_small": 6600373.0,
+     "n_bull": 160,
+     "n_bear": 126,
+     "lean": 50.0,
      "top": [
       {
        "time": "11:02",
@@ -1909,21 +1963,21 @@
        "bucket": "1m+"
       },
       {
-       "time": "12:01",
-       "ts": "12:01",
-       "contract": "6/17/27 $275C",
-       "exp": "6/17/27",
-       "strike": "275",
-       "cp": "CALL",
-       "size": 500,
-       "price": "21.95",
-       "side": "Ask",
-       "sidecode": "A",
+       "time": "15:42",
+       "ts": "3:42",
+       "contract": "12/15/28 $270P",
+       "exp": "12/15/28",
+       "strike": "270",
+       "cp": "PUT",
+       "size": 242,
+       "price": "53.80",
+       "side": "Bid",
+       "sidecode": "B",
        "sweep": false,
        "dir": "bull",
-       "premium": 1097500,
-       "spot": "251.34",
-       "dte": 205,
+       "premium": 1301960,
+       "spot": "251.2",
+       "dte": 752,
        "bucket": "1m+"
       }
      ]
@@ -2019,13 +2073,25 @@
      49.9
     ],
     [
-     "15:02",
-     49.9
+     "15:15",
+     50.3
+    ],
+    [
+     "15:30",
+     49.7
+    ],
+    [
+     "15:45",
+     49.0
+    ],
+    [
+     "16:00",
+     49.5
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 1338540.0,
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 507348.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -2046,14 +2112,14 @@
       "key": "big",
       "label": "$1M+ of $200K+ money on the bearish side",
       "ok": true,
-      "detail": "$11.5M vs $8.2M other side (needs $1M+ and more)",
+      "detail": "$13.6M vs $10.3M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": false,
-      "detail": "steady, last 15m 50% bull",
+      "ok": true,
+      "detail": "picking up bearish, last 15m 24% bull",
       "miss": "not accelerating"
      },
      {
@@ -2065,38 +2131,38 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, not accelerating",
-    "short": "Thin: no one-sided lean, not accelerating"
+    "verdict": "Thin \u2014 missing: no one-sided lean",
+    "short": "Thin: no one-sided lean"
    }
   },
   "NBIS": {
-   "bull_small": 7566180.0,
-   "bull_big": 7366299.0,
-   "bear_small": 9158458.0,
+   "bull_small": 8424389.0,
+   "bull_big": 8260084.0,
+   "bear_small": 10058318.0,
    "bear_big": 3423207.0,
-   "n": 322,
-   "n_bull_small": 136,
-   "n_bull_big": 11,
-   "n_bear_small": 164,
+   "n": 357,
+   "n_bull_small": 152,
+   "n_bull_big": 13,
+   "n_bear_small": 181,
    "n_bear_big": 11,
-   "skipped_multileg": 70245286.0,
-   "skipped_itm": 25855746.0,
-   "bull": 14932479.0,
-   "bear": 12581665.0,
-   "lean": 54.3,
-   "big_lean": 68.3,
-   "recent_bull": 262293.0,
-   "recent_bear": 521670.0,
-   "recent_lean": 33.5,
-   "early_lean": 54.9,
+   "skipped_multileg": 82381922.0,
+   "skipped_itm": 28579856.0,
+   "bull": 16684473.0,
+   "bear": 13481525.0,
+   "lean": 55.3,
+   "big_lean": 70.7,
+   "recent_bull": 0.0,
+   "recent_bear": 218295.0,
+   "recent_lean": 0.0,
+   "early_lean": 55.7,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 94.62,
-    "last": 87.0,
+    "last": 87.18,
     "low": 84.38,
     "high": 95.28,
-    "chg": -8.06
+    "chg": -7.86
    },
    "top": [
     {
@@ -2136,6 +2202,24 @@
      "bucket": "1m+"
     },
     {
+     "time": "15:27",
+     "ts": "3:27",
+     "contract": "1/21/28 $140C",
+     "exp": "1/21/28",
+     "strike": "140",
+     "cp": "CALL",
+     "size": 250,
+     "price": "26.20",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 655050,
+     "spot": "86.55",
+     "dte": 423,
+     "bucket": "1m+"
+    },
+    {
      "time": "12:46",
      "ts": "12:46",
      "contract": "2/19/27 $70P",
@@ -2170,63 +2254,63 @@
      "spot": "85.515",
      "dte": 52,
      "bucket": "1m+"
-    },
-    {
-     "time": "11:24",
-     "ts": "11:24",
-     "contract": "1/15/27 $90C",
-     "exp": "1/15/27",
-     "strike": "90",
-     "cp": "CALL",
-     "size": 300,
-     "price": "14.15",
-     "side": "Bid",
-     "sidecode": "B",
-     "sweep": false,
-     "dir": "bear",
-     "premium": 424500,
-     "spot": "85.4322",
-     "dte": 52,
-     "bucket": "1m+"
     }
    ],
    "repeat": "1/15/27 90C hit 2 times ($850K, all sellers); 6/17/27 150C hit 2 times ($535K, all buyers)",
    "buckets": {
     "wk": {
-     "bull": 1401954.0,
-     "bear": 1031126.0,
+     "bull": 1447854.0,
+     "bear": 1101326.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
-     "bull_small": 1401954.0,
-     "bear_small": 1031126.0,
-     "n_bull": 29,
-     "n_bear": 20,
-     "lean": 57.6,
+     "bull_small": 1447854.0,
+     "bear_small": 1101326.0,
+     "n_bull": 30,
+     "n_bear": 21,
+     "lean": 56.8,
      "top": []
     },
     "2w": {
-     "bull": 219620.0,
-     "bear": 540803.0,
+     "bull": 277020.0,
+     "bear": 662298.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
-     "bull_small": 219620.0,
-     "bear_small": 540803.0,
-     "n_bull": 4,
-     "n_bear": 10,
-     "lean": 28.9,
+     "bull_small": 277020.0,
+     "bear_small": 662298.0,
+     "n_bull": 6,
+     "n_bear": 11,
+     "lean": 29.5,
      "top": []
     },
     "1m": {
-     "bull": 1607286.0,
-     "bear": 1749164.0,
-     "bull_big": 435746.0,
+     "bull": 1947060.0,
+     "bear": 1874963.0,
+     "bull_big": 674481.0,
      "bear_big": 444125.0,
-     "bull_small": 1171540.0,
-     "bear_small": 1305039.0,
-     "n_bull": 23,
-     "n_bear": 21,
-     "lean": 47.9,
+     "bull_small": 1272579.0,
+     "bear_small": 1430838.0,
+     "n_bull": 27,
+     "n_bear": 23,
+     "lean": 50.9,
      "top": [
+      {
+       "time": "15:14",
+       "ts": "3:14",
+       "contract": "12/18 $98P",
+       "exp": "12/18",
+       "strike": "98",
+       "cp": "PUT",
+       "size": 133,
+       "price": "17.95",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 238735,
+       "spot": "87.32",
+       "dte": 24,
+       "bucket": "1m"
+      },
       {
        "time": "09:31",
        "ts": "9:31",
@@ -2262,37 +2346,19 @@
        "spot": "86.445",
        "dte": 24,
        "bucket": "1m"
-      },
-      {
-       "time": "12:23",
-       "ts": "12:23",
-       "contract": "12/18 $70P",
-       "exp": "12/18",
-       "strike": "70",
-       "cp": "PUT",
-       "size": 406,
-       "price": "5.30",
-       "side": "Ask",
-       "sidecode": "A",
-       "sweep": false,
-       "dir": "bear",
-       "premium": 215180,
-       "spot": "86.12",
-       "dte": 24,
-       "bucket": "1m"
       }
      ]
     },
     "1m+": {
-     "bull": 11703619.0,
-     "bear": 9260572.0,
-     "bull_big": 6930553.0,
+     "bull": 13012539.0,
+     "bear": 9842938.0,
+     "bull_big": 7585603.0,
      "bear_big": 2979082.0,
-     "bull_small": 4773066.0,
-     "bear_small": 6281490.0,
-     "n_bull": 91,
-     "n_bear": 124,
-     "lean": 55.8,
+     "bull_small": 5426936.0,
+     "bear_small": 6863856.0,
+     "n_bull": 102,
+     "n_bear": 137,
+     "lean": 56.9,
      "top": [
       {
        "time": "14:36",
@@ -2331,21 +2397,21 @@
        "bucket": "1m+"
       },
       {
-       "time": "12:46",
-       "ts": "12:46",
-       "contract": "2/19/27 $70P",
-       "exp": "2/19/27",
-       "strike": "70",
-       "cp": "PUT",
-       "size": 490,
-       "price": "11.60",
+       "time": "15:27",
+       "ts": "3:27",
+       "contract": "1/21/28 $140C",
+       "exp": "1/21/28",
+       "strike": "140",
+       "cp": "CALL",
+       "size": 250,
+       "price": "26.20",
        "side": "Ask",
        "sidecode": "A",
        "sweep": false,
-       "dir": "bear",
-       "premium": 568400,
-       "spot": "87.1124",
-       "dte": 87,
+       "dir": "bull",
+       "premium": 655050,
+       "spot": "86.55",
+       "dte": 423,
        "bucket": "1m+"
       }
      ]
@@ -2441,13 +2507,25 @@
      54.7
     ],
     [
-     "15:02",
+     "15:15",
      54.3
+    ],
+    [
+     "15:30",
+     55.1
+    ],
+    [
+     "15:45",
+     55.5
+    ],
+    [
+     "16:00",
+     55.3
     ]
    ],
-   "speed": "up_bear",
-   "speed_text": "Picking up bearish",
-   "recent_total": 783963.0,
+   "speed": "flip_bear",
+   "speed_text": "Flipping bearish",
+   "recent_total": 218295.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -2461,21 +2539,21 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "54% bullish",
+      "detail": "55% bullish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$7.4M vs $3.4M other side (needs $1M+ and more)",
+      "detail": "$8.3M vs $3.4M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "picking up bearish, last 15m 34% bull",
+      "detail": "flipping bearish, last 15m 0% bull",
       "miss": "not accelerating"
      },
      {
@@ -2492,33 +2570,33 @@
    }
   },
   "AMD": {
-   "bull_small": 79185375.0,
-   "bull_big": 118496256.0,
-   "bear_small": 85675118.0,
-   "bear_big": 77638830.0,
-   "n": 3311,
-   "n_bull_small": 1415,
-   "n_bull_big": 196,
-   "n_bear_small": 1539,
-   "n_bear_big": 161,
-   "skipped_multileg": 573394932.0,
-   "skipped_itm": 79225938.0,
-   "bull": 197681631.0,
-   "bear": 163313948.0,
-   "lean": 54.8,
-   "big_lean": 60.4,
-   "recent_bull": 4064209.0,
-   "recent_bear": 7600480.0,
-   "recent_lean": 34.8,
-   "early_lean": 55.4,
+   "bull_small": 84651206.0,
+   "bull_big": 126271119.0,
+   "bear_small": 93484330.0,
+   "bear_big": 92159803.0,
+   "n": 3596,
+   "n_bull_small": 1523,
+   "n_bull_big": 208,
+   "n_bear_small": 1685,
+   "n_bear_big": 180,
+   "skipped_multileg": 777993284.0,
+   "skipped_itm": 103842265.0,
+   "bull": 210922325.0,
+   "bear": 185644133.0,
+   "lean": 53.2,
+   "big_lean": 57.8,
+   "recent_bull": 1097039.0,
+   "recent_bear": 1516288.0,
+   "recent_lean": 42.0,
+   "early_lean": 53.3,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 425.62,
-    "last": 410.89,
+    "last": 412.89,
     "low": 396.03,
     "high": 428.14,
-    "chg": -3.46
+    "chg": -2.99
    },
    "top": [
     {
@@ -2558,6 +2636,24 @@
      "bucket": "1m+"
     },
     {
+     "time": "15:25",
+     "ts": "3:25",
+     "contract": "3/19/27 $300P",
+     "exp": "3/19/27",
+     "strike": "300",
+     "cp": "PUT",
+     "size": 1597,
+     "price": "22.07",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 3524144,
+     "spot": "411.53",
+     "dte": 115,
+     "bucket": "1m+"
+    },
+    {
      "time": "11:27",
      "ts": "11:27",
      "contract": "11/25 $402.5C",
@@ -2592,38 +2688,20 @@
      "spot": "403.5",
      "dte": 10,
      "bucket": "2w"
-    },
-    {
-     "time": "11:55",
-     "ts": "11:55",
-     "contract": "3/19/27 $450P",
-     "exp": "3/19/27",
-     "strike": "450",
-     "cp": "PUT",
-     "size": 316,
-     "price": "90.20",
-     "side": "Bid",
-     "sidecode": "B",
-     "sweep": false,
-     "dir": "bull",
-     "premium": 2850397,
-     "spot": "406.11",
-     "dte": 115,
-     "bucket": "1m+"
     }
    ],
-   "repeat": "12/18 350P hit 50 times ($15.9M, buyers and sellers); 2/19/27 470P hit 6 times ($10.1M, buyers and sellers)",
+   "repeat": "2/19/27 470P hit 17 times ($19.2M, buyers and sellers); 12/18 350P hit 50 times ($15.9M, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 39980688.0,
-     "bear": 23708529.0,
-     "bull_big": 18111483.0,
-     "bear_big": 4025813.0,
-     "bull_small": 21869205.0,
-     "bear_small": 19682716.0,
-     "n_bull": 427,
-     "n_bear": 361,
-     "lean": 62.8,
+     "bull": 41473620.0,
+     "bear": 25909577.0,
+     "bull_big": 18313453.0,
+     "bear_big": 4901313.0,
+     "bull_small": 23160167.0,
+     "bear_small": 21008264.0,
+     "n_bull": 451,
+     "n_bear": 385,
+     "lean": 61.5,
      "top": [
       {
        "time": "11:44",
@@ -2682,15 +2760,15 @@
      ]
     },
     "2w": {
-     "bull": 19243783.0,
-     "bear": 8277922.0,
-     "bull_big": 13919575.0,
+     "bull": 20293385.0,
+     "bear": 8953319.0,
+     "bull_big": 14447047.0,
      "bear_big": 2275099.0,
-     "bull_small": 5324208.0,
-     "bear_small": 6002823.0,
-     "n_bull": 125,
-     "n_bear": 133,
-     "lean": 69.9,
+     "bull_small": 5846338.0,
+     "bear_small": 6678220.0,
+     "n_bull": 140,
+     "n_bear": 147,
+     "lean": 69.4,
      "top": [
       {
        "time": "11:48",
@@ -2749,15 +2827,15 @@
      ]
     },
     "1m": {
-     "bull": 36721318.0,
-     "bear": 36454867.0,
-     "bull_big": 22048291.0,
-     "bear_big": 19853172.0,
-     "bull_small": 14673027.0,
-     "bear_small": 16601695.0,
-     "n_bull": 330,
-     "n_bear": 331,
-     "lean": 50.2,
+     "bull": 38200796.0,
+     "bear": 37725074.0,
+     "bull_big": 22597171.0,
+     "bear_big": 20177889.0,
+     "bull_small": 15603625.0,
+     "bear_small": 17547185.0,
+     "n_bull": 353,
+     "n_bear": 353,
+     "lean": 50.3,
      "top": [
       {
        "time": "11:04",
@@ -2816,15 +2894,15 @@
      ]
     },
     "1m+": {
-     "bull": 101735842.0,
-     "bear": 94872630.0,
-     "bull_big": 64416907.0,
-     "bear_big": 51484746.0,
-     "bull_small": 37318935.0,
-     "bear_small": 43387884.0,
-     "n_bull": 729,
-     "n_bear": 875,
-     "lean": 51.7,
+     "bull": 110954524.0,
+     "bear": 113056163.0,
+     "bull_big": 70913448.0,
+     "bear_big": 64805502.0,
+     "bull_small": 40041076.0,
+     "bear_small": 48250661.0,
+     "n_bull": 787,
+     "n_bear": 980,
+     "lean": 49.5,
      "top": [
       {
        "time": "12:36",
@@ -2845,6 +2923,24 @@
        "bucket": "1m+"
       },
       {
+       "time": "15:25",
+       "ts": "3:25",
+       "contract": "3/19/27 $300P",
+       "exp": "3/19/27",
+       "strike": "300",
+       "cp": "PUT",
+       "size": 1597,
+       "price": "22.07",
+       "side": "Ask",
+       "sidecode": "A",
+       "sweep": false,
+       "dir": "bear",
+       "premium": 3524144,
+       "spot": "411.53",
+       "dte": 115,
+       "bucket": "1m+"
+      },
+      {
        "time": "11:55",
        "ts": "11:55",
        "contract": "3/19/27 $450P",
@@ -2860,24 +2956,6 @@
        "premium": 2850397,
        "spot": "406.11",
        "dte": 115,
-       "bucket": "1m+"
-      },
-      {
-       "time": "12:40",
-       "ts": "12:40",
-       "contract": "2/19/27 $470P",
-       "exp": "2/19/27",
-       "strike": "470",
-       "cp": "PUT",
-       "size": 277,
-       "price": "92.30",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": true,
-       "dir": "bull",
-       "premium": 2556725,
-       "spot": "413.5075",
-       "dte": 87,
        "bucket": "1m+"
       }
      ]
@@ -2973,39 +3051,51 @@
      55.0
     ],
     [
-     "15:02",
-     54.8
+     "15:15",
+     54.5
+    ],
+    [
+     "15:30",
+     53.2
+    ],
+    [
+     "15:45",
+     53.1
+    ],
+    [
+     "16:00",
+     53.2
     ]
    ],
-   "speed": "flip_bear",
-   "speed_text": "Flipping bearish",
-   "recent_total": 11664689.0,
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 2613327.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 1524.0,
-    "n_bull_big": 99.2,
-    "n_bear_small": 1512.1,
-    "n_bear_big": 102.8,
-    "bull_small": 79368339.1,
-    "bull_big": 51141632.3,
-    "bear_small": 78447003.2,
-    "bear_big": 55200332.8,
-    "ratio_small": 1.02,
+    "n_bull_small": 1708.5,
+    "n_bull_big": 116.2,
+    "n_bear_small": 1684.5,
+    "n_bear_big": 120.0,
+    "bull_small": 89392567.6,
+    "bull_big": 59372975.7,
+    "bear_small": 87570520.5,
+    "bear_big": 64245689.1,
+    "ratio_small": 1.03,
     "ratio_big": 1.01
    },
    "vs": {
-    "n_bull_small": 0.93,
-    "n_bull_big": 1.98,
-    "n_bear_small": 1.02,
-    "n_bear_big": 1.57
+    "n_bull_small": 0.89,
+    "n_bull_big": 1.79,
+    "n_bear_small": 1.0,
+    "n_bear_big": 1.5
    },
    "vs_read": {
     "code": "normal",
-    "text": "About normal (bulls 1.0x, bears 1.1x)",
-    "x": 1.05,
+    "text": "About normal (bulls 0.9x, bears 1.0x)",
+    "x": 1.03,
     "short": "About normal"
    },
    "ready": {
@@ -3015,28 +3105,28 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "55% bullish",
+      "detail": "53% bullish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$118.5M vs $77.6M other side (needs $1M+ and more)",
+      "detail": "$126.3M vs $92.2M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "flipping bearish, last 15m 35% bull",
+      "detail": "picking up bearish, last 15m 42% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "1611 bullish orders vs ~1623 normal (1.0x)",
+      "detail": "1731 bullish orders vs ~1825 normal (0.9x)",
       "miss": "count not above normal"
      }
     ],
@@ -3046,33 +3136,33 @@
    }
   },
   "TSLA": {
-   "bull_small": 44433339.0,
-   "bull_big": 30451144.0,
-   "bear_small": 48156040.0,
-   "bear_big": 28730451.0,
-   "n": 1735,
-   "n_bull_small": 755,
-   "n_bull_big": 77,
-   "n_bear_small": 827,
-   "n_bear_big": 76,
-   "skipped_multileg": 152504274.0,
-   "skipped_itm": 18826069.0,
-   "bull": 74884483.0,
-   "bear": 76886491.0,
-   "lean": 49.3,
-   "big_lean": 51.5,
-   "recent_bull": 739093.0,
-   "recent_bear": 2548339.0,
-   "recent_lean": 22.5,
+   "bull_small": 51720204.0,
+   "bull_big": 36738453.0,
+   "bear_small": 55708792.0,
+   "bear_big": 32963395.0,
+   "n": 1998,
+   "n_bull_small": 876,
+   "n_bull_big": 89,
+   "n_bear_small": 947,
+   "n_bear_big": 86,
+   "skipped_multileg": 164802698.0,
+   "skipped_itm": 22246593.0,
+   "bull": 88458657.0,
+   "bear": 88672187.0,
+   "lean": 49.9,
+   "big_lean": 52.7,
+   "recent_bull": 1610302.0,
+   "recent_bear": 1593489.0,
+   "recent_lean": 50.3,
    "early_lean": 49.9,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 383.45,
-    "last": 380.9,
+    "last": 385.01,
     "low": 375.62,
     "high": 389.85,
-    "chg": -0.67
+    "chg": 0.41
    },
    "top": [
     {
@@ -3112,6 +3202,24 @@
      "bucket": "1m+"
     },
     {
+     "time": "15:11",
+     "ts": "3:11",
+     "contract": "6/17/27 $540C",
+     "exp": "6/17/27",
+     "strike": "540",
+     "cp": "CALL",
+     "size": 989,
+     "price": "13.55",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 1340020,
+     "spot": "381.9375",
+     "dte": 205,
+     "bucket": "1m+"
+    },
+    {
      "time": "11:09",
      "ts": "11:09",
      "contract": "6/17/27 $420P",
@@ -3146,38 +3254,20 @@
      "spot": "379.07",
      "dte": 205,
      "bucket": "1m+"
-    },
-    {
-     "time": "11:09",
-     "ts": "11:09",
-     "contract": "6/17/27 $420P",
-     "exp": "6/17/27",
-     "strike": "420",
-     "cp": "PUT",
-     "size": 148,
-     "price": "73.45",
-     "side": "Ask",
-     "sidecode": "A",
-     "sweep": false,
-     "dir": "bear",
-     "premium": 1087060,
-     "spot": "379",
-     "dte": 205,
-     "bucket": "1m+"
     }
    ],
-   "repeat": "6/17/27 420P hit 4 times ($4.3M, all buyers); 11/25 380P hit 11 times ($3.6M, buyers and sellers)",
+   "repeat": "6/17/27 420P hit 4 times ($4.3M, all buyers); 11/25 380P hit 12 times ($3.9M, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 20043711.0,
-     "bear": 15749212.0,
-     "bull_big": 6291946.0,
-     "bear_big": 3094312.0,
-     "bull_small": 13751765.0,
-     "bear_small": 12654900.0,
-     "n_bull": 243,
-     "n_bear": 234,
-     "lean": 56.0,
+     "bull": 22327470.0,
+     "bear": 17377720.0,
+     "bull_big": 6799631.0,
+     "bear_big": 3413932.0,
+     "bull_small": 15527839.0,
+     "bear_small": 13963788.0,
+     "n_bull": 275,
+     "n_bear": 258,
+     "lean": 56.2,
      "top": [
       {
        "time": "14:17",
@@ -3236,15 +3326,15 @@
      ]
     },
     "2w": {
-     "bull": 4316755.0,
-     "bear": 6120441.0,
-     "bull_big": 891916.0,
+     "bull": 5223805.0,
+     "bear": 7373057.0,
+     "bull_big": 1219696.0,
      "bear_big": 1804104.0,
-     "bull_small": 3424839.0,
-     "bear_small": 4316337.0,
-     "n_bull": 72,
-     "n_bear": 81,
-     "lean": 41.4,
+     "bull_small": 4004109.0,
+     "bear_small": 5568953.0,
+     "n_bull": 86,
+     "n_bear": 94,
+     "lean": 41.5,
      "top": [
       {
        "time": "09:31",
@@ -3265,6 +3355,24 @@
        "bucket": "2w"
       },
       {
+       "time": "15:30",
+       "ts": "3:30",
+       "contract": "11/30 $370P",
+       "exp": "11/30",
+       "strike": "370",
+       "cp": "PUT",
+       "size": 712,
+       "price": "4.60",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 327780,
+       "spot": "382.49",
+       "dte": 6,
+       "bucket": "2w"
+      },
+      {
        "time": "09:31",
        "ts": "9:31",
        "contract": "12/04 $390C",
@@ -3281,38 +3389,38 @@
        "spot": "382.3",
        "dte": 10,
        "bucket": "2w"
-      },
-      {
-       "time": "10:29",
-       "ts": "10:29",
-       "contract": "12/04 $365P",
-       "exp": "12/04",
-       "strike": "365",
-       "cp": "PUT",
-       "size": 307,
-       "price": "9.60",
-       "side": "Ask",
-       "sidecode": "A",
-       "sweep": false,
-       "dir": "bear",
-       "premium": 294844,
-       "spot": "377.0454",
-       "dte": 10,
-       "bucket": "2w"
       }
      ]
     },
     "1m": {
-     "bull": 13140620.0,
-     "bear": 18452118.0,
-     "bull_big": 4678230.0,
-     "bear_big": 8752809.0,
-     "bull_small": 8462390.0,
-     "bear_small": 9699309.0,
-     "n_bull": 170,
-     "n_bear": 185,
-     "lean": 41.6,
+     "bull": 16330934.0,
+     "bear": 20892687.0,
+     "bull_big": 6254128.0,
+     "bear_big": 10274483.0,
+     "bull_small": 10076806.0,
+     "bear_small": 10618204.0,
+     "n_bull": 202,
+     "n_bear": 206,
+     "lean": 43.9,
      "top": [
+      {
+       "time": "15:58",
+       "ts": "3:58",
+       "contract": "12/18 $440C",
+       "exp": "12/18",
+       "strike": "440",
+       "cp": "CALL",
+       "size": 2586,
+       "price": "3.95",
+       "side": "Ask",
+       "sidecode": "A",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 1021044,
+       "spot": "384.65",
+       "dte": 24,
+       "bucket": "1m"
+      },
       {
        "time": "11:59",
        "ts": "11:59",
@@ -3332,53 +3440,35 @@
        "bucket": "1m"
       },
       {
-       "time": "10:29",
-       "ts": "10:29",
-       "contract": "12/18 $400C",
+       "time": "15:54",
+       "ts": "3:54",
+       "contract": "12/18 $340C",
        "exp": "12/18",
-       "strike": "400",
+       "strike": "340",
        "cp": "CALL",
-       "size": 501,
-       "price": "11.07",
+       "size": 149,
+       "price": "53.86",
        "side": "Bid",
        "sidecode": "B",
        "sweep": false,
        "dir": "bear",
-       "premium": 554691,
-       "spot": "376.71",
-       "dte": 24,
-       "bucket": "1m"
-      },
-      {
-       "time": "09:44",
-       "ts": "9:44",
-       "contract": "12/18 $375C",
-       "exp": "12/18",
-       "strike": "375",
-       "cp": "CALL",
-       "size": 200,
-       "price": "26.85",
-       "side": "Ask",
-       "sidecode": "A",
-       "sweep": false,
-       "dir": "bull",
-       "premium": 537000,
-       "spot": "385.7399",
+       "premium": 802514,
+       "spot": "386.03",
        "dte": 24,
        "bucket": "1m"
       }
      ]
     },
     "1m+": {
-     "bull": 37383397.0,
-     "bear": 36564720.0,
-     "bull_big": 18589052.0,
-     "bear_big": 15079226.0,
-     "bull_small": 18794345.0,
-     "bear_small": 21485494.0,
-     "n_bull": 347,
-     "n_bear": 403,
-     "lean": 50.6,
+     "bull": 44576448.0,
+     "bear": 43028723.0,
+     "bull_big": 22464998.0,
+     "bear_big": 17470876.0,
+     "bull_small": 22111450.0,
+     "bear_small": 25557847.0,
+     "n_bull": 402,
+     "n_bear": 475,
+     "lean": 50.9,
      "top": [
       {
        "time": "12:15",
@@ -3417,20 +3507,20 @@
        "bucket": "1m+"
       },
       {
-       "time": "11:09",
-       "ts": "11:09",
-       "contract": "6/17/27 $420P",
+       "time": "15:11",
+       "ts": "3:11",
+       "contract": "6/17/27 $540C",
        "exp": "6/17/27",
-       "strike": "420",
-       "cp": "PUT",
-       "size": 160,
-       "price": "73.20",
+       "strike": "540",
+       "cp": "CALL",
+       "size": 989,
+       "price": "13.55",
        "side": "Ask",
        "sidecode": "A",
        "sweep": false,
-       "dir": "bear",
-       "premium": 1171200,
-       "spot": "379.215",
+       "dir": "bull",
+       "premium": 1340020,
+       "spot": "381.9375",
        "dte": 205,
        "bucket": "1m+"
       }
@@ -3527,39 +3617,51 @@
      49.3
     ],
     [
-     "15:02",
+     "15:15",
+     49.9
+    ],
+    [
+     "15:30",
      49.3
+    ],
+    [
+     "15:45",
+     49.4
+    ],
+    [
+     "16:00",
+     49.9
     ]
    ],
-   "speed": "up_bear",
-   "speed_text": "Picking up bearish",
-   "recent_total": 3287432.0,
+   "speed": "steady",
+   "speed_text": "Steady",
+   "recent_total": 3203791.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 833.7,
-    "n_bull_big": 54.8,
-    "n_bear_small": 803.0,
-    "n_bear_big": 54.0,
-    "bull_small": 46737669.0,
-    "bull_big": 26936123.6,
-    "bear_small": 45672255.5,
-    "bear_big": 24584179.6,
-    "ratio_small": 1.03,
-    "ratio_big": 1.02
+    "n_bull_small": 974.5,
+    "n_bull_big": 66.5,
+    "n_bear_small": 929.6,
+    "n_bear_big": 67.7,
+    "bull_small": 54870373.7,
+    "bull_big": 33154194.4,
+    "bear_small": 52883310.3,
+    "bear_big": 31877943.8,
+    "ratio_small": 1.05,
+    "ratio_big": 0.96
    },
    "vs": {
-    "n_bull_small": 0.91,
-    "n_bull_big": 1.41,
-    "n_bear_small": 1.03,
-    "n_bear_big": 1.41
+    "n_bull_small": 0.9,
+    "n_bull_big": 1.34,
+    "n_bear_small": 1.02,
+    "n_bear_big": 1.27
    },
    "vs_read": {
     "code": "normal",
-    "text": "About normal (bulls 0.9x, bears 1.1x)",
-    "x": 1.05,
+    "text": "About normal (bulls 0.9x, bears 1.0x)",
+    "x": 1.04,
     "short": "About normal"
    },
    "ready": {
@@ -3569,64 +3671,64 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "51% bearish",
+      "detail": "50% bearish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bearish side",
       "ok": false,
-      "detail": "$28.7M vs $30.5M other side (needs $1M+ and more)",
+      "detail": "$33.0M vs $36.7M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": true,
-      "detail": "picking up bearish, last 15m 22% bull",
+      "ok": false,
+      "detail": "steady, last 15m 50% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "903 bearish orders vs ~857 normal (1.1x)",
+      "detail": "1033 bearish orders vs ~997 normal (1.0x)",
       "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, other side has more $200K+ money, count not above normal",
-    "short": "Thin: no one-sided lean, other side has more $200K+ money, count not above normal"
+    "verdict": "Thin \u2014 missing: no one-sided lean, other side has more $200K+ money, not accelerating, count not above normal",
+    "short": "Thin: no one-sided lean, other side has more $200K+ money, not accelerating, count not above normal"
    }
   },
   "SHOP": {
-   "bull_small": 124200.0,
+   "bull_small": 174800.0,
    "bull_big": 288460.0,
-   "bear_small": 219180.0,
+   "bear_small": 340145.0,
    "bear_big": 208306.0,
-   "n": 12,
-   "n_bull_small": 4,
+   "n": 17,
+   "n_bull_small": 6,
    "n_bull_big": 1,
-   "n_bear_small": 6,
+   "n_bear_small": 9,
    "n_bear_big": 1,
-   "skipped_multileg": 2958166.0,
+   "skipped_multileg": 4183483.0,
    "skipped_itm": 5088300.0,
-   "bull": 412660.0,
-   "bear": 427486.0,
-   "lean": 49.1,
+   "bull": 463260.0,
+   "bear": 548451.0,
+   "lean": 45.8,
    "big_lean": 58.1,
-   "recent_bull": 288460.0,
-   "recent_bear": 28320.0,
-   "recent_lean": 91.1,
-   "early_lean": 23.7,
+   "recent_bull": 0.0,
+   "recent_bear": 0.0,
+   "recent_lean": null,
+   "early_lean": 45.8,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 132.67,
-    "last": 131.28,
+    "last": 132.03,
     "low": 131.26,
     "high": 137.26,
-    "chg": -1.04
+    "chg": -0.48
    },
    "top": [
     {
@@ -3705,15 +3807,15 @@
      "top": []
     },
     "1m+": {
-     "bull": 412660.0,
-     "bear": 380236.0,
+     "bull": 463260.0,
+     "bear": 501201.0,
      "bull_big": 288460.0,
      "bear_big": 208306.0,
-     "bull_small": 124200.0,
-     "bear_small": 171930.0,
-     "n_bull": 5,
-     "n_bear": 6,
-     "lean": 52.0,
+     "bull_small": 174800.0,
+     "bear_small": 292895.0,
+     "n_bull": 7,
+     "n_bear": 9,
+     "lean": 48.0,
      "top": [
       {
        "time": "14:50",
@@ -3844,13 +3946,25 @@
      49.1
     ],
     [
-     "15:02",
+     "15:15",
      49.1
+    ],
+    [
+     "15:30",
+     44.8
+    ],
+    [
+     "15:45",
+     47.7
+    ],
+    [
+     "16:00",
+     45.8
     ]
    ],
-   "speed": "flip_bull",
-   "speed_text": "Flipping bullish",
-   "recent_total": 316780.0,
+   "speed": "quiet",
+   "speed_text": "Quiet last 15m",
+   "recent_total": 0.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -3864,7 +3978,7 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "51% bearish",
+      "detail": "54% bearish",
       "miss": "no one-sided lean"
      },
      {
@@ -3878,7 +3992,7 @@
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "flipping bullish, last 15m 91% bull",
+      "detail": "quiet last 15 min",
       "miss": "not accelerating"
      },
      {
@@ -3895,33 +4009,33 @@
    }
   },
   "CRWD": {
-   "bull_small": 12235356.0,
-   "bull_big": 14505809.0,
-   "bear_small": 14583991.0,
+   "bull_small": 13306701.0,
+   "bull_big": 14925534.0,
+   "bear_small": 15697311.0,
    "bear_big": 4501362.0,
-   "n": 490,
-   "n_bull_small": 194,
-   "n_bull_big": 25,
-   "n_bear_small": 258,
+   "n": 530,
+   "n_bull_small": 214,
+   "n_bull_big": 26,
+   "n_bear_small": 277,
    "n_bear_big": 13,
-   "skipped_multileg": 11325295.0,
-   "skipped_itm": 2737408.0,
-   "bull": 26741165.0,
-   "bear": 19085353.0,
-   "lean": 58.4,
-   "big_lean": 76.3,
-   "recent_bull": 411145.0,
-   "recent_bear": 1132586.0,
-   "recent_lean": 26.6,
-   "early_lean": 59.5,
+   "skipped_multileg": 13064018.0,
+   "skipped_itm": 3440087.0,
+   "bull": 28232235.0,
+   "bear": 20198673.0,
+   "lean": 58.3,
+   "big_lean": 76.8,
+   "recent_bull": 112455.0,
+   "recent_bear": 29835.0,
+   "recent_lean": 79.0,
+   "early_lean": 58.2,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 212.19,
-    "last": 209.13,
+    "last": 211.17,
     "low": 208.14,
     "high": 215.2,
-    "chg": -1.44
+    "chg": -0.48
    },
    "top": [
     {
@@ -4018,15 +4132,15 @@
    "repeat": "1/21/28 270C hit 11 times ($9.9M, all buyers); 11/27 202.5C hit 2 times ($1.6M, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 2487490.0,
-     "bear": 2058612.0,
+     "bull": 2589890.0,
+     "bear": 2297112.0,
      "bull_big": 696800.0,
      "bear_big": 863200.0,
-     "bull_small": 1790690.0,
-     "bear_small": 1195412.0,
-     "n_bull": 21,
-     "n_bear": 19,
-     "lean": 54.7,
+     "bull_small": 1893090.0,
+     "bear_small": 1433912.0,
+     "n_bull": 23,
+     "n_bear": 22,
+     "lean": 53.0,
      "top": [
       {
        "time": "12:24",
@@ -4067,27 +4181,27 @@
      ]
     },
     "2w": {
-     "bull": 243900.0,
-     "bear": 1089880.0,
+     "bull": 350250.0,
+     "bear": 1289755.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
-     "bull_small": 243900.0,
-     "bear_small": 1089880.0,
-     "n_bull": 4,
-     "n_bear": 18,
-     "lean": 18.3,
+     "bull_small": 350250.0,
+     "bear_small": 1289755.0,
+     "n_bull": 7,
+     "n_bear": 22,
+     "lean": 21.4,
      "top": []
     },
     "1m": {
-     "bull": 1395818.0,
-     "bear": 1006525.0,
+     "bull": 1577438.0,
+     "bear": 1117735.0,
      "bull_big": 286440.0,
      "bear_big": 0.0,
-     "bull_small": 1109378.0,
-     "bear_small": 1006525.0,
-     "n_bull": 20,
-     "n_bear": 27,
-     "lean": 58.1,
+     "bull_small": 1290998.0,
+     "bear_small": 1117735.0,
+     "n_bull": 22,
+     "n_bear": 31,
+     "lean": 58.5,
      "top": [
       {
        "time": "10:28",
@@ -4110,15 +4224,15 @@
      ]
     },
     "1m+": {
-     "bull": 22613957.0,
-     "bear": 14930336.0,
-     "bull_big": 13522569.0,
+     "bull": 23714657.0,
+     "bear": 15494071.0,
+     "bull_big": 13942294.0,
      "bear_big": 3638162.0,
-     "bull_small": 9091388.0,
-     "bear_small": 11292174.0,
-     "n_bull": 174,
-     "n_bear": 207,
-     "lean": 60.2,
+     "bull_small": 9772363.0,
+     "bear_small": 11855909.0,
+     "n_bull": 188,
+     "n_bear": 215,
+     "lean": 60.5,
      "top": [
       {
        "time": "11:56",
@@ -4267,13 +4381,25 @@
      58.9
     ],
     [
-     "15:02",
+     "15:15",
      58.4
+    ],
+    [
+     "15:30",
+     58.4
+    ],
+    [
+     "15:45",
+     58.2
+    ],
+    [
+     "16:00",
+     58.3
     ]
    ],
-   "speed": "flip_bear",
-   "speed_text": "Flipping bearish",
-   "recent_total": 1543731.0,
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 142290.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -4294,14 +4420,14 @@
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$14.5M vs $4.5M other side (needs $1M+ and more)",
+      "detail": "$14.9M vs $4.5M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": false,
-      "detail": "flipping bearish, last 15m 27% bull",
+      "ok": true,
+      "detail": "picking up bullish, last 15m 79% bull",
       "miss": "not accelerating"
      },
      {
@@ -4313,38 +4439,38 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, not accelerating",
-    "short": "Thin: no one-sided lean, not accelerating"
+    "verdict": "Thin \u2014 missing: no one-sided lean",
+    "short": "Thin: no one-sided lean"
    }
   },
   "PLTR": {
-   "bull_small": 8483426.0,
+   "bull_small": 8746211.0,
    "bull_big": 9328384.0,
-   "bear_small": 4679601.0,
-   "bear_big": 4042136.0,
-   "n": 249,
-   "n_bull_small": 145,
+   "bear_small": 5410916.0,
+   "bear_big": 4352386.0,
+   "n": 267,
+   "n_bull_small": 151,
    "n_bull_big": 20,
-   "n_bear_small": 77,
-   "n_bear_big": 7,
-   "skipped_multileg": 27823425.0,
-   "skipped_itm": 8917081.0,
-   "bull": 17811810.0,
-   "bear": 8721737.0,
-   "lean": 67.1,
-   "big_lean": 69.8,
-   "recent_bull": 112656.0,
-   "recent_bear": 185939.0,
-   "recent_lean": 37.7,
-   "early_lean": 67.5,
-   "call": "Big money leaning bullish",
-   "call_dir": "bull",
+   "n_bear_small": 88,
+   "n_bear_big": 8,
+   "skipped_multileg": 39573569.0,
+   "skipped_itm": 9212314.0,
+   "bull": 18074595.0,
+   "bear": 9763302.0,
+   "lean": 64.9,
+   "big_lean": 68.2,
+   "recent_bull": 0.0,
+   "recent_bear": 0.0,
+   "recent_lean": null,
+   "early_lean": 64.9,
+   "call": "Nothing significant",
+   "call_dir": null,
    "px": {
     "first": 159.26,
-    "last": 161.12,
+    "last": 161.32,
     "low": 159.1,
     "high": 163.0,
-    "chg": 1.17
+    "chg": 1.29
    },
    "top": [
     {
@@ -4441,15 +4567,15 @@
    "repeat": "12/17/27 200C hit 11 times ($6.0M, all buyers); 1/15/27 185C hit 2 times ($623K, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 1264028.0,
-     "bear": 1596022.0,
+     "bull": 1327778.0,
+     "bear": 1770732.0,
      "bull_big": 0.0,
      "bear_big": 497829.0,
-     "bull_small": 1264028.0,
-     "bear_small": 1098193.0,
-     "n_bull": 23,
-     "n_bear": 24,
-     "lean": 44.2,
+     "bull_small": 1327778.0,
+     "bear_small": 1272903.0,
+     "n_bull": 24,
+     "n_bear": 27,
+     "lean": 42.9,
      "top": [
       {
        "time": "11:42",
@@ -4472,15 +4598,15 @@
      ]
     },
     "2w": {
-     "bull": 528448.0,
+     "bull": 559198.0,
      "bear": 252791.0,
      "bull_big": 202500.0,
      "bear_big": 0.0,
-     "bull_small": 325948.0,
+     "bull_small": 356698.0,
      "bear_small": 252791.0,
-     "n_bull": 9,
+     "n_bull": 10,
      "n_bear": 5,
-     "lean": 67.6,
+     "lean": 68.9,
      "top": [
       {
        "time": "09:30",
@@ -4504,14 +4630,14 @@
     },
     "1m": {
      "bull": 1024188.0,
-     "bear": 1001360.0,
+     "bear": 1116360.0,
      "bull_big": 0.0,
      "bear_big": 497750.0,
      "bull_small": 1024188.0,
-     "bear_small": 503610.0,
+     "bear_small": 618610.0,
      "n_bull": 15,
-     "n_bear": 7,
-     "lean": 50.6,
+     "n_bear": 8,
+     "lean": 47.8,
      "top": [
       {
        "time": "10:47",
@@ -4552,15 +4678,15 @@
      ]
     },
     "1m+": {
-     "bull": 14995146.0,
-     "bear": 5871564.0,
+     "bull": 15163431.0,
+     "bear": 6623419.0,
      "bull_big": 9125884.0,
-     "bear_big": 3046557.0,
-     "bull_small": 5869262.0,
-     "bear_small": 2825007.0,
-     "n_bull": 118,
-     "n_bear": 48,
-     "lean": 71.9,
+     "bear_big": 3356807.0,
+     "bull_small": 6037547.0,
+     "bear_small": 3266612.0,
+     "n_bull": 122,
+     "n_bear": 56,
+     "lean": 69.6,
      "top": [
       {
        "time": "11:26",
@@ -4709,13 +4835,25 @@
      67.1
     ],
     [
-     "15:02",
-     67.1
+     "15:15",
+     66.6
+    ],
+    [
+     "15:30",
+     66.0
+    ],
+    [
+     "15:45",
+     64.9
+    ],
+    [
+     "16:00",
+     64.9
     ]
    ],
-   "speed": "flip_bear",
-   "speed_text": "Flipping bearish",
-   "recent_total": 298595.0,
+   "speed": "quiet",
+   "speed_text": "Quiet last 15m",
+   "recent_total": 0.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -4728,22 +4866,22 @@
      {
       "key": "lean",
       "label": "One-sided lean (65%+)",
-      "ok": true,
-      "detail": "67% bullish",
+      "ok": false,
+      "detail": "65% bullish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$9.3M vs $4.0M other side (needs $1M+ and more)",
+      "detail": "$9.3M vs $4.4M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "flipping bearish, last 15m 38% bull",
+      "detail": "quiet last 15 min",
       "miss": "not accelerating"
      },
      {
@@ -4755,38 +4893,38 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: not accelerating",
-    "short": "Thin: not accelerating"
+    "verdict": "Thin \u2014 missing: no one-sided lean, not accelerating",
+    "short": "Thin: no one-sided lean, not accelerating"
    }
   },
   "AVGO": {
-   "bull_small": 16951399.0,
-   "bull_big": 26191204.0,
-   "bear_small": 19200327.0,
-   "bear_big": 10653379.0,
-   "n": 718,
-   "n_bull_small": 311,
-   "n_bull_big": 40,
-   "n_bear_small": 342,
-   "n_bear_big": 25,
-   "skipped_multileg": 126899859.0,
-   "skipped_itm": 21057904.0,
-   "bull": 43142603.0,
-   "bear": 29853706.0,
-   "lean": 59.1,
-   "big_lean": 71.1,
-   "recent_bull": 1236917.0,
-   "recent_bear": 940020.0,
-   "recent_lean": 56.8,
-   "early_lean": 59.2,
+   "bull_small": 19092751.0,
+   "bull_big": 31123325.0,
+   "bear_small": 21952216.0,
+   "bear_big": 13299229.0,
+   "n": 822,
+   "n_bull_small": 356,
+   "n_bull_big": 47,
+   "n_bear_small": 392,
+   "n_bear_big": 27,
+   "skipped_multileg": 141376822.0,
+   "skipped_itm": 23223384.0,
+   "bull": 50216076.0,
+   "bear": 35251445.0,
+   "lean": 58.8,
+   "big_lean": 70.1,
+   "recent_bull": 117575.0,
+   "recent_bear": 2939673.0,
+   "recent_lean": 3.8,
+   "early_lean": 60.8,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 300.64,
-    "last": 301.7,
+    "last": 300.69,
     "low": 297.93,
     "high": 308.56,
-    "chg": 0.35
+    "chg": 0.02
    },
    "top": [
     {
@@ -4805,6 +4943,24 @@
      "premium": 5452465,
      "spot": "302.55",
      "dte": 205,
+     "bucket": "1m+"
+    },
+    {
+     "time": "15:55",
+     "ts": "3:55",
+     "contract": "1/21/28 $370C",
+     "exp": "1/21/28",
+     "strike": "370",
+     "cp": "CALL",
+     "size": 426,
+     "price": "46.00",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 1959780,
+     "spot": "300.28",
+     "dte": 423,
      "bucket": "1m+"
     },
     {
@@ -4844,54 +5000,36 @@
      "bucket": "2w"
     },
     {
-     "time": "14:04",
-     "ts": "2:04",
-     "contract": "12/04 $285C",
-     "exp": "12/04",
-     "strike": "285",
-     "cp": "CALL",
-     "size": 431,
-     "price": "26.44",
-     "side": "Ask",
-     "sidecode": "A",
-     "sweep": false,
-     "dir": "bull",
-     "premium": 1139687,
-     "spot": "303.68",
-     "dte": 10,
-     "bucket": "2w"
-    },
-    {
-     "time": "13:33",
-     "ts": "1:33",
-     "contract": "9/17/27 $390C",
-     "exp": "9/17/27",
-     "strike": "390",
-     "cp": "CALL",
-     "size": 345,
-     "price": "31.33",
+     "time": "15:04",
+     "ts": "3:04",
+     "contract": "12/18 $310P",
+     "exp": "12/18",
+     "strike": "310",
+     "cp": "PUT",
+     "size": 450,
+     "price": "27.50",
      "side": "Bid",
      "sidecode": "B",
      "sweep": false,
-     "dir": "bear",
-     "premium": 1080750,
-     "spot": "304.06",
-     "dte": 297,
-     "bucket": "1m+"
+     "dir": "bull",
+     "premium": 1237500,
+     "spot": "301.52",
+     "dte": 24,
+     "bucket": "1m"
     }
    ],
-   "repeat": "11/25 302.5P hit 7 times ($3.8M, buyers and sellers); 12/04 285C hit 3 times ($3.4M, all buyers)",
+   "repeat": "11/25 302.5P hit 8 times ($4.0M, buyers and sellers); 12/04 285C hit 3 times ($3.4M, all buyers)",
    "buckets": {
     "wk": {
-     "bull": 6765473.0,
-     "bear": 5507085.0,
-     "bull_big": 4501390.0,
+     "bull": 7366364.0,
+     "bear": 5802085.0,
+     "bull_big": 4751496.0,
      "bear_big": 3495449.0,
-     "bull_small": 2264083.0,
-     "bear_small": 2011636.0,
-     "n_bull": 48,
-     "n_bear": 48,
-     "lean": 55.1,
+     "bull_small": 2614868.0,
+     "bear_small": 2306636.0,
+     "n_bull": 57,
+     "n_bear": 53,
+     "lean": 55.9,
      "top": [
       {
        "time": "09:51",
@@ -4950,15 +5088,15 @@
      ]
     },
     "2w": {
-     "bull": 4406050.0,
-     "bear": 709650.0,
+     "bull": 4481450.0,
+     "bear": 1131159.0,
      "bull_big": 3824987.0,
      "bear_big": 0.0,
-     "bull_small": 581063.0,
-     "bear_small": 709650.0,
-     "n_bull": 18,
-     "n_bear": 14,
-     "lean": 86.1,
+     "bull_small": 656463.0,
+     "bear_small": 1131159.0,
+     "n_bull": 20,
+     "n_bear": 23,
+     "lean": 79.8,
      "top": [
       {
        "time": "14:15",
@@ -5017,16 +5155,34 @@
      ]
     },
     "1m": {
-     "bull": 6787824.0,
-     "bear": 4774121.0,
-     "bull_big": 3514454.0,
+     "bull": 9215047.0,
+     "bear": 5494689.0,
+     "bull_big": 5463772.0,
      "bear_big": 1372710.0,
-     "bull_small": 3273370.0,
-     "bear_small": 3401411.0,
-     "n_bull": 70,
-     "n_bear": 65,
-     "lean": 58.7,
+     "bull_small": 3751275.0,
+     "bear_small": 4121979.0,
+     "n_bull": 84,
+     "n_bear": 80,
+     "lean": 62.6,
      "top": [
+      {
+       "time": "15:04",
+       "ts": "3:04",
+       "contract": "12/18 $310P",
+       "exp": "12/18",
+       "strike": "310",
+       "cp": "PUT",
+       "size": 450,
+       "price": "27.50",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 1237500,
+       "spot": "301.52",
+       "dte": 24,
+       "bucket": "1m"
+      },
       {
        "time": "13:53",
        "ts": "1:53",
@@ -5046,53 +5202,35 @@
        "bucket": "1m"
       },
       {
-       "time": "13:59",
-       "ts": "1:59",
-       "contract": "12/18 $330C",
-       "exp": "12/18",
-       "strike": "330",
+       "time": "15:10",
+       "ts": "3:10",
+       "contract": "12/11 $302.5C",
+       "exp": "12/11",
+       "strike": "302.5",
        "cp": "CALL",
-       "size": 550,
-       "price": "12.89",
+       "size": 335,
+       "price": "21.25",
        "side": "Ask",
        "sidecode": "A",
-       "sweep": false,
+       "sweep": true,
        "dir": "bull",
-       "premium": 708882,
-       "spot": "303.89",
-       "dte": 24,
-       "bucket": "1m"
-      },
-      {
-       "time": "14:59",
-       "ts": "2:59",
-       "contract": "12/24 $300C",
-       "exp": "12/24",
-       "strike": "300",
-       "cp": "CALL",
-       "size": 207,
-       "price": "26.24",
-       "side": "Ask",
-       "sidecode": "A",
-       "sweep": false,
-       "dir": "bull",
-       "premium": 543235,
-       "spot": "302.2594",
-       "dte": 30,
+       "premium": 711818,
+       "spot": "301.46",
+       "dte": 17,
        "bucket": "1m"
       }
      ]
     },
     "1m+": {
-     "bull": 25183256.0,
-     "bear": 18862850.0,
-     "bull_big": 14350373.0,
-     "bear_big": 5785220.0,
-     "bull_small": 10832883.0,
-     "bear_small": 13077630.0,
-     "n_bull": 215,
-     "n_bear": 240,
-     "lean": 57.2,
+     "bull": 29153215.0,
+     "bear": 22823512.0,
+     "bull_big": 17083070.0,
+     "bear_big": 8431070.0,
+     "bull_small": 12070145.0,
+     "bear_small": 14392442.0,
+     "n_bull": 242,
+     "n_bear": 263,
+     "lean": 56.1,
      "top": [
       {
        "time": "13:12",
@@ -5113,6 +5251,24 @@
        "bucket": "1m+"
       },
       {
+       "time": "15:55",
+       "ts": "3:55",
+       "contract": "1/21/28 $370C",
+       "exp": "1/21/28",
+       "strike": "370",
+       "cp": "CALL",
+       "size": 426,
+       "price": "46.00",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bear",
+       "premium": 1959780,
+       "spot": "300.28",
+       "dte": 423,
+       "bucket": "1m+"
+      },
+      {
        "time": "11:41",
        "ts": "11:41",
        "contract": "6/17/27 $370C",
@@ -5128,24 +5284,6 @@
        "premium": 1539045,
        "spot": "299.785",
        "dte": 205,
-       "bucket": "1m+"
-      },
-      {
-       "time": "13:33",
-       "ts": "1:33",
-       "contract": "9/17/27 $390C",
-       "exp": "9/17/27",
-       "strike": "390",
-       "cp": "CALL",
-       "size": 345,
-       "price": "31.33",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": false,
-       "dir": "bear",
-       "premium": 1080750,
-       "spot": "304.06",
-       "dte": 297,
        "bucket": "1m+"
       }
      ]
@@ -5241,13 +5379,25 @@
      59.2
     ],
     [
-     "15:02",
-     59.1
+     "15:15",
+     59.6
+    ],
+    [
+     "15:30",
+     59.4
+    ],
+    [
+     "15:45",
+     60.1
+    ],
+    [
+     "16:00",
+     58.8
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 2176937.0,
+   "speed": "flip_bear",
+   "speed_text": "Flipping bearish",
+   "recent_total": 3057248.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -5268,14 +5418,14 @@
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$26.2M vs $10.7M other side (needs $1M+ and more)",
+      "detail": "$31.1M vs $13.3M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "steady, last 15m 57% bull",
+      "detail": "flipping bearish, last 15m 4% bull",
       "miss": "not accelerating"
      },
      {
@@ -5292,33 +5442,33 @@
    }
   },
   "NVDA": {
-   "bull_small": 145678218.0,
-   "bull_big": 75564060.0,
-   "bear_small": 170233321.0,
-   "bear_big": 80016111.0,
-   "n": 6055,
-   "n_bull_small": 2689,
-   "n_bull_big": 150,
-   "n_bear_small": 3033,
-   "n_bear_big": 183,
-   "skipped_multileg": 302639507.0,
-   "skipped_itm": 166409200.0,
-   "bull": 221242278.0,
-   "bear": 250249432.0,
-   "lean": 46.9,
-   "big_lean": 48.6,
-   "recent_bull": 3675709.0,
-   "recent_bear": 8656488.0,
-   "recent_lean": 29.8,
-   "early_lean": 47.4,
+   "bull_small": 164725720.0,
+   "bull_big": 88993128.0,
+   "bear_small": 183185436.0,
+   "bear_big": 83816386.0,
+   "n": 6636,
+   "n_bull_small": 3010,
+   "n_bull_big": 173,
+   "n_bear_small": 3259,
+   "n_bear_big": 194,
+   "skipped_multileg": 328279161.0,
+   "skipped_itm": 226038685.0,
+   "bull": 253718848.0,
+   "bear": 267001822.0,
+   "lean": 48.7,
+   "big_lean": 51.5,
+   "recent_bull": 3959485.0,
+   "recent_bear": 4691586.0,
+   "recent_lean": 45.8,
+   "early_lean": 48.8,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 159.17,
-    "last": 152.27,
+    "last": 155.45,
     "low": 150.51,
     "high": 159.89,
-    "chg": -4.33
+    "chg": -2.34
    },
    "top": [
     {
@@ -5376,54 +5526,54 @@
      "bucket": "1m+"
     },
     {
-     "time": "10:18",
-     "ts": "10:18",
-     "contract": "1/15/27 $145C",
-     "exp": "1/15/27",
-     "strike": "145",
-     "cp": "CALL",
-     "size": 1249,
-     "price": "19.20",
-     "side": "Ask",
-     "sidecode": "A",
+     "time": "15:52",
+     "ts": "3:52",
+     "contract": "12/18 $150P",
+     "exp": "12/18",
+     "strike": "150",
+     "cp": "PUT",
+     "size": 3060,
+     "price": "8.65",
+     "side": "Bid",
+     "sidecode": "B",
      "sweep": false,
      "dir": "bull",
-     "premium": 2398080,
-     "spot": "154.1",
-     "dte": 52,
-     "bucket": "1m+"
+     "premium": 2647200,
+     "spot": "154.945",
+     "dte": 24,
+     "bucket": "1m"
     },
     {
-     "time": "09:44",
-     "ts": "9:44",
-     "contract": "11/25 $140C",
-     "exp": "11/25",
-     "strike": "140",
-     "cp": "CALL",
-     "size": 1281,
-     "price": "15.65",
-     "side": "Ask",
-     "sidecode": "A",
+     "time": "15:39",
+     "ts": "3:39",
+     "contract": "2/19/27 $120P",
+     "exp": "2/19/27",
+     "strike": "120",
+     "cp": "PUT",
+     "size": 4646,
+     "price": "5.35",
+     "side": "Bid",
+     "sidecode": "B",
      "sweep": false,
      "dir": "bull",
-     "premium": 2004765,
-     "spot": "155.015",
-     "dte": 1,
-     "bucket": "wk"
+     "premium": 2485630,
+     "spot": "152.485",
+     "dte": 87,
+     "bucket": "1m+"
     }
    ],
-   "repeat": "1/15/27 170C hit 14 times ($9.8M, buyers and sellers); 1/21/28 210C hit 12 times ($7.8M, buyers and sellers)",
+   "repeat": "1/15/27 170C hit 15 times ($10.0M, buyers and sellers); 1/21/28 210C hit 12 times ($7.8M, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 66150310.0,
-     "bear": 60328036.0,
-     "bull_big": 11218609.0,
-     "bear_big": 6936946.0,
-     "bull_small": 54931701.0,
-     "bear_small": 53391090.0,
-     "n_bull": 1129,
-     "n_bear": 1098,
-     "lean": 52.3,
+     "bull": 72494853.0,
+     "bear": 64962696.0,
+     "bull_big": 12337379.0,
+     "bear_big": 7900926.0,
+     "bull_small": 60157474.0,
+     "bear_small": 57061770.0,
+     "n_bull": 1223,
+     "n_bear": 1174,
+     "lean": 52.7,
      "top": [
       {
        "time": "09:44",
@@ -5444,6 +5594,24 @@
        "bucket": "wk"
       },
       {
+       "time": "15:02",
+       "ts": "3:02",
+       "contract": "11/25 $150C",
+       "exp": "11/25",
+       "strike": "150",
+       "cp": "CALL",
+       "size": 1825,
+       "price": "4.60",
+       "side": "Ask",
+       "sidecode": "A",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 839459,
+       "spot": "152.28",
+       "dte": 1,
+       "bucket": "wk"
+      },
+      {
        "time": "09:44",
        "ts": "9:44",
        "contract": "11/25 $137C",
@@ -5460,37 +5628,19 @@
        "spot": "155.015",
        "dte": 1,
        "bucket": "wk"
-      },
-      {
-       "time": "09:33",
-       "ts": "9:33",
-       "contract": "11/27 $160C",
-       "exp": "11/27",
-       "strike": "160",
-       "cp": "CALL",
-       "size": 2003,
-       "price": "3.40",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": false,
-       "dir": "bear",
-       "premium": 681105,
-       "spot": "156.04",
-       "dte": 3,
-       "bucket": "wk"
       }
      ]
     },
     "2w": {
-     "bull": 31924771.0,
-     "bear": 28584115.0,
-     "bull_big": 9570690.0,
-     "bear_big": 5703273.0,
-     "bull_small": 22354081.0,
-     "bear_small": 22880842.0,
-     "n_bull": 439,
-     "n_bear": 403,
-     "lean": 52.8,
+     "bull": 34605838.0,
+     "bear": 31647499.0,
+     "bull_big": 10839716.0,
+     "bear_big": 7140998.0,
+     "bull_small": 23766122.0,
+     "bear_small": 24506501.0,
+     "n_bull": 468,
+     "n_bear": 439,
+     "lean": 52.2,
      "top": [
       {
        "time": "12:10",
@@ -5549,16 +5699,34 @@
      ]
     },
     "1m": {
-     "bull": 29038863.0,
-     "bear": 38175387.0,
-     "bull_big": 8127231.0,
+     "bull": 35286577.0,
+     "bear": 40031276.0,
+     "bull_big": 11001006.0,
      "bear_big": 12969261.0,
-     "bull_small": 20911632.0,
-     "bear_small": 25206126.0,
-     "n_bull": 392,
-     "n_bear": 461,
-     "lean": 43.2,
+     "bull_small": 24285571.0,
+     "bear_small": 27062015.0,
+     "n_bull": 448,
+     "n_bear": 490,
+     "lean": 46.9,
      "top": [
+      {
+       "time": "15:52",
+       "ts": "3:52",
+       "contract": "12/18 $150P",
+       "exp": "12/18",
+       "strike": "150",
+       "cp": "PUT",
+       "size": 3060,
+       "price": "8.65",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 2647200,
+       "spot": "154.945",
+       "dte": 24,
+       "bucket": "1m"
+      },
       {
        "time": "10:51",
        "ts": "10:51",
@@ -5594,37 +5762,19 @@
        "spot": "153.77",
        "dte": 24,
        "bucket": "1m"
-      },
-      {
-       "time": "10:07",
-       "ts": "10:07",
-       "contract": "12/18 $150P",
-       "exp": "12/18",
-       "strike": "150",
-       "cp": "PUT",
-       "size": 1500,
-       "price": "8.52",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": false,
-       "dir": "bull",
-       "premium": 1278000,
-       "spot": "153.955",
-       "dte": 24,
-       "bucket": "1m"
       }
      ]
     },
     "1m+": {
-     "bull": 94128334.0,
-     "bear": 123161894.0,
-     "bull_big": 46647530.0,
-     "bear_big": 54406631.0,
-     "bull_small": 47480804.0,
-     "bear_small": 68755263.0,
-     "n_bull": 879,
-     "n_bear": 1254,
-     "lean": 43.3,
+     "bull": 111331580.0,
+     "bear": 130360351.0,
+     "bull_big": 54815027.0,
+     "bear_big": 55805201.0,
+     "bull_small": 56516553.0,
+     "bear_small": 74555150.0,
+     "n_bull": 1044,
+     "n_bear": 1350,
+     "lean": 46.1,
      "top": [
       {
        "time": "11:47",
@@ -5773,39 +5923,51 @@
      47.2
     ],
     [
-     "15:02",
-     46.9
+     "15:15",
+     47.3
+    ],
+    [
+     "15:30",
+     47.7
+    ],
+    [
+     "15:45",
+     47.9
+    ],
+    [
+     "16:00",
+     48.7
     ]
    ],
-   "speed": "up_bear",
-   "speed_text": "Picking up bearish",
-   "recent_total": 12332197.0,
+   "speed": "steady",
+   "speed_text": "Steady",
+   "recent_total": 8651071.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 2624.3,
-    "n_bull_big": 209.6,
-    "n_bear_small": 2941.6,
-    "n_bear_big": 242.8,
-    "bull_small": 143596111.2,
-    "bull_big": 98892837.2,
-    "bear_small": 161737858.8,
-    "bear_big": 109456430.3,
-    "ratio_small": 0.91,
-    "ratio_big": 0.9
+    "n_bull_small": 2990.5,
+    "n_bull_big": 244.3,
+    "n_bear_small": 3344.6,
+    "n_bear_big": 275.4,
+    "bull_small": 163441091.9,
+    "bull_big": 113524020.4,
+    "bear_small": 184340393.9,
+    "bear_big": 123247960.0,
+    "ratio_small": 0.9,
+    "ratio_big": 0.92
    },
    "vs": {
-    "n_bull_small": 1.02,
-    "n_bull_big": 0.72,
-    "n_bear_small": 1.03,
-    "n_bear_big": 0.75
+    "n_bull_small": 1.01,
+    "n_bull_big": 0.71,
+    "n_bear_small": 0.97,
+    "n_bear_big": 0.7
    },
    "vs_read": {
     "code": "normal",
     "text": "About normal (bulls 1.0x, bears 1.0x)",
-    "x": 1.01,
+    "x": 0.98,
     "short": "About normal"
    },
    "ready": {
@@ -5815,64 +5977,64 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "53% bearish",
+      "detail": "51% bearish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bearish side",
-      "ok": true,
-      "detail": "$80.0M vs $75.6M other side (needs $1M+ and more)",
+      "ok": false,
+      "detail": "$83.8M vs $89.0M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": true,
-      "detail": "picking up bearish, last 15m 30% bull",
+      "ok": false,
+      "detail": "steady, last 15m 46% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "3216 bearish orders vs ~3184 normal (1.0x)",
+      "detail": "3453 bearish orders vs ~3620 normal (1.0x)",
       "miss": "count not above normal"
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, count not above normal",
-    "short": "Thin: no one-sided lean, count not above normal"
+    "verdict": "Thin \u2014 missing: no one-sided lean, other side has more $200K+ money, not accelerating, count not above normal",
+    "short": "Thin: no one-sided lean, other side has more $200K+ money, not accelerating, count not above normal"
    }
   },
   "META": {
-   "bull_small": 16728764.0,
-   "bull_big": 9553868.0,
-   "bear_small": 17538814.0,
-   "bear_big": 10332198.0,
-   "n": 677,
-   "n_bull_small": 321,
-   "n_bull_big": 13,
-   "n_bear_small": 318,
-   "n_bear_big": 25,
-   "skipped_multileg": 87482099.0,
-   "skipped_itm": 11619752.0,
-   "bull": 26282632.0,
-   "bear": 27871012.0,
-   "lean": 48.5,
-   "big_lean": 48.0,
-   "recent_bull": 1489734.0,
-   "recent_bear": 1587084.0,
-   "recent_lean": 48.4,
-   "early_lean": 48.5,
+   "bull_small": 19542244.0,
+   "bull_big": 13632458.0,
+   "bear_small": 19752506.0,
+   "bear_big": 13989353.0,
+   "n": 778,
+   "n_bull_small": 372,
+   "n_bull_big": 21,
+   "n_bear_small": 355,
+   "n_bear_big": 30,
+   "skipped_multileg": 144493921.0,
+   "skipped_itm": 12655077.0,
+   "bull": 33174702.0,
+   "bear": 33741859.0,
+   "lean": 49.6,
+   "big_lean": 49.4,
+   "recent_bull": 1349073.0,
+   "recent_bear": 532055.0,
+   "recent_lean": 71.7,
+   "early_lean": 48.9,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 589.09,
-    "last": 588.69,
+    "last": 589.96,
     "low": 584.67,
     "high": 600.2,
-    "chg": -0.07
+    "chg": 0.15
    },
    "top": [
     {
@@ -5891,6 +6053,24 @@
      "premium": 4870000,
      "spot": "591.63",
      "dte": 87,
+     "bucket": "1m+"
+    },
+    {
+     "time": "15:37",
+     "ts": "3:37",
+     "contract": "1/21/28 $680C",
+     "exp": "1/21/28",
+     "strike": "680",
+     "cp": "CALL",
+     "size": 303,
+     "price": "87.00",
+     "side": "Bid",
+     "sidecode": "B",
+     "sweep": false,
+     "dir": "bear",
+     "premium": 2636100,
+     "spot": "587.57",
+     "dte": 423,
      "bucket": "1m+"
     },
     {
@@ -5946,38 +6126,20 @@
      "spot": "588.585",
      "dte": 787,
      "bucket": "1m+"
-    },
-    {
-     "time": "12:41",
-     "ts": "12:41",
-     "contract": "3/19/27 $500P",
-     "exp": "3/19/27",
-     "strike": "500",
-     "cp": "PUT",
-     "size": 450,
-     "price": "21.96",
-     "side": "Ask",
-     "sidecode": "A",
-     "sweep": false,
-     "dir": "bear",
-     "premium": 988201,
-     "spot": "594.685",
-     "dte": 115,
-     "bucket": "1m+"
     }
    ],
-   "repeat": "1/21/28 680C hit 11 times ($4.6M, all sellers); 12/24 625C hit 2 times ($1.5M, all buyers)",
+   "repeat": "1/21/28 680C hit 15 times ($8.0M, all sellers); 12/24 625C hit 2 times ($1.5M, all buyers)",
    "buckets": {
     "wk": {
-     "bull": 2902516.0,
-     "bear": 3070433.0,
+     "bull": 2962116.0,
+     "bear": 3567227.0,
      "bull_big": 688940.0,
      "bear_big": 0.0,
-     "bull_small": 2213576.0,
-     "bear_small": 3070433.0,
-     "n_bull": 53,
-     "n_bear": 65,
-     "lean": 48.6,
+     "bull_small": 2273176.0,
+     "bear_small": 3567227.0,
+     "n_bull": 55,
+     "n_bear": 73,
+     "lean": 45.4,
      "top": [
       {
        "time": "09:44",
@@ -6036,15 +6198,15 @@
      ]
     },
     "2w": {
-     "bull": 2008603.0,
-     "bear": 953754.0,
+     "bull": 2181223.0,
+     "bear": 1118759.0,
      "bull_big": 0.0,
      "bear_big": 348000.0,
-     "bull_small": 2008603.0,
-     "bear_small": 605754.0,
-     "n_bull": 32,
-     "n_bear": 13,
-     "lean": 67.8,
+     "bull_small": 2181223.0,
+     "bear_small": 770759.0,
+     "n_bull": 35,
+     "n_bear": 16,
+     "lean": 66.1,
      "top": [
       {
        "time": "09:31",
@@ -6067,15 +6229,15 @@
      ]
     },
     "1m": {
-     "bull": 5171375.0,
-     "bear": 4485476.0,
-     "bull_big": 1547565.0,
+     "bull": 6374911.0,
+     "bear": 4756076.0,
+     "bull_big": 1965690.0,
      "bear_big": 1173399.0,
-     "bull_small": 3623810.0,
-     "bear_small": 3312077.0,
-     "n_bull": 82,
-     "n_bear": 71,
-     "lean": 53.6,
+     "bull_small": 4409221.0,
+     "bear_small": 3582677.0,
+     "n_bull": 100,
+     "n_bear": 77,
+     "lean": 57.3,
      "top": [
       {
        "time": "11:05",
@@ -6096,6 +6258,24 @@
        "bucket": "1m"
       },
       {
+       "time": "15:22",
+       "ts": "3:22",
+       "contract": "12/18 $600P",
+       "exp": "12/18",
+       "strike": "600",
+       "cp": "PUT",
+       "size": 125,
+       "price": "33.45",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 418125,
+       "spot": "588.0345",
+       "dte": 24,
+       "bucket": "1m"
+      },
+      {
        "time": "13:15",
        "ts": "1:15",
        "contract": "12/18 $680P",
@@ -6112,37 +6292,19 @@
        "spot": "593.035",
        "dte": 24,
        "bucket": "1m"
-      },
-      {
-       "time": "11:02",
-       "ts": "11:02",
-       "contract": "12/24 $625C",
-       "exp": "12/24",
-       "strike": "625",
-       "cp": "CALL",
-       "size": 201,
-       "price": "16.25",
-       "side": "Ask",
-       "sidecode": "A",
-       "sweep": false,
-       "dir": "bull",
-       "premium": 326625,
-       "spot": "588.08",
-       "dte": 30,
-       "bucket": "1m"
       }
      ]
     },
     "1m+": {
-     "bull": 16200138.0,
-     "bear": 19361349.0,
-     "bull_big": 7317363.0,
-     "bear_big": 8810799.0,
-     "bull_small": 8882775.0,
-     "bear_small": 10550550.0,
-     "n_bull": 167,
-     "n_bear": 194,
-     "lean": 45.6,
+     "bull": 21656452.0,
+     "bear": 24299797.0,
+     "bull_big": 10977828.0,
+     "bear_big": 12467954.0,
+     "bull_small": 10678624.0,
+     "bear_small": 11831843.0,
+     "n_bull": 203,
+     "n_bear": 219,
+     "lean": 47.1,
      "top": [
       {
        "time": "13:20",
@@ -6163,6 +6325,24 @@
        "bucket": "1m+"
       },
       {
+       "time": "15:37",
+       "ts": "3:37",
+       "contract": "1/21/28 $680C",
+       "exp": "1/21/28",
+       "strike": "680",
+       "cp": "CALL",
+       "size": 303,
+       "price": "87.00",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bear",
+       "premium": 2636100,
+       "spot": "587.57",
+       "dte": 423,
+       "bucket": "1m+"
+      },
+      {
        "time": "11:14",
        "ts": "11:14",
        "contract": "1/21/28 $680C",
@@ -6178,24 +6358,6 @@
        "premium": 1987720,
        "spot": "585.53",
        "dte": 423,
-       "bucket": "1m+"
-      },
-      {
-       "time": "11:00",
-       "ts": "11:00",
-       "contract": "1/19/29 $910C",
-       "exp": "1/19/29",
-       "strike": "910",
-       "cp": "CALL",
-       "size": 154,
-       "price": "77.30",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": false,
-       "dir": "bear",
-       "premium": 1190420,
-       "spot": "588.585",
-       "dte": 787,
        "bucket": "1m+"
       }
      ]
@@ -6291,39 +6453,51 @@
      49.0
     ],
     [
-     "15:02",
-     48.5
+     "15:15",
+     48.7
+    ],
+    [
+     "15:30",
+     49.4
+    ],
+    [
+     "15:45",
+     48.2
+    ],
+    [
+     "16:00",
+     49.6
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 3076818.0,
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 1881128.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 391.9,
-    "n_bull_big": 24.1,
-    "n_bear_small": 379.9,
-    "n_bear_big": 26.1,
-    "bull_small": 21619488.8,
-    "bull_big": 11759955.8,
-    "bear_small": 20974304.0,
-    "bear_big": 13035103.6,
-    "ratio_small": 1.01,
+    "n_bull_small": 462.0,
+    "n_bull_big": 29.7,
+    "n_bear_small": 455.0,
+    "n_bear_big": 31.9,
+    "bull_small": 25634791.3,
+    "bull_big": 15206085.5,
+    "bear_small": 25170013.8,
+    "bear_big": 15862749.0,
+    "ratio_small": 1.0,
     "ratio_big": 0.98
    },
    "vs": {
-    "n_bull_small": 0.82,
-    "n_bull_big": 0.54,
-    "n_bear_small": 0.84,
-    "n_bear_big": 0.96
+    "n_bull_small": 0.81,
+    "n_bull_big": 0.71,
+    "n_bear_small": 0.78,
+    "n_bear_big": 0.94
    },
    "vs_read": {
     "code": "normal",
     "text": "About normal (bulls 0.8x, bears 0.8x)",
-    "x": 0.84,
+    "x": 0.8,
     "short": "About normal"
    },
    "ready": {
@@ -6333,28 +6507,28 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "52% bearish",
+      "detail": "50% bearish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bearish side",
       "ok": true,
-      "detail": "$10.3M vs $9.6M other side (needs $1M+ and more)",
+      "detail": "$14.0M vs $13.6M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "steady, last 15m 48% bull",
+      "detail": "picking up bullish, last 15m 72% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "343 bearish orders vs ~406 normal (0.8x)",
+      "detail": "385 bearish orders vs ~487 normal (0.8x)",
       "miss": "count not above normal"
      }
     ],
@@ -6364,33 +6538,33 @@
    }
   },
   "WMT": {
-   "bull_small": 5203169.0,
+   "bull_small": 5524697.0,
    "bull_big": 316679.0,
-   "bear_small": 2401761.0,
+   "bear_small": 2454746.0,
    "bear_big": 969041.0,
-   "n": 117,
-   "n_bull_small": 71,
+   "n": 126,
+   "n_bull_small": 78,
    "n_bull_big": 1,
-   "n_bear_small": 43,
+   "n_bear_small": 45,
    "n_bear_big": 2,
-   "skipped_multileg": 5431163.0,
-   "skipped_itm": 3647059.0,
-   "bull": 5519848.0,
-   "bear": 3370802.0,
-   "lean": 62.1,
+   "skipped_multileg": 5883957.0,
+   "skipped_itm": 4014544.0,
+   "bull": 5841376.0,
+   "bear": 3423787.0,
+   "lean": 63.0,
    "big_lean": 24.6,
-   "recent_bull": 0.0,
-   "recent_bear": 0.0,
-   "recent_lean": null,
-   "early_lean": 62.1,
+   "recent_bull": 203400.0,
+   "recent_bear": 52985.0,
+   "recent_lean": 79.3,
+   "early_lean": 62.6,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 130.14,
-    "last": 131.97,
+    "last": 132.31,
     "low": 130.14,
     "high": 132.4,
-    "chg": 1.41
+    "chg": 1.67
    },
    "top": [
     {
@@ -6451,15 +6625,15 @@
    "repeat": null,
    "buckets": {
     "wk": {
-     "bull": 380186.0,
-     "bear": 251235.0,
+     "bull": 405386.0,
+     "bear": 276770.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
-     "bull_small": 380186.0,
-     "bear_small": 251235.0,
-     "n_bull": 8,
-     "n_bear": 6,
-     "lean": 60.2,
+     "bull_small": 405386.0,
+     "bear_small": 276770.0,
+     "n_bull": 9,
+     "n_bear": 7,
+     "lean": 59.4,
      "top": []
     },
     "2w": {
@@ -6475,27 +6649,27 @@
      "top": []
     },
     "1m": {
-     "bull": 833578.0,
+     "bull": 883978.0,
      "bear": 367138.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
-     "bull_small": 833578.0,
+     "bull_small": 883978.0,
      "bear_small": 367138.0,
-     "n_bull": 13,
+     "n_bull": 14,
      "n_bear": 8,
-     "lean": 69.4,
+     "lean": 70.7,
      "top": []
     },
     "1m+": {
-     "bull": 4156093.0,
-     "bear": 2752429.0,
+     "bull": 4402021.0,
+     "bear": 2779879.0,
      "bull_big": 316679.0,
      "bear_big": 969041.0,
-     "bull_small": 3839414.0,
-     "bear_small": 1783388.0,
-     "n_bull": 49,
-     "n_bear": 31,
-     "lean": 60.2,
+     "bull_small": 4085342.0,
+     "bear_small": 1810838.0,
+     "n_bull": 54,
+     "n_bear": 32,
+     "lean": 61.3,
      "top": [
       {
        "time": "11:45",
@@ -6644,13 +6818,25 @@
      62.1
     ],
     [
-     "15:02",
+     "15:15",
      62.1
+    ],
+    [
+     "15:30",
+     62.3
+    ],
+    [
+     "15:45",
+     62.3
+    ],
+    [
+     "16:00",
+     63.0
     ]
    ],
-   "speed": "quiet",
-   "speed_text": "Quiet last 15m",
-   "recent_total": 0.0,
+   "speed": "up_bull",
+   "speed_text": "Picking up bullish",
+   "recent_total": 256385.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -6664,7 +6850,7 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "62% bullish",
+      "detail": "63% bullish",
       "miss": "no one-sided lean"
      },
      {
@@ -6677,8 +6863,8 @@
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": false,
-      "detail": "quiet last 15 min",
+      "ok": true,
+      "detail": "picking up bullish, last 15m 79% bull",
       "miss": "not accelerating"
      },
      {
@@ -6690,38 +6876,38 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, under $1M of $200K+ money, not accelerating",
-    "short": "Thin: no one-sided lean, under $1M of $200K+ money, not accelerating"
+    "verdict": "Thin \u2014 missing: no one-sided lean, under $1M of $200K+ money",
+    "short": "Thin: no one-sided lean, under $1M of $200K+ money"
    }
   },
   "MU": {
-   "bull_small": 102619508.0,
-   "bull_big": 91233593.0,
-   "bear_small": 107245578.0,
-   "bear_big": 66648153.0,
-   "n": 4222,
-   "n_bull_small": 1855,
-   "n_bull_big": 157,
-   "n_bear_small": 2065,
-   "n_bear_big": 145,
-   "skipped_multileg": 630216654.0,
-   "skipped_itm": 206396370.0,
-   "bull": 193853101.0,
-   "bear": 173893731.0,
-   "lean": 52.7,
-   "big_lean": 57.8,
-   "recent_bull": 4534966.0,
-   "recent_bear": 4069689.0,
-   "recent_lean": 52.7,
-   "early_lean": 52.7,
+   "bull_small": 119404204.0,
+   "bull_big": 105431285.0,
+   "bear_small": 120396894.0,
+   "bear_big": 74860253.0,
+   "n": 4801,
+   "n_bull_small": 2158,
+   "n_bull_big": 182,
+   "n_bear_small": 2298,
+   "n_bear_big": 163,
+   "skipped_multileg": 851650750.0,
+   "skipped_itm": 243201413.0,
+   "bull": 224835489.0,
+   "bear": 195257147.0,
+   "lean": 53.5,
+   "big_lean": 58.5,
+   "recent_bull": 4615408.0,
+   "recent_bear": 5942243.0,
+   "recent_lean": 43.7,
+   "early_lean": 53.8,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 669.39,
-    "last": 625.18,
+    "last": 628.07,
     "low": 622.22,
     "high": 671.04,
-    "chg": -6.6
+    "chg": -6.17
    },
    "top": [
     {
@@ -6740,6 +6926,24 @@
      "premium": 6463720,
      "spot": "635.4",
      "dte": 52,
+     "bucket": "1m+"
+    },
+    {
+     "time": "15:53",
+     "ts": "3:53",
+     "contract": "2/19/27 $640C",
+     "exp": "2/19/27",
+     "strike": "640",
+     "cp": "CALL",
+     "size": 500,
+     "price": "95.90",
+     "side": "Ask",
+     "sidecode": "A",
+     "sweep": false,
+     "dir": "bull",
+     "premium": 4794984,
+     "spot": "635.95",
+     "dte": 87,
      "bucket": "1m+"
     },
     {
@@ -6795,38 +6999,20 @@
      "spot": "634.48",
      "dte": 3,
      "bucket": "wk"
-    },
-    {
-     "time": "10:45",
-     "ts": "10:45",
-     "contract": "3/19/27 $600P",
-     "exp": "3/19/27",
-     "strike": "600",
-     "cp": "PUT",
-     "size": 243,
-     "price": "86.75",
-     "side": "Bid",
-     "sidecode": "B",
-     "sweep": false,
-     "dir": "bull",
-     "premium": 2108025,
-     "spot": "623.43",
-     "dte": 115,
-     "bucket": "1m+"
     }
    ],
-   "repeat": "1/15/27 600C hit 4 times ($7.6M, all buyers); 12/18 700C hit 8 times ($7.5M, buyers and sellers)",
+   "repeat": "12/18 700C hit 9 times ($7.7M, buyers and sellers); 1/15/27 600C hit 4 times ($7.6M, all buyers)",
    "buckets": {
     "wk": {
-     "bull": 70874556.0,
-     "bear": 53348500.0,
-     "bull_big": 30240766.0,
-     "bear_big": 14311671.0,
-     "bull_small": 40633790.0,
-     "bear_small": 39036829.0,
-     "n_bull": 917,
-     "n_bear": 907,
-     "lean": 57.1,
+     "bull": 79032817.0,
+     "bear": 59523307.0,
+     "bull_big": 32124916.0,
+     "bear_big": 15656679.0,
+     "bull_small": 46907901.0,
+     "bear_small": 43866628.0,
+     "n_bull": 1045,
+     "n_bear": 1002,
+     "lean": 57.0,
      "top": [
       {
        "time": "13:38",
@@ -6885,15 +7071,15 @@
      ]
     },
     "2w": {
-     "bull": 8093929.0,
-     "bear": 10434456.0,
+     "bull": 9183638.0,
+     "bear": 12656067.0,
      "bull_big": 2235725.0,
-     "bear_big": 3162720.0,
-     "bull_small": 5858204.0,
-     "bear_small": 7271736.0,
-     "n_bull": 115,
-     "n_bear": 157,
-     "lean": 43.7,
+     "bear_big": 4303775.0,
+     "bull_small": 6947913.0,
+     "bear_small": 8352292.0,
+     "n_bull": 133,
+     "n_bear": 180,
+     "lean": 42.1,
      "top": [
       {
        "time": "12:29",
@@ -6952,15 +7138,15 @@
      ]
     },
     "1m": {
-     "bull": 27235511.0,
-     "bear": 25234507.0,
-     "bull_big": 15329453.0,
-     "bear_big": 13786168.0,
-     "bull_small": 11906058.0,
-     "bear_small": 11448339.0,
-     "n_bull": 236,
-     "n_bear": 261,
-     "lean": 51.9,
+     "bull": 32274965.0,
+     "bear": 30732439.0,
+     "bull_big": 18292529.0,
+     "bear_big": 17347720.0,
+     "bull_small": 13982436.0,
+     "bear_small": 13384719.0,
+     "n_bull": 278,
+     "n_bear": 300,
+     "lean": 51.2,
      "top": [
       {
        "time": "09:40",
@@ -7019,15 +7205,15 @@
      ]
     },
     "1m+": {
-     "bull": 87649105.0,
-     "bear": 84876268.0,
-     "bull_big": 43427649.0,
-     "bear_big": 35387594.0,
-     "bull_small": 44221456.0,
-     "bear_small": 49488674.0,
-     "n_bull": 744,
-     "n_bear": 885,
-     "lean": 50.8,
+     "bull": 104344069.0,
+     "bear": 92345334.0,
+     "bull_big": 52778115.0,
+     "bear_big": 37552079.0,
+     "bull_small": 51565954.0,
+     "bear_small": 54793255.0,
+     "n_bull": 884,
+     "n_bear": 979,
+     "lean": 53.1,
      "top": [
       {
        "time": "12:50",
@@ -7048,6 +7234,24 @@
        "bucket": "1m+"
       },
       {
+       "time": "15:53",
+       "ts": "3:53",
+       "contract": "2/19/27 $640C",
+       "exp": "2/19/27",
+       "strike": "640",
+       "cp": "CALL",
+       "size": 500,
+       "price": "95.90",
+       "side": "Ask",
+       "sidecode": "A",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 4794984,
+       "spot": "635.95",
+       "dte": 87,
+       "bucket": "1m+"
+      },
+      {
        "time": "10:08",
        "ts": "10:08",
        "contract": "12/17/27 $900C",
@@ -7063,24 +7267,6 @@
        "premium": 2210240,
        "spot": "643.445",
        "dte": 388,
-       "bucket": "1m+"
-      },
-      {
-       "time": "10:45",
-       "ts": "10:45",
-       "contract": "3/19/27 $600P",
-       "exp": "3/19/27",
-       "strike": "600",
-       "cp": "PUT",
-       "size": 243,
-       "price": "86.75",
-       "side": "Bid",
-       "sidecode": "B",
-       "sweep": false,
-       "dir": "bull",
-       "premium": 2108025,
-       "spot": "623.43",
-       "dte": 115,
        "bucket": "1m+"
       }
      ]
@@ -7176,33 +7362,45 @@
      52.8
     ],
     [
-     "15:02",
+     "15:15",
+     52.8
+    ],
+    [
+     "15:30",
+     52.6
+    ],
+    [
+     "15:45",
      52.7
+    ],
+    [
+     "16:00",
+     53.5
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 8604655.0,
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 10557651.0,
    "base": {
-    "slot": "15:00",
+    "slot": "16:00",
     "days": 10,
     "first": "2026-11-06",
     "last": "2026-11-19",
-    "n_bull_small": 2119.6,
-    "n_bull_big": 145.7,
-    "n_bear_small": 2136.6,
-    "n_bear_big": 153.9,
-    "bull_small": 107416915.2,
-    "bull_big": 79224232.9,
-    "bear_small": 108877532.1,
-    "bear_big": 80323284.3,
+    "n_bull_small": 2370.9,
+    "n_bull_big": 167.4,
+    "n_bear_small": 2383.1,
+    "n_bear_big": 172.8,
+    "bull_small": 120644554.4,
+    "bull_big": 93345424.8,
+    "bear_small": 121596697.1,
+    "bear_big": 90241453.1,
     "ratio_small": 0.99,
-    "ratio_big": 0.94
+    "ratio_big": 0.97
    },
    "vs": {
-    "n_bull_small": 0.88,
-    "n_bull_big": 1.08,
-    "n_bear_small": 0.97,
+    "n_bull_small": 0.91,
+    "n_bull_big": 1.09,
+    "n_bear_small": 0.96,
     "n_bear_big": 0.94
    },
    "vs_read": {
@@ -7218,28 +7416,28 @@
       "key": "lean",
       "label": "One-sided lean (65%+)",
       "ok": false,
-      "detail": "53% bullish",
+      "detail": "54% bullish",
       "miss": "no one-sided lean"
      },
      {
       "key": "big",
       "label": "$1M+ of $200K+ money on the bullish side",
       "ok": true,
-      "detail": "$91.2M vs $66.6M other side (needs $1M+ and more)",
+      "detail": "$105.4M vs $74.9M other side (needs $1M+ and more)",
       "miss": "other side has more $200K+ money"
      },
      {
       "key": "accel",
       "label": "Accelerating",
       "ok": false,
-      "detail": "steady, last 15m 53% bull",
+      "detail": "picking up bearish, last 15m 44% bull",
       "miss": "not accelerating"
      },
      {
       "key": "count",
       "label": "Above-normal order count",
       "ok": false,
-      "detail": "2012 bullish orders vs ~2265 normal (0.9x)",
+      "detail": "2340 bullish orders vs ~2538 normal (0.9x)",
       "miss": "count not above normal"
      }
     ],
@@ -7258,24 +7456,24 @@
    "n_bull_big": 1,
    "n_bear_small": 11,
    "n_bear_big": 2,
-   "skipped_multileg": 5042176.0,
-   "skipped_itm": 41000.0,
+   "skipped_multileg": 5187690.0,
+   "skipped_itm": 414350.0,
    "bull": 1479042.0,
    "bear": 1079531.0,
    "lean": 57.8,
    "big_lean": 44.2,
-   "recent_bull": 402830.0,
-   "recent_bear": 32130.0,
-   "recent_lean": 92.6,
-   "early_lean": 50.7,
+   "recent_bull": 0.0,
+   "recent_bear": 0.0,
+   "recent_lean": null,
+   "early_lean": 57.8,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 175.44,
-    "last": 173.91,
-    "low": 173.84,
+    "last": 173.36,
+    "low": 173.36,
     "high": 175.87,
-    "chg": -0.87
+    "chg": -1.18
    },
    "top": [
     {
@@ -7517,13 +7715,25 @@
      57.8
     ],
     [
-     "15:02",
+     "15:15",
+     57.8
+    ],
+    [
+     "15:30",
+     57.8
+    ],
+    [
+     "15:45",
+     57.8
+    ],
+    [
+     "16:00",
      57.8
     ]
    ],
-   "speed": "up_bull",
-   "speed_text": "Picking up bullish",
-   "recent_total": 434960.0,
+   "speed": "quiet",
+   "speed_text": "Quiet last 15m",
+   "recent_total": 0.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -7550,8 +7760,8 @@
      {
       "key": "accel",
       "label": "Accelerating",
-      "ok": true,
-      "detail": "picking up bullish, last 15m 93% bull",
+      "ok": false,
+      "detail": "quiet last 15 min",
       "miss": "not accelerating"
      },
      {
@@ -7563,38 +7773,38 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, under $1M of $200K+ money",
-    "short": "Thin: no one-sided lean, under $1M of $200K+ money"
+    "verdict": "Thin \u2014 missing: no one-sided lean, under $1M of $200K+ money, not accelerating",
+    "short": "Thin: no one-sided lean, under $1M of $200K+ money, not accelerating"
    }
   },
   "SPOT": {
    "bull_small": 617215.0,
    "bull_big": 0.0,
-   "bear_small": 674485.0,
+   "bear_small": 1134935.0,
    "bear_big": 255360.0,
-   "n": 22,
+   "n": 29,
    "n_bull_small": 15,
    "n_bull_big": 0,
-   "n_bear_small": 6,
+   "n_bear_small": 13,
    "n_bear_big": 1,
-   "skipped_multileg": 28322579.0,
-   "skipped_itm": 1187207.0,
+   "skipped_multileg": 28610267.0,
+   "skipped_itm": 1212547.0,
    "bull": 617215.0,
-   "bear": 929845.0,
-   "lean": 39.9,
+   "bear": 1390295.0,
+   "lean": 30.7,
    "big_lean": 0.0,
    "recent_bull": 0.0,
-   "recent_bear": 285425.0,
+   "recent_bear": 113260.0,
    "recent_lean": 0.0,
-   "early_lean": 48.9,
-   "call": "Nothing significant",
-   "call_dir": null,
+   "early_lean": 32.6,
+   "call": "Whales selling the rip",
+   "call_dir": "bear",
    "px": {
     "first": 587.5,
-    "last": 601.92,
+    "last": 601.75,
     "low": 587.5,
     "high": 607.61,
-    "chg": 2.45
+    "chg": 2.42
    },
    "top": [
     {
@@ -7620,14 +7830,14 @@
    "buckets": {
     "wk": {
      "bull": 0.0,
-     "bear": 0.0,
+     "bear": 47040.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
      "bull_small": 0.0,
-     "bear_small": 0.0,
+     "bear_small": 47040.0,
      "n_bull": 0,
-     "n_bear": 0,
-     "lean": null,
+     "n_bear": 1,
+     "lean": 0.0,
      "top": []
     },
     "2w": {
@@ -7656,14 +7866,14 @@
     },
     "1m+": {
      "bull": 617215.0,
-     "bear": 929845.0,
+     "bear": 1343255.0,
      "bull_big": 0.0,
      "bear_big": 255360.0,
      "bull_small": 617215.0,
-     "bear_small": 674485.0,
+     "bear_small": 1087895.0,
      "n_bull": 15,
-     "n_bear": 7,
-     "lean": 39.9,
+     "n_bear": 13,
+     "lean": 31.5,
      "top": [
       {
        "time": "14:42",
@@ -7776,13 +7986,25 @@
      44.1
     ],
     [
-     "15:02",
-     39.9
+     "15:15",
+     38.9
+    ],
+    [
+     "15:30",
+     33.4
+    ],
+    [
+     "15:45",
+     33.4
+    ],
+    [
+     "16:00",
+     30.7
     ]
    ],
    "speed": "up_bear",
    "speed_text": "Picking up bearish",
-   "recent_total": 285425.0,
+   "recent_total": 113260.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -7795,8 +8017,8 @@
      {
       "key": "lean",
       "label": "One-sided lean (65%+)",
-      "ok": false,
-      "detail": "60% bearish",
+      "ok": true,
+      "detail": "69% bearish",
       "miss": "no one-sided lean"
      },
      {
@@ -7822,38 +8044,38 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, under $1M of $200K+ money",
-    "short": "Thin: no one-sided lean, under $1M of $200K+ money"
+    "verdict": "Thin \u2014 missing: under $1M of $200K+ money",
+    "short": "Thin: under $1M of $200K+ money"
    }
   },
   "BRK.B": {
-   "bull_small": 861381.0,
+   "bull_small": 960911.0,
    "bull_big": 0.0,
-   "bear_small": 489811.0,
+   "bear_small": 517547.0,
    "bear_big": 0.0,
-   "n": 35,
-   "n_bull_small": 21,
+   "n": 38,
+   "n_bull_small": 23,
    "n_bull_big": 0,
-   "n_bear_small": 14,
+   "n_bear_small": 15,
    "n_bear_big": 0,
-   "skipped_multileg": 5929892.0,
-   "skipped_itm": 161373.0,
-   "bull": 861381.0,
-   "bear": 489811.0,
-   "lean": 63.7,
+   "skipped_multileg": 6147112.0,
+   "skipped_itm": 304573.0,
+   "bull": 960911.0,
+   "bear": 517547.0,
+   "lean": 65.0,
    "big_lean": null,
-   "recent_bull": 0.0,
+   "recent_bull": 35950.0,
    "recent_bear": 0.0,
-   "recent_lean": null,
-   "early_lean": 63.7,
+   "recent_lean": 100.0,
+   "early_lean": 64.1,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 572.24,
-    "last": 576.14,
+    "last": 577.2,
     "low": 572.24,
     "high": 579.62,
-    "chg": 0.68
+    "chg": 0.87
    },
    "top": [],
    "repeat": null,
@@ -7895,15 +8117,15 @@
      "top": []
     },
     "1m+": {
-     "bull": 791981.0,
-     "bear": 403621.0,
+     "bull": 891511.0,
+     "bear": 431357.0,
      "bull_big": 0.0,
      "bear_big": 0.0,
-     "bull_small": 791981.0,
-     "bear_small": 403621.0,
-     "n_bull": 19,
-     "n_bear": 11,
-     "lean": 66.2,
+     "bull_small": 891511.0,
+     "bear_small": 431357.0,
+     "n_bull": 21,
+     "n_bear": 12,
+     "lean": 67.4,
      "top": []
     }
    },
@@ -7997,13 +8219,25 @@
      63.7
     ],
     [
-     "15:02",
+     "15:15",
      63.7
+    ],
+    [
+     "15:30",
+     62.5
+    ],
+    [
+     "15:45",
+     62.5
+    ],
+    [
+     "16:00",
+     65.0
     ]
    ],
    "speed": "quiet",
    "speed_text": "Quiet last 15m",
-   "recent_total": 0.0,
+   "recent_total": 35950.0,
    "base": null,
    "vs_read": {
     "code": "none",
@@ -8016,8 +8250,8 @@
      {
       "key": "lean",
       "label": "One-sided lean (65%+)",
-      "ok": false,
-      "detail": "64% bullish",
+      "ok": true,
+      "detail": "65% bullish",
       "miss": "no one-sided lean"
      },
      {
@@ -8043,40 +8277,40 @@
      }
     ],
     "ready": false,
-    "verdict": "Thin \u2014 missing: no one-sided lean, no $200K+ money, not accelerating",
-    "short": "Thin: no one-sided lean, no $200K+ money, not accelerating"
+    "verdict": "Thin \u2014 missing: no $200K+ money, not accelerating",
+    "short": "Thin: no $200K+ money, not accelerating"
    }
   }
  },
  "gauges": {
   "SPY": {
-   "bull_small": 88564598.0,
-   "bull_big": 198992275.0,
-   "bear_small": 61918165.0,
-   "bear_big": 130197566.0,
-   "n": 1813,
-   "n_bull_small": 635,
-   "n_bull_big": 422,
-   "n_bear_small": 465,
-   "n_bear_big": 291,
-   "skipped_multileg": 520712845.0,
-   "skipped_itm": 129416254.0,
-   "bull": 287556873.0,
-   "bear": 192115731.0,
-   "lean": 59.9,
-   "big_lean": 60.4,
-   "recent_bull": 7424299.0,
-   "recent_bear": 5754584.0,
-   "recent_lean": 56.3,
-   "early_lean": 60.1,
+   "bull_small": 98709839.0,
+   "bull_big": 218956416.0,
+   "bear_small": 71526843.0,
+   "bear_big": 149536663.0,
+   "n": 2053,
+   "n_bull_small": 709,
+   "n_bull_big": 472,
+   "n_bear_small": 536,
+   "n_bear_big": 336,
+   "skipped_multileg": 559885488.0,
+   "skipped_itm": 140250751.0,
+   "bull": 317666255.0,
+   "bear": 221063506.0,
+   "lean": 59.0,
+   "big_lean": 59.4,
+   "recent_bull": 4782818.0,
+   "recent_bear": 5319836.0,
+   "recent_lean": 47.3,
+   "early_lean": 59.2,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 715.23,
-    "last": 715.5,
+    "last": 718.86,
     "low": 712.29,
     "high": 720.89,
-    "chg": 0.04
+    "chg": 0.51
    },
    "top": [
     {
@@ -8170,18 +8404,18 @@
      "bucket": "1m+"
     }
    ],
-   "repeat": "12/18 685P hit 15 times ($13.7M, buyers and sellers); 12/18 680P hit 10 times ($11.0M, buyers and sellers)",
+   "repeat": "12/18 685P hit 15 times ($13.7M, buyers and sellers); 11/30 725P hit 21 times ($13.0M, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 74138710.0,
-     "bear": 61370950.0,
-     "bull_big": 40055965.0,
-     "bear_big": 32203263.0,
-     "bull_small": 34082745.0,
-     "bear_small": 29167687.0,
-     "n_bull": 349,
-     "n_bear": 310,
-     "lean": 54.7,
+     "bull": 83855707.0,
+     "bear": 71755719.0,
+     "bull_big": 44812589.0,
+     "bear_big": 38104213.0,
+     "bull_small": 39043118.0,
+     "bear_small": 33651506.0,
+     "n_bull": 397,
+     "n_bear": 357,
+     "lean": 53.9,
      "top": [
       {
        "time": "09:58",
@@ -8202,6 +8436,24 @@
        "bucket": "wk"
       },
       {
+       "time": "15:38",
+       "ts": "3:38",
+       "contract": "11/27 $715P",
+       "exp": "11/27",
+       "strike": "715",
+       "cp": "PUT",
+       "size": 2876,
+       "price": "5.51",
+       "side": "Bid",
+       "sidecode": "B",
+       "sweep": false,
+       "dir": "bull",
+       "premium": 1584676,
+       "spot": "715.63",
+       "dte": 3,
+       "bucket": "wk"
+      },
+      {
        "time": "09:41",
        "ts": "9:41",
        "contract": "11/25 $721P",
@@ -8218,37 +8470,19 @@
        "spot": "715.48",
        "dte": 1,
        "bucket": "wk"
-      },
-      {
-       "time": "14:29",
-       "ts": "2:29",
-       "contract": "11/25 $715C",
-       "exp": "11/25",
-       "strike": "715",
-       "cp": "CALL",
-       "size": 1427,
-       "price": "6.81",
-       "side": "Ask",
-       "sidecode": "A",
-       "sweep": true,
-       "dir": "bull",
-       "premium": 971947,
-       "spot": "718.85",
-       "dte": 1,
-       "bucket": "wk"
       }
      ]
     },
     "2w": {
-     "bull": 45420774.0,
-     "bear": 33629173.0,
-     "bull_big": 36010348.0,
-     "bear_big": 25713138.0,
-     "bull_small": 9410426.0,
-     "bear_small": 7916035.0,
-     "n_bull": 132,
-     "n_bear": 115,
-     "lean": 57.5,
+     "bull": 49949871.0,
+     "bear": 40792154.0,
+     "bull_big": 39963641.0,
+     "bear_big": 32435476.0,
+     "bull_small": 9986230.0,
+     "bear_small": 8356678.0,
+     "n_bull": 145,
+     "n_bear": 131,
+     "lean": 55.0,
      "top": [
       {
        "time": "09:32",
@@ -8307,15 +8541,15 @@
      ]
     },
     "1m": {
-     "bull": 41082714.0,
-     "bear": 35695268.0,
-     "bull_big": 30631509.0,
-     "bear_big": 29434625.0,
-     "bull_small": 10451205.0,
-     "bear_small": 6260643.0,
-     "n_bull": 124,
-     "n_bear": 98,
-     "lean": 53.5,
+     "bull": 42247622.0,
+     "bear": 36935701.0,
+     "bull_big": 31093004.0,
+     "bear_big": 29986879.0,
+     "bull_small": 11154618.0,
+     "bear_small": 6948822.0,
+     "n_bull": 131,
+     "n_bear": 105,
+     "lean": 53.4,
      "top": [
       {
        "time": "10:31",
@@ -8374,15 +8608,15 @@
      ]
     },
     "1m+": {
-     "bull": 126914675.0,
-     "bear": 61420340.0,
-     "bull_big": 92294453.0,
-     "bear_big": 42846540.0,
-     "bull_small": 34620222.0,
-     "bear_small": 18573800.0,
-     "n_bull": 452,
-     "n_bear": 233,
-     "lean": 67.4,
+     "bull": 141613055.0,
+     "bear": 71579932.0,
+     "bull_big": 103087182.0,
+     "bear_big": 49010095.0,
+     "bull_small": 38525873.0,
+     "bear_small": 22569837.0,
+     "n_bull": 508,
+     "n_bear": 279,
+     "lean": 66.4,
      "top": [
       {
        "time": "09:44",
@@ -8531,42 +8765,54 @@
      60.1
     ],
     [
-     "15:02",
+     "15:15",
      59.9
+    ],
+    [
+     "15:30",
+     59.7
+    ],
+    [
+     "15:45",
+     59.5
+    ],
+    [
+     "16:00",
+     59.0
     ]
    ],
-   "speed": "steady",
-   "speed_text": "Steady",
-   "recent_total": 13178883.0
+   "speed": "up_bear",
+   "speed_text": "Picking up bearish",
+   "recent_total": 10102654.0
   },
   "QQQ": {
-   "bull_small": 67784943.0,
-   "bull_big": 82270734.0,
-   "bear_small": 67178269.0,
-   "bear_big": 111529592.0,
-   "n": 1372,
-   "n_bull_small": 482,
-   "n_bull_big": 179,
-   "n_bear_small": 480,
-   "n_bear_big": 231,
-   "skipped_multileg": 414168966.0,
-   "skipped_itm": 5964160.0,
-   "bull": 150055677.0,
-   "bear": 178707861.0,
-   "lean": 45.6,
-   "big_lean": 42.5,
-   "recent_bull": 3626988.0,
-   "recent_bear": 8592901.0,
-   "recent_lean": 29.7,
-   "early_lean": 46.3,
+   "bull_small": 73549878.0,
+   "bull_big": 86489921.0,
+   "bear_small": 73365900.0,
+   "bear_big": 119509923.0,
+   "n": 1492,
+   "n_bull_small": 526,
+   "n_bull_big": 191,
+   "n_bear_small": 525,
+   "n_bear_big": 250,
+   "skipped_multileg": 1220691209.0,
+   "skipped_itm": 6791488.0,
+   "bull": 160039799.0,
+   "bear": 192875823.0,
+   "lean": 45.3,
+   "big_lean": 42.0,
+   "recent_bull": 1338665.0,
+   "recent_bear": 1699929.0,
+   "recent_lean": 44.1,
+   "early_lean": 45.4,
    "call": "Nothing significant",
    "call_dir": null,
    "px": {
     "first": 640.04,
-    "last": 634.74,
+    "last": 638.16,
     "low": 631.24,
     "high": 643.17,
-    "chg": -0.83
+    "chg": -0.29
    },
    "top": [
     {
@@ -8663,15 +8909,15 @@
    "repeat": "1/15/27 650P hit 15 times ($12.3M, buyers and sellers); 12/18 640P hit 9 times ($8.2M, buyers and sellers)",
    "buckets": {
     "wk": {
-     "bull": 61565968.0,
-     "bear": 63011990.0,
-     "bull_big": 23281119.0,
-     "bear_big": 21832217.0,
-     "bull_small": 38284849.0,
-     "bear_small": 41179773.0,
-     "n_bull": 341,
-     "n_bear": 363,
-     "lean": 49.4,
+     "bull": 67414984.0,
+     "bear": 69200883.0,
+     "bull_big": 24781246.0,
+     "bear_big": 24303247.0,
+     "bull_small": 42633738.0,
+     "bear_small": 44897636.0,
+     "n_bull": 380,
+     "n_bear": 397,
+     "lean": 49.3,
      "top": [
       {
        "time": "10:59",
@@ -8730,15 +8976,15 @@
      ]
     },
     "2w": {
-     "bull": 22703463.0,
-     "bear": 17403332.0,
-     "bull_big": 17660687.0,
-     "bear_big": 11975991.0,
-     "bull_small": 5042776.0,
-     "bear_small": 5427341.0,
-     "n_bull": 59,
-     "n_bear": 66,
-     "lean": 56.6,
+     "bull": 23447536.0,
+     "bear": 20799005.0,
+     "bull_big": 18006527.0,
+     "bear_big": 15087664.0,
+     "bull_small": 5441009.0,
+     "bear_small": 5711341.0,
+     "n_bull": 63,
+     "n_bear": 72,
+     "lean": 53.0,
      "top": [
       {
        "time": "13:50",
@@ -8797,15 +9043,15 @@
      ]
     },
     "1m": {
-     "bull": 24180669.0,
-     "bear": 33913591.0,
-     "bull_big": 17837964.0,
-     "bear_big": 26475096.0,
+     "bull": 24460083.0,
+     "bear": 34750364.0,
+     "bull_big": 18117378.0,
+     "bear_big": 26739846.0,
      "bull_small": 6342705.0,
-     "bear_small": 7438495.0,
-     "n_bull": 80,
-     "n_bear": 111,
-     "lean": 41.6,
+     "bear_small": 8010518.0,
+     "n_bull": 81,
+     "n_bear": 116,
+     "lean": 41.3,
      "top": [
       {
        "time": "10:42",
@@ -8864,15 +9110,15 @@
      ]
     },
     "1m+": {
-     "bull": 41605577.0,
-     "bear": 64378948.0,
-     "bull_big": 23490964.0,
-     "bear_big": 51246288.0,
-     "bull_small": 18114613.0,
-     "bear_small": 13132660.0,
-     "n_bull": 181,
-     "n_bear": 171,
-     "lean": 39.3,
+     "bull": 44717196.0,
+     "bear": 68125571.0,
+     "bull_big": 25584770.0,
+     "bear_big": 53379166.0,
+     "bull_small": 19132426.0,
+     "bear_small": 14746405.0,
+     "n_bull": 193,
+     "n_bear": 190,
+     "lean": 39.6,
      "top": [
       {
        "time": "13:07",
@@ -9021,22 +9267,34 @@
      45.8
     ],
     [
-     "15:02",
-     45.6
+     "15:15",
+     45.7
+    ],
+    [
+     "15:30",
+     45.5
+    ],
+    [
+     "15:45",
+     45.0
+    ],
+    [
+     "16:00",
+     45.3
     ]
    ],
-   "speed": "up_bear",
-   "speed_text": "Picking up bearish",
-   "recent_total": 12219889.0
+   "speed": "steady",
+   "speed_text": "Steady",
+   "recent_total": 3038594.0
   }
  },
  "tide": {
-  "time": "15:00",
-  "ncp": -139979228.0,
-  "npp": -38154174.0,
+  "time": "15:55",
+  "ncp": -86866769.0,
+  "npp": 6154200.0,
   "read": "Bearish"
  },
  "focus": null,
  "errors": [],
- "api_calls": 26
+ "api_calls": 28
 }
