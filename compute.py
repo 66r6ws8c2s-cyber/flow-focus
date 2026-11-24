@@ -24,7 +24,9 @@ import holidays
 import q
 
 ET = ZoneInfo("America/New_York")
-TICKERS = "GOOGL MSFT AAPL AMZN NBIS AMD TSLA SHOP CRWD PLTR AVGO NVDA META WMT MU ABNB SPOT".split()
+TICKERS = "GOOGL MSFT AAPL AMZN NBIS AMD TSLA SHOP CRWD PLTR AVGO NVDA META WMT MU ABNB SPOT BRK.B".split()
+# Unusual Whales option-trades uses BRKB; cards and latest.json use BRK.B.
+API_SYMBOL = {"BRK.B": "BRKB"}
 GAUGES = ["SPY", "QQQ"]
 MIN_PREM = 25000
 GAUGE_MIN_PREM = 100000
@@ -121,7 +123,7 @@ def multi_leg(x):
 def pull_new(tk, since_ms, min_prem, max_pages=20, until_ms=None):
     rows, older = [], until_ms
     for _ in range(max_pages):
-        params = dict(ticker_symbol=tk, min_premium=min_prem, include_agg_trades="true", limit=500, newer_than=since_ms)
+        params = dict(ticker_symbol=API_SYMBOL.get(tk, tk), min_premium=min_prem, include_agg_trades="true", limit=500, newer_than=since_ms)
         if older:
             params["older_than"] = older
         status, data = api("option-trades", **params)

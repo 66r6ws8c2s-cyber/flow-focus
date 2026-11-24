@@ -1,6 +1,6 @@
 # Flow Focus
 
-Static GitHub Pages dashboard. [`index.html`](index.html) reads [`latest.json`](latest.json) and draws one card per ticker from the current HCPG watchlist (GOOGL, MSFT, AAPL, AMZN, NBIS, AMD, TSLA, SHOP, CRWD, PLTR, AVGO, NVDA, META, WMT, MU, ABNB, SPOT). SPY and QQQ are context on the Market Tide line only.
+Static GitHub Pages dashboard. [`index.html`](index.html) reads [`latest.json`](latest.json) and draws one card per ticker from the current HCPG watchlist (GOOGL, MSFT, AAPL, AMZN, NBIS, AMD, TSLA, SHOP, CRWD, PLTR, AVGO, NVDA, META, WMT, MU, ABNB, SPOT, BRK.B). SPY and QQQ are context on the Market Tide line only.
 
 The page refreshes itself. GitHub Actions runs the generator on a schedule, then commits `latest.json` (and `baselines.json` after the close) back to `main`. No agent, no paid runner minutes on this public repo. The only credential is the `UW_API_KEY` repo secret. It is passed as an environment variable and is never printed, logged, or written into a file.
 
